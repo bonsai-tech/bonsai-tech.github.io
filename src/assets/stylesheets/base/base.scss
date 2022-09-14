@@ -1,8 +1,5 @@
 // BASE
 
-// Tipos
-// @include font-face('AvantGardeStd-Demi', 'ITCAvantGardeStd-Demi');
-
 // Global
 * {
   box-sizing: border-box;
@@ -15,7 +12,7 @@ html {
 
 body {
   @include typo-rwd(body);
-  background: $base-bg;
+  background: $white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
