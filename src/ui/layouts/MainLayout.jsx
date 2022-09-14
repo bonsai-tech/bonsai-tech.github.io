@@ -4,9 +4,9 @@ import cx from "classnames";
 const MainLayout = ({ children, className }) => {
   return (
     <div className={cx("outer-wrapper", className)}>
-      <p>Header</p>
+      <header className="header">Header</header>
       <div className="content">{children}</div>
-      <p>Footer</p>
+      <footer className="footer">Footer</footer>
     </div>
   );
 };
