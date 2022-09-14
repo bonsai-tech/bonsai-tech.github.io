@@ -1,3 +1,12 @@
 {
-  "hero:title": "Desarrollo de calidad, ágil y sin sobresaltos. "
+  "hero:title": "Desarrollo de calidad, ágil y sin sobresaltos. ",
+  "values:title": "Values",
+  "services:title": "Services",
+  "about:title": "About",
+  "cta:title": "Cta",
+  "cta2:title": "Cta 2",
+  "map:title": "Donde estamos",
+  "quote:text": "Quote",
+  "contact:title": "Háblanos de tu proyecto",
+  "quote:title": "Quote"
 }
