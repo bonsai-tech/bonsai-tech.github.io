@@ -1,0 +1,59 @@
+// VARIABLES
+
+// Colors
+
+$base-bg: #fbfbfb;
+$black-color: #182026;
+$black-color-light: #22282d;
+$black-color-light-2: #47535f;
+$blue: #0092ff;
+$blue-dark-1: #047ad2;
+$blue-dark-2: #006aba;
+$blue-light: #85cbff;
+$gray-light: #f2f2f2;
+$gray-light-2: #e8e8e8;
+$gray-light-3: #cacaca;
+$gray-light-4: #ebebeb;
+$gray-dark-blue: #727d88;
+$gray-dark-blue2: #313f4d;
+$error: #d13913;
+$error-light: #ff0000;
+$warning: #f28a39;
+$success: #0f9960;
+$success-light: #3dcc91;
+$whiteish: #fbfbfd;
+
+// Fonts
+$font-base: 16px;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$black: 900;
+
+// Layout
+$layout-maxWidth: 74.6875rem;
+
+$xxs: 0;
+$xs: 390px;
+$sm: 520px;
+$md: 760px;
+$lg: 960px;
+$xl: 1200px;
+$xxl: 1500px;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: $xs,
+  // Extra small screen / phone
+  sm: $sm,
+  // Small screen / phone
+  md: $md,
+  // Medium screen / tablet
+  lg: $lg,
+  // Large screen / desktop
+  xl: $xl,
+  // Extra large screen / wide desktop
+  xxl: $xxl // Extra large screen / wide desktop,,,,,,,,,,,
+);

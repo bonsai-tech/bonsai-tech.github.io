@@ -1,0 +1,26 @@
+// Animations
+
+// Transitions
+$general-change: 0.3s ease-in-out;
+$slow-change: 0.5s ease-in-out;
+$quick-change: 0.1s ease-in-out;
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

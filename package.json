@@ -16,9 +16,12 @@
   },
   "dependencies": {
     "gatsby": "^4.23.0",
+    "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-sass": "^5.23.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
+    "react-intl": "^6.1.1",
     "sass": "^1.54.9"
   }
 }

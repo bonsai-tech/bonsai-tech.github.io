@@ -1,0 +1,74 @@
+// @font-face {
+//   font-family: "Inter";
+//   src: url("../../assets/fonts/inter.ttf");
+//   font-display: swap;
+//   font-weight: 400;
+// }
+
+// @font-face {
+//   font-family: "Inter";
+//   src: url("../../assets/fonts/inter.ttf");
+//   font-display: swap;
+//   font-weight: 500;
+// }
+
+// @font-face {
+//   font-family: "Inter";
+//   src: url("../../assets/fonts/inter.ttf");
+//   font-display: swap;
+//   font-weight: 600;
+// }
+
+// @font-face {
+//   font-family: "Inter";
+//   src: url("../../assets/fonts/inter.ttf");
+//   font-display: swap;
+//   font-weight: 700;
+// }
+
+@font-face {
+  font-family: "CeraPro";
+  src: url("../../assets/fonts/ceraPro-Light.ttf");
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "CeraPro";
+  src: url("../../assets/fonts/ceraPro-Medium.ttf");
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "CeraPro";
+  src: url("../../assets/fonts/ceraPro-italic.ttf");
+  font-display: swap;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CeraPro";
+  src: url("../../assets/fonts/ceraPro-Bold.ttf");
+  font-display: swap;
+  font-weight: 700;
+}
+
+$cera: "CeraPro", sans-serif;
+
+$font-families: (
+  cera: $cera,
+);
+
+$typography: (
+  body: (
+    format: (
+      xxs: (
+        ff: cera,
+        fz: 1rem,
+        lh: normal,
+      ),
+    ),
+  ),
+);

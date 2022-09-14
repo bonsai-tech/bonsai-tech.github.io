@@ -1,0 +1,11 @@
+// GLOBALS
+@import "globals/settings";
+@import "globals/texts";
+@import "globals/mixins";
+
+// BASE
+@import "base/normalize";
+@import "base/base";
+@import "base/animations";
+@import "base/utils";
+@import "base/layout";

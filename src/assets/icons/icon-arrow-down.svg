@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="60px" viewBox="0 0 45 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow_vertical_mobile</title>
+    <g id="UI-Kit-Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.100000001">
+        <g id="v1.8-Asset-Exports" transform="translate(-2124.000000, -884.000000)" fill="#000000">
+            <path d="M2153.41542,892 L2171.458,910.043 L2171.46945,910.032719 L2175.68852,914.25179 L2175.677,914.262 L2175.68852,914.273091 L2171.46945,918.492162 L2171.458,918.481 L2153.41542,936.524881 L2149.19635,932.30581 L2164.433,917.068 L2117,917.068962 L2117,911.102296 L2164.079,911.102 L2149.19635,896.21907 L2153.41542,892 Z" id="arrow_vertical_mobile" transform="translate(2146.344258, 914.262440) rotate(-270.000000) translate(-2146.344258, -914.262440) "></path>
+        </g>
+    </g>
+</svg>
