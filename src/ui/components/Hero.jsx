@@ -1,14 +1,14 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 
-const Test = ({}) => {
+const Hero = ({}) => {
   const t = useTranslations();
 
   return (
-    <div>
-      <h1 className="test">{t("hero:title")}</h1>
+    <div className="wrapper">
+      <h1 className="alpha">{t("hero:title")}</h1>
     </div>
   );
 };
 
-export default Test;
+export default Hero;

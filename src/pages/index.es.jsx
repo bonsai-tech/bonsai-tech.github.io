@@ -2,8 +2,8 @@ import React from "react";
 import AppWrapper from "../ui/layouts/AppWarpper";
 import HelmetComponent from "../ui/layouts/HelmetComponent";
 import metaTags from "../config/meta-tags/en.json";
-import Test from "../ui/components/Test";
 import { getLocaleFromPathname } from "../libs/i18n";
+import HomePage from "./HomePage";
 
 const IndexPage = props => {
   const locale = getLocaleFromPathname(props.location);
@@ -16,7 +16,7 @@ const IndexPage = props => {
         page="/es/"
       />
       <AppWrapper {...props} lang="es">
-        <Test />
+        <HomePage />
       </AppWrapper>
     </>
   );
