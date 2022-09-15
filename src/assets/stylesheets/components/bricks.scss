@@ -1,0 +1,19 @@
+// Bricks
+
+.brick {
+  background: $white;
+  padding: 150px 0;
+  &-dark {
+    background: $black;
+    color: $white;
+  }
+  &-grey {
+    background: $grey-light;
+  }
+}
+
+.claims {
+  .beta {
+    max-width: 780px;
+  }
+}

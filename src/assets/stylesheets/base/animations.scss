@@ -66,3 +66,14 @@ $quick-change: 0.1s ease-in-out;
     box-shadow: 0 0 0 0 rgba($grey, 0.2);
   }
 }
+
+@keyframes appear-cube-icon {
+  0% {
+    transform: translate(-50%, 6px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -4px);
+    opacity: 1;
+  }
+}

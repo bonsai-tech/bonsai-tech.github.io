@@ -1,6 +1,7 @@
 import React from "react";
 import MainLayout from "../ui/layouts/MainLayout";
 import Hero from "../ui/components/Hero";
+import Claims from "../ui/components/Claims";
 import Values from "../ui/components/Values";
 import About from "../ui/components/About";
 import Contact from "../ui/components/Contact";
@@ -13,6 +14,7 @@ const HomePage = () => {
   return (
     <MainLayout>
       <Hero />
+      <Claims />
       <Values />
       <About />
       <Contact />

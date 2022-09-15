@@ -1,0 +1,105 @@
+// Cubes
+
+$cube-width: 116px;
+$cube-height: 154px;
+
+.cube {
+  $self: &;
+  &-n,
+  &-e,
+  &-s,
+  &-w {
+    transition: transform $general-change;
+    width: $cube-width;
+    height: $cube-height;
+    position: absolute;
+  }
+  &-n {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  &-s {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+  &-e {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  &-w {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  &-skirt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  &-grid {
+    margin-top: 52px;
+    position: relative;
+    width: calc(#{$cube-width} * 2);
+    height: calc(#{$cube-height} + 70px);
+
+    .icon {
+      z-index: 10;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -4px;
+    }
+
+    &.activated {
+      .icon {
+        animation: appear-cube-icon 0.5s both;
+      }
+    }
+
+    .icon {
+      width: calc(#{$cube-width} / 2.2);
+      opacity: 0.8;
+    }
+
+    &.is-north {
+      &.activated {
+        #{$self}-n {
+          transform: translate(-50%, -52px);
+        }
+      }
+    }
+
+    &.is-east {
+      &.activated {
+        #{$self}-e {
+          transform: translateY(-120px);
+        }
+      }
+    }
+
+    &.is-south {
+      &.activated {
+        #{$self}-s {
+          transform: translate(-50%, -42px);
+        }
+      }
+    }
+
+    &.is-west {
+      &.activated {
+        #{$self}-w {
+          transform: translateY(-120px);
+        }
+      }
+    }
+  }
+}
