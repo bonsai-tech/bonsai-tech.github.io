@@ -1,7 +1,11 @@
 // Cubes
 
-$cube-width: 116px;
-$cube-height: 154px;
+$cube-width: 216px;
+$v-to-h: 113 / 190;
+$cube-face-height: $cube-width * $v-to-h;
+$cube-height: $cube-width * (154 / 116);
+$cube-padding: $cube-width / 4;
+$cube-padding-v: $cube-padding * $v-to-h;
 
 .cube {
   $self: &;
@@ -16,37 +20,34 @@ $cube-height: 154px;
   }
   &-n {
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: $cube-width / 2 + $cube-padding / 2;
     z-index: 1;
   }
   &-s {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: $cube-face-height + $cube-padding-v;
+    left: $cube-width / 2 + $cube-padding / 2;
     z-index: 3;
   }
   &-e {
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    top: $cube-face-height / 2 + $cube-padding-v / 2;
+    left: $cube-width + $cube-padding;
     z-index: 2;
   }
   &-w {
-    top: 50%;
+    top: $cube-face-height / 2 + $cube-padding-v / 2;
     left: 0;
-    transform: translateY(-50%);
     z-index: 2;
   }
   &-skirt {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    top: 213px;
+    left: 11px;
+    min-width: 464px;
+    // min-width: $cube-width * 2 + $cube-padding * 2;
     z-index: 10;
   }
   &-grid {
-    margin-top: 52px;
+    margin-top: $cube-face-height * 0.65 + $cube-height / 2;
     position: relative;
     width: calc(#{$cube-width} * 2);
     height: calc(#{$cube-height} + 70px);
@@ -73,7 +74,7 @@ $cube-height: 154px;
     &.is-north {
       &.activated {
         #{$self}-n {
-          transform: translate(-50%, -52px);
+          transform: translateY(-$cube-face-height * 0.65);
         }
       }
     }
@@ -81,7 +82,7 @@ $cube-height: 154px;
     &.is-east {
       &.activated {
         #{$self}-e {
-          transform: translateY(-120px);
+          transform: translateY(-$cube-face-height * 0.65);
         }
       }
     }
@@ -89,7 +90,7 @@ $cube-height: 154px;
     &.is-south {
       &.activated {
         #{$self}-s {
-          transform: translate(-50%, -42px);
+          transform: translateY(-$cube-face-height * 0.65);
         }
       }
     }
@@ -97,7 +98,7 @@ $cube-height: 154px;
     &.is-west {
       &.activated {
         #{$self}-w {
-          transform: translateY(-120px);
+          transform: translateY(-$cube-face-height * 0.65);
         }
       }
     }
