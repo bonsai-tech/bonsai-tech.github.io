@@ -7,15 +7,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  &:before {
+  animation: border-white 0.5s ease;
+
+  &:after {
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
-    bottom: -6px;
-    right: -6px;
-    background: lighten($grey, 36%);
-    z-index: 1;
+    top: 0;
+    left: 0;
+    animation: pulse-out 0.3s;
   }
 
   &-content {
@@ -33,9 +34,17 @@
     transition: transform $quick-change;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
+    &:after {
+      animation: pulse-in 0.3s both;
+    }
+  }
+
+  &.is-clear {
     #{$self}-content {
-      transform: translate(6px, 6px);
+      background: $white;
+      color: $black;
     }
   }
 }

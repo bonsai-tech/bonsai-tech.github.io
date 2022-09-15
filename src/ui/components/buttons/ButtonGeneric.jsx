@@ -1,9 +1,9 @@
 import React from "react";
 import cx from "classnames";
 
-const ButtonGeneric = ({ label, disabled, skin = false, children }) => {
+const ButtonGeneric = ({ label, disabled, clear = false, children }) => {
   const buttonClasses = cx("button", {
-    [`button-${skin}`]: skin,
+    "is-clear": clear,
     "is-disabled": disabled,
   });
   const buttonContent = (

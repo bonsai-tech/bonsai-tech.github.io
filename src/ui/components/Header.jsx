@@ -9,21 +9,23 @@ const Header = () => {
 
   return (
     <header className="header">
-      <Link to="/" className="logo">
-        <img className="logo" alt="Bonsai" src={logo} />
-      </Link>
-      <nav className="main-nav">
-        <a href="#" className="nav-item">
-          {t("services:name")}
-        </a>
-        <a href="#" className="nav-item">
-          {t("about:name")}
-        </a>
-        <a href="#" className="nav-item">
-          {t("contact:name")}
-        </a>
-        <LangSelector />
-      </nav>
+      <div className="wrapper">
+        <Link to="/" className="logo">
+          <img className="logo" alt="Bonsai" src={logo} />
+        </Link>
+        <nav className="main-nav">
+          <a href="#" className="nav-item">
+            {t("services:name")}
+          </a>
+          <a href="#" className="nav-item">
+            {t("about:name")}
+          </a>
+          <a href="#" className="nav-item">
+            {t("contact:name")}
+          </a>
+          <LangSelector />
+        </nav>
+      </div>
     </header>
   );
 };
