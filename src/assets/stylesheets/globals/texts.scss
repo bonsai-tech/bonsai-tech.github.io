@@ -47,23 +47,57 @@ $typography: (
     format: (
       xxs: (
         ff: cera,
-        fz: 1rem,
+        fz: 1.2,
         lh: normal,
       ),
     ),
   ),
-  header-jumbo: (
+  alpha: (
     format: (
       xxs: (
-        fz: 70px,
-        lh: 1.2,
-        ls: -1.99px,
+        fz: 40px,
+        lh: 1,
         fw: 900,
+      ),
+      md: (
+        fz: 70px,
+      ),
+    ),
+  ),
+  beta: (
+    format: (
+      xxs: (
+        fz: 32px,
+        lh: 1.2,
+        fw: 900,
+      ),
+      md: (
+        fz: 48px,
+      ),
+    ),
+  ),
+  gamma: (
+    format: (
+      xxs: (
+        fz: 28px,
+        lh: 1.2,
+        fw: 900,
+      ),
+      md: (
+        fz: 32px,
+      ),
+    ),
+  ),
+  intro-text: (
+    format: (
+      xxs: (
+        fz: 22px,
+        lh: 1.2,
+        fw: 300,
+      ),
+      md: (
+        fz: 28px,
       ),
     ),
   ),
 );
-
-// .alpha {
-//   @include typo-rwd(header-jumbo);
-// }

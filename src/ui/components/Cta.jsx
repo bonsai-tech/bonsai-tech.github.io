@@ -6,7 +6,7 @@ const Cta = () => {
 
   return (
     <div className="wrapper">
-      <h1 className="alpha">{t("cta:title")}</h1>
+      <h1 className="beta">{t("cta:title")}</h1>
     </div>
   );
 };

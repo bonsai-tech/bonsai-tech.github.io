@@ -1,0 +1,17 @@
+// Headings
+
+.alpha {
+  @include typo-rwd(alpha);
+}
+
+.beta {
+  @include typo-rwd(beta);
+}
+
+.gamma {
+  @include typo-rwd(gamma);
+}
+
+.intro-text {
+  @include typo-rwd(intro-text);
+}

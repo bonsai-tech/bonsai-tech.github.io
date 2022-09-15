@@ -6,7 +6,7 @@ const Quote = () => {
 
   return (
     <div className="wrapper">
-      <h1 className="alpha">{t("quote:title")}</h1>
+      <h1 className="beta">{t("quote:title")}</h1>
     </div>
   );
 };

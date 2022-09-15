@@ -1,5 +1,6 @@
 {
-  "hero:title": "[EN] - Desarrollo de calidad, ágil y sin sobresaltos. ",
+  "hero:title": "[EN] - Desarrollo de <span>calidad</span>, ágil y sin sobresaltos. ",
+  "hero:subtitle": "[EN] - Somos un equipo ágil y experimentado de desarrolladores que te ayudarán a lanzar tu proyecto a tiempo y con código de calidad. ",
   "values:title": "[EN] - Values ",
   "services:title": "[EN] - Services",
   "services:name": "[EN] - Services",
@@ -11,5 +12,6 @@
   "quote:text": "[EN] - Quote",
   "contact:title": "[EN] - Háblanos de tu proyecto",
   "contact:name": "[EN] - Contacto",
-  "quote:title": "[EN] - Quote"
+  "quote:title": "[EN] - Quote",
+  "actions:hire": "[EN] - ¡Contrata a tu equipo ya!"
 }

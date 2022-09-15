@@ -6,7 +6,7 @@ const About = () => {
 
   return (
     <div className="wrapper">
-      <h1 className="alpha">{t("about:title")}</h1>
+      <h1 className="beta">{t("about:title")}</h1>
     </div>
   );
 };

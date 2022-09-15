@@ -6,7 +6,7 @@ const MapBlock = () => {
 
   return (
     <div className="wrapper">
-      <h1 className="alpha">{t("map:title")}</h1>
+      <h1 className="beta">{t("map:title")}</h1>
     </div>
   );
 };
