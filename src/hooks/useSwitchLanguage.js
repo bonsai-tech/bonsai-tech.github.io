@@ -1,8 +1,7 @@
 import useLocalizePath from "./useLocalizePath";
 import { navigate } from "gatsby";
 
-const useSwitchLanguage = locale => {
-  const targetLang = locale === "en" ? "es" : "en";
+const useSwitchLanguage = targetLang => {
   const pathname =
     typeof window === "undefined" ? "" : window.location.pathname;
   const to = useLocalizePath(targetLang)(pathname);

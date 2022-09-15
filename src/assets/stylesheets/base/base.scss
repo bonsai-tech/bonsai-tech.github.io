@@ -63,4 +63,8 @@ a {
 .wrapper {
   max-width: $layout-maxWidth;
   margin: 0 auto;
+  padding: 0 20px;
+  // @include mq($until: $layout-maxWidth) {
+  //   padding: 0 20px;
+  // }
 }

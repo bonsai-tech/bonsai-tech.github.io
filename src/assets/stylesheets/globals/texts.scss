@@ -29,6 +29,13 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "CeraPro";
+  src: url("../../assets/fonts/ceraPro-Black.ttf");
+  font-display: swap;
+  font-weight: 900;
+}
+
 $cera: "CeraPro", sans-serif;
 
 $font-families: (
@@ -45,4 +52,18 @@ $typography: (
       ),
     ),
   ),
+  header-jumbo: (
+    format: (
+      xxs: (
+        fz: 70px,
+        lh: 1.2,
+        ls: -1.99px,
+        fw: 900,
+      ),
+    ),
+  ),
 );
+
+// .alpha {
+//   @include typo-rwd(header-jumbo);
+// }

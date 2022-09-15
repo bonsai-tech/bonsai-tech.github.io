@@ -2,11 +2,14 @@
   "hero:title": "[EN] - Desarrollo de calidad, ágil y sin sobresaltos. ",
   "values:title": "[EN] - Values ",
   "services:title": "[EN] - Services",
+  "services:name": "[EN] - Services",
   "about:title": "[EN] - About",
+  "about:name": "[EN] - About",
   "cta:title": "[EN] - Cta",
   "cta2:title": "[EN] - Cta 2",
   "map:title": "[EN] - Donde estamos",
   "quote:text": "[EN] - Quote",
   "contact:title": "[EN] - Háblanos de tu proyecto",
+  "contact:name": "[EN] - Contacto",
   "quote:title": "[EN] - Quote"
 }
