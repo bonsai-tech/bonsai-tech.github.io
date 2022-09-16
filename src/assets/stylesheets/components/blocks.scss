@@ -1,0 +1,35 @@
+// Blocks
+
+.visual-block {
+  margin: 40px 0;
+
+  .gamma {
+    margin-bottom: 20px;
+  }
+
+  .basic-text {
+    margin-bottom: 3px;
+    color: rgba($white, 0.8);
+  }
+
+  &.reverse {
+    .cube-grid {
+      order: -1;
+      margin-left: 0;
+    }
+    .info {
+      margin-left: auto;
+    }
+  }
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    .info {
+      flex: 1 1 auto;
+      max-width: 500px;
+    }
+    .cube-grid {
+      margin: 0 90px 0 auto;
+    }
+  }
+}

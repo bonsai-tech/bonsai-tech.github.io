@@ -15,3 +15,7 @@
 .intro-text {
   @include typo-rwd(intro-text);
 }
+
+.basic-text {
+  @include typo-rwd(basic-text);
+}

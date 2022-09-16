@@ -79,12 +79,12 @@ $typography: (
   gamma: (
     format: (
       xxs: (
-        fz: 28px,
+        fz: 24px,
         lh: 1.2,
         fw: 900,
       ),
       md: (
-        fz: 32px,
+        fz: 28px,
       ),
     ),
   ),
@@ -97,6 +97,15 @@ $typography: (
       ),
       md: (
         fz: 28px,
+      ),
+    ),
+  ),
+  basic-text: (
+    format: (
+      xxs: (
+        fz: 18px,
+        lh: 1.2,
+        fw: 300,
       ),
     ),
   ),

@@ -1,9 +1,9 @@
 // Cubes
 
-$cube-width: 216px;
-$v-to-h: 113 / 190;
+$cube-width: 126px;
+$v-to-h: calc(113 / 190);
 $cube-face-height: $cube-width * $v-to-h;
-$cube-height: $cube-width * (154 / 116);
+$cube-height: calc(#{$cube-width} * (154 / 116));
 $cube-padding: $cube-width / 4;
 $cube-padding-v: $cube-padding * $v-to-h;
 
@@ -20,36 +20,35 @@ $cube-padding-v: $cube-padding * $v-to-h;
   }
   &-n {
     top: 0;
-    left: $cube-width / 2 + $cube-padding / 2;
+    left: calc(#{$cube-width} / 2 + #{$cube-padding} / 2);
     z-index: 1;
   }
   &-s {
     top: $cube-face-height + $cube-padding-v;
-    left: $cube-width / 2 + $cube-padding / 2;
+    left: calc(#{$cube-width} / 2 + #{$cube-padding} / 2);
     z-index: 3;
   }
   &-e {
-    top: $cube-face-height / 2 + $cube-padding-v / 2;
+    top: calc(#{$cube-face-height} / 2 + #{$cube-padding-v} / 2);
     left: $cube-width + $cube-padding;
     z-index: 2;
   }
   &-w {
-    top: $cube-face-height / 2 + $cube-padding-v / 2;
+    top: calc(#{$cube-face-height} / 2 + #{$cube-padding-v} / 2);
     left: 0;
     z-index: 2;
   }
   &-skirt {
+    min-width: $cube-width * 2 + $cube-padding;
     position: absolute;
-    top: 213px;
-    left: 11px;
-    min-width: 464px;
-    // min-width: $cube-width * 2 + $cube-padding * 2;
+    top: calc(#{$cube-height} / 1.3);
+    left: 0;
     z-index: 10;
   }
   &-grid {
-    margin-top: $cube-face-height * 0.65 + $cube-height / 2;
+    margin-top: calc(#{$cube-face-height} * 0.65);
     position: relative;
-    width: calc(#{$cube-width} * 2);
+    width: calc(#{$cube-width} * 2 + #{$cube-padding});
     height: calc(#{$cube-height} + 70px);
 
     .icon {
@@ -58,17 +57,13 @@ $cube-padding-v: $cube-padding * $v-to-h;
       left: 50%;
       transform: translateX(-50%);
       top: -4px;
+      width: calc(#{$cube-width} / 2.2);
     }
 
     &.activated {
       .icon {
         animation: appear-cube-icon 0.5s both;
       }
-    }
-
-    .icon {
-      width: calc(#{$cube-width} / 2.2);
-      opacity: 0.8;
     }
 
     &.is-north {
