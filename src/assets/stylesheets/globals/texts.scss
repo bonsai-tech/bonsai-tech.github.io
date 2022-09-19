@@ -88,6 +88,15 @@ $typography: (
       ),
     ),
   ),
+  pre-title: (
+    format: (
+      xxs: (
+        fz: 20px,
+        lh: 1.2,
+        fw: 500,
+      ),
+    ),
+  ),
   intro-text: (
     format: (
       xxs: (
@@ -106,6 +115,15 @@ $typography: (
         fz: 18px,
         lh: 1.2,
         fw: 300,
+      ),
+    ),
+  ),
+  cta-text: (
+    format: (
+      xxs: (
+        fz: 22px,
+        lh: 1.2,
+        fw: 500,
       ),
     ),
   ),

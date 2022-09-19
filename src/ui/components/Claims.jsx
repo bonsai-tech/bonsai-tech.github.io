@@ -18,16 +18,9 @@ const Claims = () => {
         visual={<CubeGridNorth />}
         texts={
           <>
-            <p className="basic-text">
-              Nos incorporamos al proyecto con la mayor rápidez posible.
-            </p>
-            <p className="basic-text">
-              No generamos una carga extra a equipos internos.
-            </p>
-            <p className="basic-text">
-              Revisamos la documentación y el código y nos ponemos manos a la
-              obra.
-            </p>
+            <p className="basic-text">{t("claims:section1:text1")}</p>
+            <p className="basic-text">{t("claims:section1:text2")}</p>
+            <p className="basic-text">{t("claims:section1:text3")}</p>
           </>
         }
       />
@@ -37,16 +30,9 @@ const Claims = () => {
         visual={<CubeGridEast />}
         texts={
           <>
-            <p className="basic-text">
-              Nos incorporamos al proyecto con la mayor rápidez posible.
-            </p>
-            <p className="basic-text">
-              No generamos una carga extra a equipos internos.
-            </p>
-            <p className="basic-text">
-              Revisamos la documentación y el código y nos ponemos manos a la
-              obra.
-            </p>
+            <p className="basic-text">{t("claims:section1:text1")}</p>
+            <p className="basic-text">{t("claims:section1:text2")}</p>
+            <p className="basic-text">{t("claims:section1:text3")}</p>
           </>
         }
       />
@@ -55,16 +41,9 @@ const Claims = () => {
         visual={<CubeGridSouth />}
         texts={
           <>
-            <p className="basic-text">
-              Nos incorporamos al proyecto con la mayor rápidez posible.
-            </p>
-            <p className="basic-text">
-              No generamos una carga extra a equipos internos.
-            </p>
-            <p className="basic-text">
-              Revisamos la documentación y el código y nos ponemos manos a la
-              obra.
-            </p>
+            <p className="basic-text">{t("claims:section1:text1")}</p>
+            <p className="basic-text">{t("claims:section1:text2")}</p>
+            <p className="basic-text">{t("claims:section1:text3")}</p>
           </>
         }
       />
@@ -74,16 +53,9 @@ const Claims = () => {
         reverse
         texts={
           <>
-            <p className="basic-text">
-              Nos incorporamos al proyecto con la mayor rápidez posible.
-            </p>
-            <p className="basic-text">
-              No generamos una carga extra a equipos internos.
-            </p>
-            <p className="basic-text">
-              Revisamos la documentación y el código y nos ponemos manos a la
-              obra.
-            </p>
+            <p className="basic-text">{t("claims:section1:text1")}</p>
+            <p className="basic-text">{t("claims:section1:text2")}</p>
+            <p className="basic-text">{t("claims:section1:text3")}</p>
           </>
         }
       />

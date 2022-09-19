@@ -2,7 +2,9 @@
 
 .header {
   padding: 24px 0;
-  background: $white;
+  background: rgba($white, 0.3);
+  backdrop-filter: blur(3.2959rem);
+
   .wrapper {
     display: flex;
     align-items: center;
@@ -13,7 +15,7 @@
     justify-content: end;
   }
   .logo {
-    width: 120px;
+    width: 100px;
   }
 }
 
@@ -22,6 +24,10 @@
     margin-left: 32px;
     font-size: 16px;
     font-weight: 500;
+    transition: color $general-change;
+    &:hover {
+      color: $primary;
+    }
   }
   .lang-selector {
     margin-left: 40px;

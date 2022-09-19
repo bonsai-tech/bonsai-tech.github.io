@@ -7,7 +7,11 @@ const Brick = ({ className, children, skin = false }) => {
   const t = useTranslations();
 
   return (
-    <div className={cx(`brick brick-${skin}`, { [className]: className })}>
+    <div
+      className={cx(`brick brick-${skin}`, {
+        [className]: className,
+      })}
+    >
       <div className="wrapper">{children}</div>
     </div>
   );

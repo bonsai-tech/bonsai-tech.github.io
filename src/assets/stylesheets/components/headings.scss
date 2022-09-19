@@ -19,3 +19,13 @@
 .basic-text {
   @include typo-rwd(basic-text);
 }
+
+.cta-text {
+  @include typo-rwd(cta-text);
+}
+
+.pre-title {
+  @include typo-rwd(pre-title);
+  text-transform: uppercase;
+  color: $black-40;
+}

@@ -1,1 +1,23 @@
 // Layout
+
+$header-height: 80px;
+
+.outer-wrapper {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: $header-height;
+  }
+  .content {
+    padding-top: $header-height;
+  }
+}
+
+.intro-heading {
+  .pre-title {
+    margin-bottom: 10px;
+  }
+}
