@@ -2,12 +2,14 @@ import React from "react";
 import cube1 from "../../../assets/images/cube-long.svg";
 import cubeSkirt from "../../../assets/images/cube-skirt.svg";
 import chat from "../../../assets/images/icon-chat.svg";
+// import { ReactComponent as Chat } from "../../../assets/icons/icon-chat.svg";
 
 const CubeGridNorth = () => {
   return (
     <div className="cube-grid is-north">
       <div className="cube-n">
         <img src={cube1} alt="cube" />
+
         <img className="icon" src={chat} alt="chat" />
       </div>
       <img className="cube-e" src={cube1} alt="cube" />

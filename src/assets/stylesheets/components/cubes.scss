@@ -1,6 +1,6 @@
 // Cubes
 
-$cube-width: 126px;
+$cube-width: 110px;
 $v-to-h: calc(113 / 190);
 $cube-face-height: $cube-width * $v-to-h;
 $cube-height: calc(#{$cube-width} * (154 / 116));
