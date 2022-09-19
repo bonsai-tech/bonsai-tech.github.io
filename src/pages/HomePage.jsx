@@ -6,7 +6,6 @@ import Values from "../ui/components/Values";
 import About from "../ui/components/About";
 import Contact from "../ui/components/Contact";
 import Cta from "../ui/components/Cta";
-import Cta2 from "../ui/components/Cta2";
 import Quote from "../ui/components/Quote";
 import Services from "../ui/components/Services";
 import MapBlock from "../ui/components/MapBlock";
@@ -21,7 +20,7 @@ const HomePage = () => {
       <About />
       <Values />
       <Contact />
-      <Cta2 />
+      <Cta skin="dark" clearButton />
       <Quote />
       <MapBlock />
     </MainLayout>
