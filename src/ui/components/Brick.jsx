@@ -1,12 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
 import cx from "classnames";
 
-const Brick = ({ className, children, skin = false, id }) => {
+const Brick = ({ className, children, skin, id }) => {
   return (
     <div
-      className={cx(`brick brick-${skin}`, {
+      className={cx(`brick`, {
         [className]: className,
+        [skin]: skin,
       })}
       id={id}
     >
@@ -15,8 +15,8 @@ const Brick = ({ className, children, skin = false, id }) => {
   );
 };
 
-Brick.propTypes = {
-  skin: PropTypes.oneOf(["", "dark", "grey"]),
+Brick.defaultProps = {
+  skin: false,
 };
 
 export default Brick;

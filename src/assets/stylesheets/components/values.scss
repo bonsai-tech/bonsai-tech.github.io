@@ -1,0 +1,17 @@
+// Values
+
+.values {
+  $gutter: 30px;
+  @include mq(md) {
+    padding-bottom: 100px;
+    &-block {
+      display: flex;
+      margin-left: -$gutter;
+    }
+
+    .info-block {
+      flex: 1 1 33.3%;
+      padding: 0 $gutter;
+    }
+  }
+}

@@ -91,9 +91,12 @@ $typography: (
   pre-title: (
     format: (
       xxs: (
-        fz: 20px,
+        fz: 16px,
         lh: 1.2,
         fw: 500,
+      ),
+      md: (
+        fz: 20px,
       ),
     ),
   ),

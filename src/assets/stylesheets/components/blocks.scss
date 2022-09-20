@@ -36,14 +36,6 @@
 
 .cta {
   padding: 120px 0;
-  .wrapper {
-    display: flex;
-    align-items: center;
-  }
-  &-info {
-    padding-right: 40px;
-    flex: 1 1 auto;
-  }
 
   .beta {
     margin-bottom: 10px;
@@ -54,8 +46,35 @@
     color: $grey;
     max-width: 600px;
   }
-  &-actions {
-    flex: 0 0 auto;
-    margin-left: auto;
+  &-action {
+    margin-top: 20px;
+  }
+
+  @include mq(md) {
+    .wrapper {
+      display: flex;
+      align-items: center;
+    }
+    &-info {
+      padding-right: 40px;
+      flex: 1 1 auto;
+    }
+    &-action {
+      flex: 0 0 auto;
+      margin: 0 0 0 auto;
+    }
+  }
+}
+
+.info-block {
+  margin: 60px 0;
+  .gamma,
+  p {
+    margin-bottom: 10px;
+  }
+
+  .basic-text {
+    font-weight: $medium;
+    color: $grey;
   }
 }
