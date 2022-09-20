@@ -18,11 +18,11 @@ const HomePage = () => {
       <Cta />
       <Services />
       <About />
-      <Values />
-      <Contact />
       <Cta skin="dark" clearButton />
-      <Quote />
+      <Values />
       <MapBlock />
+      <Quote />
+      <Contact />
     </MainLayout>
   );
 };

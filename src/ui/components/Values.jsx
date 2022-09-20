@@ -6,7 +6,7 @@ const Values = () => {
   const t = useTranslations();
 
   return (
-    <Brick skin="grey" className="values">
+    <Brick className="values">
       <h1 className="beta">{t("values:title")}</h1>
     </Brick>
   );

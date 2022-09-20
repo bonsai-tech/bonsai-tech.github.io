@@ -12,7 +12,7 @@ const About = () => {
   const blockRef = useScrollRevealEffect({ delay: 0.3, stagger: 0.1 });
 
   return (
-    <Brick className="about">
+    <Brick className="about" id="about">
       <div className="intro-heading" ref={titleRef}>
         <h3 className="pre-title">{t("about:pretitle")}</h3>
         <h1 className="beta">{t("about:title")}</h1>

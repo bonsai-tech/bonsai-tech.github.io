@@ -6,7 +6,7 @@ const Contact = () => {
   const t = useTranslations();
 
   return (
-    <Brick skin="grey" className="contact">
+    <Brick skin="grey" className="contact" id="contact">
       <h1 className="beta">{t("contact:title")}</h1>
     </Brick>
   );
