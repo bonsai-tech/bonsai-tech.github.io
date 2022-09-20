@@ -1,9 +1,6 @@
 import React from "react";
-import useTranslations from "../../hooks/useTranslations";
 
 const TeamMember = ({ name, position, description, image }) => {
-  const t = useTranslations();
-
   return (
     <div className="team-member">
       <div className="team-image">

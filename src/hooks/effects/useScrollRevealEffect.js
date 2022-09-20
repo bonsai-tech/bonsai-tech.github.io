@@ -1,8 +1,8 @@
-import useGsapEffect from './useGsapEffect'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import useGsapEffect from "./useGsapEffect";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 const defaultParams = {
   y: 30,
@@ -10,19 +10,21 @@ const defaultParams = {
   delay: 0.1,
   stagger: 0.1,
   duration: 0.5,
-  ease: 'expo.out',
-}
+  ease: "expo.out",
+};
 
 export default useGsapEffect((element, params = {}) => {
-  const markers = params.markers
-  delete params.markers
+  const markers = params.markers;
+  const toggleClass = params.toggleClass;
+  delete params.markers;
   gsap.from(element, {
     scrollTrigger: {
       trigger: element,
-      start: 'top 95%',
+      start: "50% 90%",
       markers: markers,
+      toggleClass: toggleClass,
     },
     ...defaultParams,
     ...params,
-  })
-})
+  });
+});
