@@ -1,8 +1,8 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import pattern from "../../assets/images/hero-pattern.svg";
-import ButtonLink from "../components/buttons/ButtonLink";
 import useRevealEffect from "../../hooks/effects/useRevealEffect";
+import ButtonHashLink from "./buttons/ButtonHashLink";
 
 const Hero = () => {
   const t = useTranslations();
@@ -26,7 +26,7 @@ const Hero = () => {
             })}
           </h1>
           <p className="intro-text">{t("hero:subtitle")}</p>
-          <ButtonLink label={t("actions:hire")} href="#" />
+          <ButtonHashLink label={t("actions:hire")} to="#contact" />
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
-import ButtonLink from "../components/buttons/ButtonLink";
+import ButtonHashLink from "../components/buttons/ButtonHashLink";
 import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
 
 const Cta = ({ skin, clearButton }) => {
@@ -16,7 +16,11 @@ const Cta = ({ skin, clearButton }) => {
         <p className="cta-text">{t("cta:text")}</p>
       </div>
       <div className="cta-action" ref={buttonRef}>
-        <ButtonLink label={t("actions:hire")} href="#" clear={clearButton} />
+        <ButtonHashLink
+          label={t("actions:hire")}
+          to="#contact"
+          clear={clearButton}
+        />
       </div>
     </Brick>
   );
