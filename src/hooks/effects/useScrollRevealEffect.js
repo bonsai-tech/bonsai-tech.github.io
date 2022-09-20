@@ -20,7 +20,7 @@ export default useGsapEffect((element, params = {}) => {
   gsap.from(element, {
     scrollTrigger: {
       trigger: element,
-      start: "50% 90%",
+      start: "60% 90%",
       markers: markers,
       toggleClass: toggleClass,
     },

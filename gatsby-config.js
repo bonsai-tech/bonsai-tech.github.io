@@ -6,6 +6,8 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     /* i18n */
+    /* svg */
+    "gatsby-plugin-svgr",
     {
       resolve: "gatsby-plugin-i18n",
       options: {

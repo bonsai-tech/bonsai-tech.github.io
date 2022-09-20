@@ -14,7 +14,7 @@ const HelmetComponent = ({ description, page, title }) => {
       <link rel="canonical" href={"https://aucta.io/" + page} />
       <meta property="og:site_name" content="Aucta" />
       <meta property="og:url" content={"https://aucta.io/" + page} />
-      <meta property="og:title" content="Aucta" />
+      <meta property="og:title" content="Bonsai" />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta
@@ -39,8 +39,8 @@ const HelmetComponent = ({ description, page, title }) => {
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="https://aucta.io/og/og-921x518.png" />
-      <meta property="twitter:title" content="Aucta" />
-      <meta name="twitter:image:alt" content="Aucta" />
+      <meta property="twitter:title" content="Bonsai" />
+      <meta name="twitter:image:alt" content="Bonsai" />
       <meta property="twitter:description" content={description} />
     </Helmet>
   );

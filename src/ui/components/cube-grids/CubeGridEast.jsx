@@ -1,7 +1,7 @@
 import React from "react";
 import cube1 from "../../../assets/images/cube-long.svg";
-import chat from "../../../assets/images/icon-chat.svg";
 import CubeGrid from "./CubeGrid";
+import { ReactComponent as Stack } from "../../../assets/icons/icon-stack.svg";
 
 const CubeGridEast = () => {
   return (
@@ -9,7 +9,7 @@ const CubeGridEast = () => {
       <img className="cube-n" src={cube1} alt="cube" />
       <div className="cube-e">
         <img src={cube1} alt="cube" />
-        <img className="icon" src={chat} alt="chat" />
+        <Stack className="icon" />
       </div>
       <img className="cube-s" src={cube1} alt="cube" />
       <img className="cube-w" src={cube1} alt="cube" />
