@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const TeamMember = ({ name, position, description, image }) => {
+const TeamMember = forwardRef(({ name, position, description, image }, ref) => {
   return (
-    <div className="team-member">
+    <div className="team-member" ref={ref}>
       <div className="team-image">
         <img src={image} alt={name} />
       </div>
@@ -13,6 +13,6 @@ const TeamMember = ({ name, position, description, image }) => {
       </div>
     </div>
   );
-};
+});
 
 export default TeamMember;
