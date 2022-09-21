@@ -38,7 +38,15 @@
   "map:title": "[EN] Donde estamos",
   "quote:text": "[EN] Quote",
   "contact:title": "[EN] Háblanos de tu proyecto",
+  "contact:lets-see": "[EN] Veámonos",
+  "contact:lets-see-text": "[EN] Organicemos una reunión online.",
+  "contact:send-email": "[EN] Mándanos un correo",
+  "contact:send-email-text": "[EN] Cuéntanos tu proyecto con todo detalle.",
+  "contact:lets-chat": "[EN] Chateemos",
+  "contact:lets-chat-text": "[EN] ¿Tienes una duda rápida?",
   "contact:name": "[EN] Contacto",
   "quote:title": "[EN] Quote",
-  "actions:hire": "[EN] ¡Contrata a tu equipo ya!"
+  "actions:hire": "[EN] ¡Contrata a tu equipo ya!",
+  "action:program-meeting": "[EN] Programa una reunión",
+  "action:ask-budget": "[EN] Pídenos presupuesto"
 }

@@ -38,7 +38,15 @@
   "map:title": "Donde estamos",
   "quote:text": "Quote",
   "contact:title": "Háblanos de tu proyecto",
+  "contact:lets-see": "Veámonos",
+  "contact:lets-see-text": "Organicemos una reunión online.",
+  "contact:send-email": "Mándanos un correo",
+  "contact:send-email-text": "Cuéntanos tu proyecto con todo detalle.",
+  "contact:lets-chat": "Chateemos",
+  "contact:lets-chat-text": "¿Tienes una duda rápida?",
   "contact:name": "Contacto",
   "quote:title": "Quote",
-  "actions:hire": "¡Contrata a tu equipo ya!"
+  "actions:hire": "¡Contrata a tu equipo ya!",
+  "action:program-meeting": "Programa una reunión",
+  "action:ask-budget": "Pídenos presupuesto"
 }

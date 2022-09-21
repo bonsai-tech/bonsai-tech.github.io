@@ -17,7 +17,7 @@ const Cta = ({ skin, clearButton }) => {
       </div>
       <div className="cta-action" ref={buttonRef}>
         <ButtonHashLink
-          label={t("actions:hire")}
+          label="actions:hire"
           to="#contact"
           clear={clearButton}
         />
