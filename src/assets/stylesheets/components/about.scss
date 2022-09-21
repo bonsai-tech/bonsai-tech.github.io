@@ -2,28 +2,22 @@
 
 .about {
   position: relative;
-  padding: 120px 0;
   .pattern {
     position: absolute;
     top: 0;
     right: 0;
   }
+  @include mq(lg) {
+    padding: 120px 0;
+  }
 }
 
 .team {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   margin-top: 40px;
   &-member {
-    flex: 1 1 50%;
     display: flex;
     align-items: center;
     margin-bottom: 60px;
-
-    &:nth-child(odd) {
-      padding-right: 20px;
-    }
   }
 
   &-image {
@@ -31,6 +25,7 @@
     height: auto;
     margin-right: 20px;
     position: relative;
+    flex-shrink: 0;
     img {
       z-index: 10;
       display: block;
@@ -51,5 +46,17 @@
 
   &-description {
     max-width: 90%;
+  }
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &-member {
+      flex: 1 1 50%;
+
+      &:nth-child(odd) {
+        padding-right: 20px;
+      }
+    }
   }
 }

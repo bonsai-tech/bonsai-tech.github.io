@@ -8,7 +8,7 @@
 
 .show-in-mobile {
   display: block;
-  @include mq(lg) {
+  @include mq(md) {
     display: none;
   }
 }
@@ -51,4 +51,8 @@
 .link {
   color: $primary;
   font-weight: $bold;
+}
+
+.disable-scroll-mobile {
+  overflow: hidden;
 }

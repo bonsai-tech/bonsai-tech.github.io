@@ -75,3 +75,23 @@ $quick-change: 0.1s ease-in-out;
     transform: translate(-50%, -6px);
   }
 }
+
+@keyframes nav-item-hover {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(100%);
+  }
+}
+
+@keyframes appear-top {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

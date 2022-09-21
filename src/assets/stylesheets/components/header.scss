@@ -1,7 +1,7 @@
 // Header
 
 .header {
-  padding: 24px 0;
+  padding: 16px 0;
   background: rgba($white, 0.3);
   backdrop-filter: blur(3.2959rem);
 
@@ -17,16 +17,86 @@
   .logo {
     width: 100px;
   }
+  .button-menu {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  &.open-menu {
+    .hamburger {
+      &:before {
+        transform: translateY(0.75rem) rotate(45deg);
+      }
+      &:after {
+        transform: translateY(-0.75rem) rotate(-45deg);
+      }
+    }
+
+    .main-nav {
+      position: fixed;
+      background-color: $white;
+      top: 60px;
+      left: 0;
+      right: 0;
+      display: block;
+      border-bottom: 1px solid $grey-light;
+      box-shadow: 0 4px 10px 2px $grey-light;
+      padding-bottom: 10px;
+      animation: appear-top 0.3s ease;
+    }
+    .nav-item,
+    .lang-selector {
+      display: block;
+      padding: 10px 20px;
+      margin: 0;
+    }
+    .nav-item {
+      &:hover {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  @include mq($until: md) {
+    .main-nav {
+      display: none;
+    }
+  }
+  @include mq(md) {
+    padding: 24px 0;
+    .button-menu {
+      display: none;
+    }
+  }
 }
 
 .main-nav {
   .nav-item {
-    margin-left: 32px;
+    margin-left: 24px;
+    padding: 4px;
     font-size: 16px;
     font-weight: 500;
     transition: color $general-change;
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $black;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      transform: scaleX(0);
+      transform-origin: 0 0;
+    }
     &:hover {
-      color: $primary;
+      &:after {
+        animation: nav-item-hover 0.3s ease both;
+      }
     }
   }
   .lang-selector {
@@ -35,6 +105,7 @@
 }
 
 .lang-selector {
+  padding: 4px 0;
   .lang-item {
     background: transparent;
     border: none;
@@ -45,8 +116,8 @@
       color: $black;
     }
     &:last-child {
-      margin-left: 6px;
-      padding-left: 6px;
+      margin-left: 10px;
+      padding-left: 10px;
       position: relative;
       &:before {
         content: "";
@@ -58,5 +129,34 @@
         left: 0;
       }
     }
+  }
+}
+
+// Hamburger
+
+.hamburger {
+  display: block;
+  width: 22px;
+  height: 10px;
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: $black;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  &:before {
+    transform-origin: top right;
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    transform-origin: bottom right;
+    top: 0.5rem;
+    left: 0;
   }
 }

@@ -1,6 +1,7 @@
 // Layout
 
 $header-height: 80px;
+$header-height-mv: 60px;
 
 .outer-wrapper {
   .header {
@@ -9,10 +10,18 @@ $header-height: 80px;
     left: 0;
     right: 0;
     z-index: 99;
-    height: $header-height;
+    height: $header-height-mv;
   }
   .content {
-    padding-top: $header-height;
+    padding-top: $header-height-mv;
+  }
+  @include mq(md) {
+    .header {
+      height: $header-height;
+    }
+    .content {
+      padding-top: $header-height;
+    }
   }
 }
 

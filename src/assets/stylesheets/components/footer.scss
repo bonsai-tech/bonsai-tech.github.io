@@ -4,13 +4,14 @@
   $self: &;
   .logo {
     width: 100px;
+    margin-right: 20px;
   }
   &-main {
     background: darken($grey-light, 2%);
     padding: 20px 0;
   }
   &-extra {
-    background: darken($grey-light, 6%);
+    background: darken($grey-light, 5%);
     padding: 10px 0;
     a {
       &:hover {
@@ -19,10 +20,6 @@
     }
   }
 
-  &-social {
-    display: flex;
-    align-items: center;
-  }
   .social-item {
     display: inline-flex;
     align-items: center;
@@ -41,6 +38,36 @@
     }
   }
 
+  .nav-item {
+    margin-right: 20px;
+  }
+
+  @include mq($until: md) {
+    .logo {
+      margin-bottom: 6px;
+    }
+    .nav-item {
+      display: block;
+      margin: 0;
+      padding-left: 0;
+    }
+    &-social {
+      .link {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .social-item {
+        margin: 0 10px 0 0;
+      }
+    }
+    .right-slot {
+      .footer-caption {
+        display: block;
+        margin-bottom: 2px;
+      }
+    }
+  }
+
   @include mq(md) {
     &-main {
       .wrapper {
@@ -51,14 +78,19 @@
         margin-left: auto;
       }
     }
-  }
-  &-extra {
-    .wrapper {
+
+    &-social {
       display: flex;
       align-items: center;
     }
-    .right-slot {
-      margin-left: auto;
+    &-extra {
+      .wrapper {
+        display: flex;
+        align-items: center;
+      }
+      .right-slot {
+        margin-left: auto;
+      }
     }
   }
 }

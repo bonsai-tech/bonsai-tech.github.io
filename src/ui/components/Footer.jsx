@@ -18,15 +18,12 @@ const Footer = () => {
           <Link to="/" className="logo">
             <img className="logo" alt="Bonsai" src={logo} />
           </Link>
-          <nav className="main-nav">
+          <nav className="footer-nav">
             <HashLink to="#services" className="nav-item">
               {t("services:name")}
             </HashLink>
             <HashLink to="#about" className="nav-item">
               {t("about:name")}
-            </HashLink>
-            <HashLink to="#contact" className="nav-item">
-              {t("contact:name")}
             </HashLink>
           </nav>
           <div className="footer-social">

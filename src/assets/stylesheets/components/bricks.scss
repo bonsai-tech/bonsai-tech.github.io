@@ -11,7 +11,7 @@
     background: $grey-light;
   }
 
-  @include mq(md) {
+  @include mq(lg) {
     padding: 120px 0;
   }
 }

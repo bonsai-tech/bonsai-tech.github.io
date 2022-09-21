@@ -1,7 +1,7 @@
 // Hero
 
 .hero {
-  padding: 180px 0 250px;
+  padding: 80px 0 100px;
   position: relative;
 
   &-info {
@@ -12,9 +12,11 @@
 
   &-pattern {
     position: absolute;
-    top: 0;
+    top: 28%;
     right: 0;
+    width: 150%;
     z-index: 1;
+    max-width: none;
   }
   .alpha {
     margin-bottom: 20px;
@@ -26,5 +28,19 @@
 
   .button {
     margin-top: 30px;
+  }
+  @include mq($from: sm) {
+    &-info {
+      width: 90%;
+    }
+  }
+  @include mq(lg) {
+    padding: 180px 0 250px;
+    &-pattern {
+      max-width: 100%;
+      top: 0;
+      right: 0;
+      width: 100%;
+    }
   }
 }

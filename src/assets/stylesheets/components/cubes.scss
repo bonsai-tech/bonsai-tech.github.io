@@ -51,6 +51,8 @@ $cube-padding-v: $cube-padding * $v-to-h;
     position: relative;
     width: calc(#{$cube-width} * 2 + #{$cube-padding});
     height: calc(#{$cube-height} + 70px);
+    flex-shrink: 0;
+    top: 10px;
 
     .icon {
       z-index: 10;
@@ -62,6 +64,8 @@ $cube-padding-v: $cube-padding * $v-to-h;
       color: $primary;
       background: $black;
       border-radius: 10px;
+      width: 50px;
+      height: 50px;
     }
 
     &.activated {

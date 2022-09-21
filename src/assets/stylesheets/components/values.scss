@@ -2,8 +2,8 @@
 
 .values {
   $gutter: 30px;
+  padding-bottom: 60px;
   @include mq(md) {
-    padding-bottom: 100px;
     &-block {
       display: flex;
       margin-left: -$gutter;
@@ -13,5 +13,8 @@
       flex: 1 1 33.3%;
       padding: 0 $gutter;
     }
+  }
+  @include mq(lg) {
+    padding-bottom: 100px;
   }
 }

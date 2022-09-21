@@ -5,12 +5,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const defaultParams = {
-  y: 30,
+  y: 10,
   opacity: 0,
   delay: 0.1,
   stagger: 0.1,
-  duration: 0.5,
-  ease: "expo.out",
+  duration: 0.6,
+  ease: "power1.out",
 };
 
 export default useGsapEffect((element, params = {}) => {

@@ -60,6 +60,9 @@ $typography: (
         fw: 900,
       ),
       md: (
+        fz: 56px,
+      ),
+      lg: (
         fz: 70px,
       ),
     ),
@@ -72,6 +75,9 @@ $typography: (
         fw: 900,
       ),
       md: (
+        fz: 36px,
+      ),
+      lg: (
         fz: 42px,
       ),
     ),
@@ -83,7 +89,7 @@ $typography: (
         lh: 1.2,
         fw: 900,
       ),
-      md: (
+      lg: (
         fz: 28px,
       ),
     ),
@@ -108,6 +114,9 @@ $typography: (
         fw: 300,
       ),
       md: (
+        fz: 26px,
+      ),
+      lg: (
         fz: 28px,
       ),
     ),
@@ -124,9 +133,12 @@ $typography: (
   cta-text: (
     format: (
       xxs: (
-        fz: 22px,
+        fz: 20px,
         lh: 1.2,
         fw: 500,
+      ),
+      md: (
+        fz: 22px,
       ),
     ),
   ),
