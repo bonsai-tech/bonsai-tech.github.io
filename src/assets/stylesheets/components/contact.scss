@@ -2,6 +2,8 @@
 
 .contact {
   position: relative;
+  overflow: hidden;
+  padding-bottom: 60px;
   .pattern {
     position: absolute;
     top: 0;
@@ -19,45 +21,16 @@
       flex-wrap: wrap;
       margin: 40px 0;
     }
+  }
+  @include mq(md) {
+    .card {
+      &.w-50 {
+        flex: 0 0 calc(50% - 20px);
 
-    &.w-50 {
-      flex: 0 0 calc(50% - 20px);
-
-      &:first-child {
-        margin-right: 40px;
+        &:first-child {
+          margin-right: 40px;
+        }
       }
-    }
-  }
-}
-
-.card {
-  background: $white;
-  padding: 38px 40px 40px 40px;
-  margin-bottom: 40px;
-
-  .gamma {
-    margin-bottom: 6px;
-  }
-
-  .button {
-    margin-top: 10px;
-    + .button {
-      margin-left: 20px;
-    }
-  }
-
-  p {
-    font-weight: $medium;
-    color: $grey;
-    margin-bottom: 10px;
-  }
-
-  &.w-50 {
-    display: flex;
-    flex-direction: column;
-    .button {
-      width: 100%;
-      margin-top: auto;
     }
   }
 }

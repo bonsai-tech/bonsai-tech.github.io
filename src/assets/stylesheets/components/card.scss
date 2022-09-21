@@ -1,0 +1,33 @@
+// Card
+
+.card {
+  background: $white;
+  padding: 38px 40px 40px 40px;
+  margin-bottom: 40px;
+
+  .gamma {
+    margin-bottom: 6px;
+  }
+
+  .button {
+    margin-top: 10px;
+    + .button {
+      margin-left: 20px;
+    }
+  }
+
+  p {
+    font-weight: $medium;
+    color: $grey;
+    margin-bottom: 10px;
+  }
+
+  &.w-50 {
+    display: flex;
+    flex-direction: column;
+    .button {
+      width: 100%;
+      margin-top: auto;
+    }
+  }
+}

@@ -36,7 +36,6 @@
   "services:name": "[EN] Servicios",
   "about:name": "[EN] Sobre nosotros",
   "map:title": "[EN] Donde estamos",
-  "quote:text": "[EN] Quote",
   "contact:title": "[EN] Háblanos de tu proyecto",
   "contact:lets-see": "[EN] Veámonos",
   "contact:lets-see-text": "[EN] Organicemos una reunión online.",
@@ -45,8 +44,13 @@
   "contact:lets-chat": "[EN] Chateemos",
   "contact:lets-chat-text": "[EN] ¿Tienes una duda rápida?",
   "contact:name": "[EN] Contacto",
-  "quote:title": "[EN] Quote",
+  "quote:text": "[EN] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet",
+  "quote:elias-position": "CTO at Aucta",
   "actions:hire": "[EN] ¡Contrata a tu equipo ya!",
   "action:program-meeting": "[EN] Programa una reunión",
-  "action:ask-budget": "[EN] Pídenos presupuesto"
+  "action:ask-budget": "[EN] Pídenos presupuesto",
+  "info:based-madrid": "Based on Madrid (Spain)",
+  "info:all-rights-reserved": "All rights reserved",
+  "info:privacy": "Privacy policy",
+  "info:cookies": "Cookies policy"
 }

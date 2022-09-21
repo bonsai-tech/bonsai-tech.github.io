@@ -20,6 +20,12 @@
   @include typo-rwd(basic-text);
 }
 
+.text {
+  @include typo-rwd(basic-text);
+  font-weight: $medium;
+  color: $grey;
+}
+
 .cta-text {
   @include typo-rwd(cta-text);
 }

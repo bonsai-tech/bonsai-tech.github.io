@@ -130,4 +130,16 @@ $typography: (
       ),
     ),
   ),
+  quote-text: (
+    format: (
+      xxs: (
+        fz: 26px,
+        lh: 1.2,
+        fw: 500,
+      ),
+      md: (
+        fz: 40px,
+      ),
+    ),
+  ),
 );

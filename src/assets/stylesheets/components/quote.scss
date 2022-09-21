@@ -1,0 +1,44 @@
+// Quote
+
+.quote {
+  position: relative;
+  .wrapper {
+    display: flex;
+  }
+
+  &-info {
+  }
+
+  &-text {
+    @include typo-rwd(quote-text);
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 16px;
+  }
+
+  &-author {
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    font-weight: $medium;
+    color: rgba($black, 0.8);
+  }
+
+  &-position {
+    font-size: 16px;
+    color: $black-40;
+  }
+
+  &-graphic {
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  @include mq($until: md) {
+    &-graphic {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      width: 120px;
+    }
+  }
+}

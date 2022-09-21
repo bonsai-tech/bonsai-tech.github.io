@@ -21,7 +21,11 @@ const HomePage = () => {
       <Cta skin="dark" clearButton />
       <Values />
       <MapBlock />
-      <Quote />
+      <Quote
+        text="quote:text"
+        author="Elías Alonso Gómez-Cornejo"
+        position="quote:elias-position"
+      />
       <Contact />
     </MainLayout>
   );

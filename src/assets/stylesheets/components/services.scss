@@ -1,0 +1,27 @@
+// Services
+
+.services {
+  .card-grid {
+    margin-top: 40px;
+  }
+
+  .intro-heading {
+    .text {
+      margin-top: 16px;
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
+  @include mq(md) {
+    padding: 100px 0;
+    .card-grid {
+      display: flex;
+      .card {
+        flex: 1 1 calc(50% - 20px);
+        &:first-child {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+}
