@@ -16,6 +16,8 @@ import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
 import { PointLight } from "@babylonjs/core/Lights/pointLight";
 
 const config = {
+  intensity: 1.5,
+  speed: 1.5,
   blockSeparation: 0.5,
   ortho: 6,
   offsetX: -4,
@@ -160,10 +162,16 @@ class SceneManager {
         const box = col[j];
         if (!box) continue;
         box.position.y =
-          Math.sin(f * 0.01 - j * 0.2 + (f * 0.006 + i * 0.3)) / 10 +
-          Math.sin(f * 0.01 - j * i * 0.2) / 10 +
-          Math.cos(f * 0.02 - j * 0.2) / 8 -
-          0.25;
+          config.intensity *
+          (Math.sin(
+            f * config.speed * 0.01 -
+              j * 0.2 +
+              (f * config.speed * 0.006 + i * 0.3),
+          ) /
+            10 +
+            Math.sin(f * config.speed * 0.01 - j * i * 0.2) / 10 +
+            Math.cos(f * config.speed * 0.02 - j * 0.2) / 8 -
+            0.25);
       }
     }
     this.frameCount = f + 1;
