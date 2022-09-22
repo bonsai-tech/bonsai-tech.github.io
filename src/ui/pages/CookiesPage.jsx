@@ -51,7 +51,22 @@ const CookiesPage = () => {
 
           <h2 className="gamma">{t("cookies:section2:title1")}</h2>
           <p>{t("cookies:section2:text1")}</p>
-          <p>TABLA!!!!</p>
+          <table className="basic-table">
+            <tr>
+              <th>{t("cookies:section2:table-header1")}</th>
+              <th>{t("cookies:section2:table-header2")}</th>
+              <th>{t("cookies:section2:table-header3")}</th>
+              <th>{t("cookies:section2:table-header4")}</th>
+              <th>{t("cookies:section2:table-header5")}</th>
+            </tr>
+            <tr>
+              <td>{t("cookies:section2:table-cell1")}</td>
+              <td>{t("cookies:section2:table-cell2")}</td>
+              <td>{t("cookies:section2:table-cell3")}</td>
+              <td>{t("cookies:section2:table-cell4")}</td>
+              <td>{t("cookies:section2:table-cell5")}</td>
+            </tr>
+          </table>
           <h3 className="delta">{t("cookies:section2:title2")}</h3>
           <p>{t("cookies:section2:text2")}</p>
           <p>
