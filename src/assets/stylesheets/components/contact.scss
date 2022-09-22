@@ -22,6 +22,9 @@
       margin: 40px 0;
     }
   }
+  .button-content {
+    padding: 0 14px;
+  }
   @include mq(md) {
     .card {
       &.w-50 {
