@@ -35,7 +35,7 @@
       width: 90%;
     }
   }
-  G @include mq(lg) {
+  @include mq(lg) {
     height: 781px;
     padding: 180px 0 250px;
     &-pattern {
