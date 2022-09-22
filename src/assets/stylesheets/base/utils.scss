@@ -51,6 +51,9 @@
 .link {
   color: $primary;
   font-weight: $bold;
+  &:hover {
+    color: darken($primary, 10%);
+  }
 }
 
 .disable-scroll-mobile {
