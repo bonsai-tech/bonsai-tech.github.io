@@ -3,6 +3,7 @@ import useTranslations from "../../hooks/useTranslations";
 import pattern from "../../assets/images/hero-pattern.svg";
 import useRevealEffect from "../../hooks/effects/useRevealEffect";
 import ButtonHashLink from "./buttons/ButtonHashLink";
+import AnimatedGrid from "./AnimatedGrid";
 
 const Hero = () => {
   const t = useTranslations();
@@ -13,12 +14,13 @@ const Hero = () => {
   return (
     <div className="hero" ref={blockRef}>
       <div className="wrapper">
-        <img
-          className="hero-pattern"
-          src={pattern}
-          alt="cube pattern"
-          ref={imageRef}
-        />
+        <AnimatedGrid />
+        {/* <img */}
+        {/*   className="hero-pattern" */}
+        {/*   src={pattern} */}
+        {/*   alt="cube pattern" */}
+        {/*   ref={imageRef} */}
+        {/* /> */}
         <div className="hero-info" ref={textRef}>
           <h1 className="alpha">
             {t("hero:title", {

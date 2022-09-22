@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@babylonjs/core": "^5.25.0",
     "@svgr/webpack": "^6.3.1",
     "classnames": "^2.3.2",
     "gatsby": "^4.23.0",
@@ -28,6 +29,7 @@
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "react-intl": "^6.1.1",
+    "react-router-dom": "^6.4.1",
     "react-router-hash-link": "^2.4.3",
     "sass": "^1.54.9"
   }

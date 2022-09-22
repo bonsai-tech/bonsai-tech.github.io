@@ -10,7 +10,6 @@ import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
 
 const Claims = () => {
   const t = useTranslations();
-  const blockRef = useScrollRevealEffect();
   const titleRef = useScrollRevealEffect();
   const itemRef = useScrollRevealEffect({
     delay: 0.2,
@@ -34,7 +33,7 @@ const Claims = () => {
   });
 
   return (
-    <Brick skin="dark" className="claims" ref={blockRef}>
+    <Brick skin="dark" className="claims">
       <h1 className="beta" ref={titleRef}>
         {t("claims:title")}
       </h1>
