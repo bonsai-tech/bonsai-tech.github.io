@@ -64,8 +64,8 @@ $cube-padding-v: $cube-padding * $v-to-h;
       color: $primary;
       background: $black;
       border-radius: 10px;
-      width: 50px;
-      height: 50px;
+      width: 54px;
+      height: 54px;
     }
 
     &.activated {
@@ -104,6 +104,14 @@ $cube-padding-v: $cube-padding * $v-to-h;
         #{$self}-w {
           transform: translateY(-$cube-face-height * 0.6);
         }
+      }
+    }
+  }
+
+  @include mq(md) {
+    &-grid {
+      &.is-north {
+        top: 60px;
       }
     }
   }

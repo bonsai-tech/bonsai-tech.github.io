@@ -9,6 +9,13 @@
 
 @font-face {
   font-family: "CeraPro";
+  src: url("../../assets/fonts/CeraPro-Regular.ttf");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "CeraPro";
   src: url("../../assets/fonts/CeraPro-Medium.ttf");
   font-display: swap;
   font-weight: 500;
@@ -71,7 +78,7 @@ $typography: (
     format: (
       xxs: (
         fz: 32px,
-        lh: 1.2,
+        lh: 1.1,
         fw: 900,
       ),
       md: (

@@ -2,6 +2,7 @@
 
 .visual-block {
   margin: 40px 0;
+  max-width: 910px;
 
   .gamma {
     margin-bottom: 20px;
@@ -10,6 +11,16 @@
   .basic-text {
     margin-bottom: 3px;
     color: rgba($white, 0.8);
+  }
+
+  .block-content {
+    // max-width: 480px;
+    color: rgba($white, 0.8);
+    font-weight: 400;
+    line-height: 1.4;
+    p {
+      margin-bottom: 16px;
+    }
   }
 
   &.reverse {
@@ -31,15 +42,15 @@
     align-items: center;
     .info {
       flex: 1 1 auto;
-      max-width: 500px;
-      padding-right: 40px;
+      // max-width: 600px;
+      padding-right: 90px;
     }
     .cube-grid {
       margin: 0 auto;
     }
     &.reverse {
       .info {
-        padding: 0 10px 0 40px;
+        padding: 0 0 0 90px;
       }
       // .cube-grid {
       //   margin: 0;

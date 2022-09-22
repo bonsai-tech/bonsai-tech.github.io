@@ -2,7 +2,7 @@ import React, { useState, useCallback, useLayoutEffect } from "react";
 import useTranslations from "../../hooks/useTranslations";
 import LangSelector from "../components/LangSelector";
 import logo from "../../assets/images/logo.svg";
-import Link from "gatsby-link";
+import Link from "../components/LinkLocalized";
 import { HashLink } from "react-router-hash-link";
 import cx from "classnames";
 

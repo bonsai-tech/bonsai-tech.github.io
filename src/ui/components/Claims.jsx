@@ -42,11 +42,11 @@ const Claims = () => {
         title="claims:section1:title"
         visual={<CubeGridNorth />}
         texts={
-          <>
-            <p className="basic-text">{t("claims:section1:text1")}</p>
-            <p className="basic-text">{t("claims:section1:text2")}</p>
-            <p className="basic-text">{t("claims:section1:text3")}</p>
-          </>
+          <div className="block-content">
+            <span>{t("claims:section1:text1")}</span>
+            <span>{t("claims:section1:text2")}</span>
+            <span>{t("claims:section1:text3")}</span>
+          </div>
         }
       />
       <VisualBlock
@@ -55,11 +55,11 @@ const Claims = () => {
         reverse
         visual={<CubeGridEast />}
         texts={
-          <>
-            <p className="basic-text">{t("claims:section1:text1")}</p>
-            <p className="basic-text">{t("claims:section1:text2")}</p>
-            <p className="basic-text">{t("claims:section1:text3")}</p>
-          </>
+          <div className="block-content">
+            <span>{t("claims:section2:text1")}</span>
+            <span>{t("claims:section2:text2")}</span>
+            <span>{t("claims:section2:text3")}</span>
+          </div>
         }
       />
       <VisualBlock
@@ -67,11 +67,11 @@ const Claims = () => {
         title="claims:section3:title"
         visual={<CubeGridSouth />}
         texts={
-          <>
-            <p className="basic-text">{t("claims:section1:text1")}</p>
-            <p className="basic-text">{t("claims:section1:text2")}</p>
-            <p className="basic-text">{t("claims:section1:text3")}</p>
-          </>
+          <div className="block-content">
+            <span>{t("claims:section3:text1")}</span>
+            <span>{t("claims:section3:text2")}</span>
+            <span>{t("claims:section3:text3")}</span>
+          </div>
         }
       />
       <VisualBlock
@@ -80,11 +80,10 @@ const Claims = () => {
         visual={<CubeGridWest />}
         reverse
         texts={
-          <>
-            <p className="basic-text">{t("claims:section1:text1")}</p>
-            <p className="basic-text">{t("claims:section1:text2")}</p>
-            <p className="basic-text">{t("claims:section1:text3")}</p>
-          </>
+          <div className="block-content">
+            <span>{t("claims:section4:text1")}</span>
+            <span>{t("claims:section4:text2")}</span>
+          </div>
         }
       />
     </Brick>

@@ -66,6 +66,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    max-width: 1500px;
   }
 }
 
@@ -73,6 +74,7 @@
   li {
     padding-left: 22px;
     position: relative;
+    margin-bottom: 10px;
     &:before {
       content: "";
       width: 6px;
@@ -82,5 +84,22 @@
       top: 8px;
       left: 4px;
     }
+  }
+}
+
+.basic-table {
+  width: 100%;
+  border-collapse: collapse;
+  th,
+  td {
+    border: 1px solid darken($grey-light, 10%);
+    text-align: left;
+  }
+  th {
+    padding: 6px 20px;
+    background: $grey-light;
+  }
+  td {
+    padding: 16px 20px;
   }
 }

@@ -19,6 +19,7 @@ const AppWrapper = ({ children, location = {}, lang }) => {
     if (!isSSR) window.scrollTo(0, 0);
   }, [locale, location]);
   // -- END i18n ----
+
   return (
     <IntlProvider
       messages={messages}

@@ -6,6 +6,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    max-width: 1500px;
   }
   @include mq(lg) {
     padding: 120px 0;

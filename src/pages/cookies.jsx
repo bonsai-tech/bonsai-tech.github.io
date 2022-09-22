@@ -13,7 +13,7 @@ const Cookies = props => {
       <HelmetComponent
         title={metaTags.indexTitle}
         description={metaTags.index}
-        page=""
+        page="cookies"
       />
       <AppWrapper {...props} lang={locale}>
         <CookiesPage />

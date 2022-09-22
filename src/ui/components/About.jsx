@@ -2,7 +2,7 @@ import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
 import sara from "../../assets/images/sara.png";
-import pattern from "../../assets/images/pattern2.svg";
+import pattern from "../../assets/images/pattern2.png";
 import TeamMember from "./TeamMember";
 import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
 

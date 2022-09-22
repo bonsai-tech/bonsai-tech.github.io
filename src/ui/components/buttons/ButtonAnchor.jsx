@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonGeneric from "./ButtonGeneric";
-import { Link } from "gatsby-link";
+import { Link } from "../LinkLocalized";
 
 const ButtonAnchor = ({ to, ...props }) => {
   return (
