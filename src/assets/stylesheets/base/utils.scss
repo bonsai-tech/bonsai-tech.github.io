@@ -56,3 +56,31 @@
 .disable-scroll-mobile {
   overflow: hidden;
 }
+
+.banner {
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+  background: $grey-light;
+  .pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.basic-list {
+  li {
+    padding-left: 22px;
+    position: relative;
+    &:before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: $black;
+      position: absolute;
+      top: 8px;
+      left: 4px;
+    }
+  }
+}

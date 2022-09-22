@@ -3,9 +3,9 @@ import AppWrapper from "../ui/layouts/AppWarpper";
 import HelmetComponent from "../ui/layouts/HelmetComponent";
 import metaTags from "../config/meta-tags/en.json";
 import { getLocaleFromPathname } from "../libs/i18n";
-import HomePage from "../ui/pages/HomePage";
+import CookiesPage from "../ui/pages/CookiesPage";
 
-const IndexPage = props => {
+const Cookies = props => {
   const locale = getLocaleFromPathname(props.location);
 
   return (
@@ -16,10 +16,10 @@ const IndexPage = props => {
         page=""
       />
       <AppWrapper {...props} lang={locale}>
-        <HomePage />
+        <CookiesPage />
       </AppWrapper>
     </>
   );
 };
 
-export default IndexPage;
+export default Cookies;

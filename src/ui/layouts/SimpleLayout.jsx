@@ -1,19 +1,19 @@
 import React from "react";
 import cx from "classnames";
-import Header from "../components/Header";
+import HeaderSimple from "../components/HeaderSimple";
 import Footer from "../components/Footer";
 import { MemoryRouter } from "react-router-dom";
 
-const MainLayout = ({ children, className }) => {
+const SimpleLayout = ({ children, className }) => {
   return (
     <MemoryRouter>
       <div className={cx("outer-wrapper", className)}>
-        <Header />
+        <HeaderSimple />
         <div className="content">{children}</div>
-        <Footer hasNav />
+        <Footer hasNav={false} />
       </div>
     </MemoryRouter>
   );
 };
 
-export default MainLayout;
+export default SimpleLayout;

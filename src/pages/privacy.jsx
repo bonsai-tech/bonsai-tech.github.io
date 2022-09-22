@@ -3,9 +3,9 @@ import AppWrapper from "../ui/layouts/AppWarpper";
 import HelmetComponent from "../ui/layouts/HelmetComponent";
 import metaTags from "../config/meta-tags/en.json";
 import { getLocaleFromPathname } from "../libs/i18n";
-import HomePage from "../ui/pages/HomePage";
+import PrivacyPage from "../ui/pages/PrivacyPage";
 
-const IndexPage = props => {
+const Privacy = props => {
   const locale = getLocaleFromPathname(props.location);
 
   return (
@@ -16,10 +16,10 @@ const IndexPage = props => {
         page=""
       />
       <AppWrapper {...props} lang={locale}>
-        <HomePage />
+        <PrivacyPage />
       </AppWrapper>
     </>
   );
 };
 
-export default IndexPage;
+export default Privacy;

@@ -1,0 +1,25 @@
+// Content
+
+.generic-content {
+  padding: 20px 20px 60px 20px;
+  h1 {
+    margin-bottom: 26px;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 30px 0 10px;
+    font-weight: 800;
+  }
+  p,
+  ul {
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: rgba($black, 0.7);
+  }
+  li {
+    margin-bottom: 10px;
+  }
+}

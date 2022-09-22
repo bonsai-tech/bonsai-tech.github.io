@@ -8,7 +8,7 @@ import { ReactComponent as Linkedin } from "../../assets/icons/icon-linkedin.svg
 import { ReactComponent as Whastapp } from "../../assets/icons/icon-whatsapp.svg";
 import { ReactComponent as Telegram } from "../../assets/icons/icon-telegram.svg";
 
-const Footer = () => {
+const Footer = ({ hasNav }) => {
   const t = useTranslations();
 
   return (
@@ -18,14 +18,16 @@ const Footer = () => {
           <Link to="/" className="logo">
             <img className="logo" alt="Bonsai" src={logo} />
           </Link>
-          <nav className="footer-nav">
-            <HashLink to="#services" className="nav-item">
-              {t("services:name")}
-            </HashLink>
-            <HashLink to="#about" className="nav-item">
-              {t("about:name")}
-            </HashLink>
-          </nav>
+          {hasNav ? (
+            <nav className="footer-nav">
+              <HashLink to="#services" className="nav-item">
+                {t("services:name")}
+              </HashLink>
+              <HashLink to="#about" className="nav-item">
+                {t("about:name")}
+              </HashLink>
+            </nav>
+          ) : null}
           <div className="footer-social">
             <a className="link" href="#">
               hola@bonsaitech.com
