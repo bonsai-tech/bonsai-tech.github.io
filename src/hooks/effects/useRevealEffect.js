@@ -9,11 +9,16 @@ const defaultValues = {
   ease: "power2.out",
 };
 
-export default useGsapEffect((element, params = {}) => {
-  gsap.to(element, {
-    opacity: 1,
-    duration: params.duration,
-    delay: params.delay,
+const useRevealEffect = (...params) => {
+  const effect = useGsapEffect((element, params = {}) => {
+    gsap.to(element, {
+      opacity: 1,
+      duration: params.duration,
+      delay: params.delay,
+    });
+    gsap.from(element, { ...defaultValues, ...params });
   });
-  gsap.from(element, { ...defaultValues, ...params });
-});
+  return effect(...params);
+};
+
+export default useRevealEffect;

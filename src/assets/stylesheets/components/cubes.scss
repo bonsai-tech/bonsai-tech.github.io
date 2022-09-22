@@ -4,7 +4,7 @@ $cube-width: 110px;
 $v-to-h: calc(113 / 190);
 $cube-face-height: $cube-width * $v-to-h;
 $cube-height: calc(#{$cube-width} * (154 / 116));
-$cube-padding: $cube-width / 4;
+$cube-padding: calc($cube-width / 4);
 $cube-padding-v: $cube-padding * $v-to-h;
 
 .cube {

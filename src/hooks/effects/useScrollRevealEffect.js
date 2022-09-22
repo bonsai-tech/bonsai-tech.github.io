@@ -13,18 +13,23 @@ const defaultParams = {
   ease: "power1.out",
 };
 
-export default useGsapEffect((element, params = {}) => {
-  const markers = params.markers;
-  const toggleClass = params.toggleClass;
-  delete params.markers;
-  gsap.from(element, {
-    scrollTrigger: {
-      trigger: element,
-      start: "60% 90%",
-      markers: markers,
-      toggleClass: toggleClass,
-    },
-    ...defaultParams,
-    ...params,
+const useScrollRevealEffect = (...params) => {
+  const effect = useGsapEffect((element, params = {}) => {
+    const markers = params.markers;
+    const toggleClass = params.toggleClass;
+    delete params.markers;
+    gsap.from(element, {
+      scrollTrigger: {
+        trigger: element,
+        start: "60% 90%",
+        markers: markers,
+        toggleClass: toggleClass,
+      },
+      ...defaultParams,
+      ...params,
+    });
   });
-});
+  return effect(...params);
+};
+
+export default useScrollRevealEffect;
