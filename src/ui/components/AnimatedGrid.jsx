@@ -187,8 +187,8 @@ const AnimatedGrid = () => {
   // initialize babylon scene
   useEffect(() => {
     if (!canvasRef.current) return;
-    console.log(">> INITIALIZING THE SCENE");
     const sceneManager = new SceneManager(canvasRef.current);
+    canvasRef.current.classList.add("visible");
     // resize window
     const onResize = () => sceneManager.onResize();
     window.addEventListener("resize", onResize);

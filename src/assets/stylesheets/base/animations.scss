@@ -69,10 +69,10 @@ $quick-change: 0.1s ease-in-out;
 
 @keyframes appear-cube-icon {
   0% {
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0) scale(1);
   }
   100% {
-    transform: translate(-50%, -6px);
+    transform: translate(-50%, -16px) scale(1.1);
   }
 }
 

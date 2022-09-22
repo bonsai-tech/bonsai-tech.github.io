@@ -3,10 +3,14 @@
 .about {
   position: relative;
   overflow: hidden;
+  .intro-heading {
+    z-index: 10;
+    position: relative;
+  }
   .animated-grid {
     position: absolute;
     top: -200px;
-    right: -312px;
+    right: -350px;
     // max-width: 1500px;
     z-index: 1;
   }

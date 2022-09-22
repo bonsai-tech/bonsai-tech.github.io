@@ -9,7 +9,13 @@
     height: 835px;
   }
   canvas {
+    background: $white;
     border: none;
     outline: none;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    &.visible {
+      opacity: 1;
+    }
   }
 }

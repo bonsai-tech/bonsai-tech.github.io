@@ -35,7 +35,8 @@
       width: 90%;
     }
   }
-  @include mq(lg) {
+  G @include mq(lg) {
+    height: 781px;
     padding: 180px 0 250px;
     &-pattern {
       max-width: 1500px;

@@ -22,6 +22,8 @@
   }
 }
 
+// Claims
+
 .claims {
   .beta {
     max-width: 780px;
@@ -34,5 +36,8 @@
   }
   @include mq(lg) {
     padding-bottom: 50px;
+    .wrapper {
+      max-width: 900px;
+    }
   }
 }

@@ -14,6 +14,7 @@ const Header = () => {
     () => setisMenuOpen(!isMenuOpen),
     [isMenuOpen],
   );
+  const closeMenu = useCallback(() => setisMenuOpen(false), [setisMenuOpen]);
 
   useLayoutEffect(() => {
     // Remove body scroll when menu is open
@@ -33,7 +34,7 @@ const Header = () => {
         <Link to="/" className="logo">
           <img className="logo" alt="Bonsai" src={logo} />
         </Link>
-        <nav className="main-nav">
+        <nav className="main-nav" onClick={closeMenu}>
           <HashLink to="#services" className="nav-item">
             {t("services:name")}
           </HashLink>

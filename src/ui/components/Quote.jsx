@@ -15,7 +15,7 @@ const Quote = ({ text, author, position }) => {
         <p className="quote-author">{author}</p>
         <p className="quote-position">{t(position)}</p>
       </div>
-      <div className="quote-graphic">
+      <div className="quote-graphic" ref={blockRef}>
         <img src={quotes} alt="Quotes" />
       </div>
     </Brick>
