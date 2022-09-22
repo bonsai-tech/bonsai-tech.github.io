@@ -67,8 +67,9 @@
   background: $grey-light;
   .pattern {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -228px;
+    right: -278px;
+    width: 900px;
     max-width: 1500px;
   }
 }

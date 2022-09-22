@@ -1,6 +1,6 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
-import pattern from "../../assets/images/pattern2.png";
+import pattern from "../../assets/images/grid.png";
 import SimpleLayout from "../layouts/SimpleLayout";
 
 const CookiesPage = () => {

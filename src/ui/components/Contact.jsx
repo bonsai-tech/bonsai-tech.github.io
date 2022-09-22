@@ -1,7 +1,7 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
-import pattern from "../../assets/images/pattern3.svg";
+import pattern from "../../assets/images/grid.png";
 import ButtonLink from "./buttons/ButtonLink";
 import { ReactComponent as Whatsapp } from "../../assets/icons/icon-whatsapp.svg";
 import { ReactComponent as Telegram } from "../../assets/icons/icon-telegram.svg";

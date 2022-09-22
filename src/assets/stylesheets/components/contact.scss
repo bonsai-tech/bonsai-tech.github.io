@@ -6,9 +6,11 @@
   padding-bottom: 0;
   .pattern {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -114px;
+    right: -376px;
     z-index: 1;
+    max-width: 1500px;
+    width: 900px;
   }
 
   .card {

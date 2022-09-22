@@ -1,9 +1,15 @@
+// Animated grid
+
 .animated-grid {
   position: absolute;
-  top: 0;
-  right: -160px;
+  top: -58px;
+  right: -194px;
   .viewport {
     width: 1080px;
     height: 850px;
+  }
+  canvas {
+    border: none;
+    outline: none;
   }
 }

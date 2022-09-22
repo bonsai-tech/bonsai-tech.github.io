@@ -2,11 +2,13 @@
 
 .about {
   position: relative;
-  .pattern {
+  overflow: hidden;
+  .animated-grid {
     position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 1500px;
+    top: -200px;
+    right: -312px;
+    // max-width: 1500px;
+    z-index: 1;
   }
   @include mq(lg) {
     padding: 120px 0;
@@ -15,6 +17,8 @@
 
 .team {
   margin-top: 40px;
+  z-index: 10;
+  position: relative;
   &-member {
     display: flex;
     align-items: center;

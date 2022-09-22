@@ -1,6 +1,6 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
-import pattern from "../../assets/images/hero-pattern.png";
+// import pattern from "../../assets/images/hero-pattern.png";
 import useRevealEffect from "../../hooks/effects/useRevealEffect";
 import ButtonHashLink from "./buttons/ButtonHashLink";
 import AnimatedGrid from "./AnimatedGrid";
