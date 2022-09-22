@@ -76,7 +76,6 @@ $cube-padding-v: $cube-padding * $v-to-h;
     }
 
     &.is-north {
-      top: 60px;
       &.activated {
         #{$self}-n {
           transform: translateY(-$cube-face-height * 0.65);
@@ -105,6 +104,14 @@ $cube-padding-v: $cube-padding * $v-to-h;
         #{$self}-w {
           transform: translateY(-$cube-face-height * 0.6);
         }
+      }
+    }
+  }
+
+  @include mq(md) {
+    &-grid {
+      &.is-north {
+        top: 60px;
       }
     }
   }
