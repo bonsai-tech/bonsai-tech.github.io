@@ -1,11 +1,5 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
-import Map from "./Map";
-
-const render = status => {
-  return <h1>{status}</h1>;
-};
 
 const MapBlock = () => {
   const t = useTranslations();
@@ -20,9 +14,7 @@ const MapBlock = () => {
           </p>
         </div>
       </div>
-      <Wrapper apiKey={"AIzaSyB5hWweZHowclpVOVjk-UlDZgTWC5otY0U"}>
-        <Map />
-      </Wrapper>
+      <iframe src="https://snazzymaps.com/embed/424465"></iframe>
     </div>
   );
 };
