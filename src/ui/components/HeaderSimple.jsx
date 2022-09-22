@@ -1,7 +1,7 @@
 import React from "react";
 import LangSelector from "../components/LangSelector";
 import logo from "../../assets/images/logo.svg";
-import Link from "gatsby-link";
+import Link from "../components/LinkLocalized";
 import cx from "classnames";
 
 const HeaderSimple = () => {

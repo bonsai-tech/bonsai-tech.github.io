@@ -6,6 +6,12 @@
   &.dark {
     background: $black;
     color: $white;
+    .basic-list {
+      color: rgba($white, 0.7);
+      li:before {
+        background: rgba($white, 0.7);
+      }
+    }
   }
   &.grey {
     background: $grey-light;
@@ -19,5 +25,14 @@
 .claims {
   .beta {
     max-width: 780px;
+  }
+
+  .basic-list {
+    li {
+      font-weight: 400;
+    }
+  }
+  @include mq(lg) {
+    padding-bottom: 50px;
   }
 }

@@ -76,6 +76,7 @@ $cube-padding-v: $cube-padding * $v-to-h;
     }
 
     &.is-north {
+      top: 60px;
       &.activated {
         #{$self}-n {
           transform: translateY(-$cube-face-height * 0.65);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MainLayout from "../layouts/MainLayout";
 import Hero from "../components/Hero";
 import Claims from "../components/Claims";
@@ -11,6 +11,10 @@ import Services from "../components/Services";
 import MapBlock from "../components/MapBlock";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <MainLayout>
       <Hero />

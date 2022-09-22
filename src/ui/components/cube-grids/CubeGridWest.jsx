@@ -1,6 +1,6 @@
 import React from "react";
 import cube1 from "../../../assets/images/cube-long.svg";
-import chat from "../../../assets/images/icon-chat.svg";
+import { ReactComponent as Clock } from "../../../assets/icons/icon-clock.svg";
 import CubeGrid from "./CubeGrid";
 
 const CubeGridWest = () => {
@@ -11,7 +11,7 @@ const CubeGridWest = () => {
       <img className="cube-s" src={cube1} alt="cube" />
       <div className="cube-w">
         <img src={cube1} alt="cube" />
-        <img className="icon" src={chat} alt="chat" />
+        <Clock className="icon" />
       </div>
     </CubeGrid>
   );

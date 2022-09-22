@@ -1,7 +1,7 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import logo from "../../assets/images/logo.svg";
-import Link from "gatsby-link";
+import Link from "../components/LinkLocalized";
 import { HashLink } from "react-router-hash-link";
 import { ReactComponent as Instagram } from "../../assets/icons/icon-instagram.svg";
 import { ReactComponent as Linkedin } from "../../assets/icons/icon-linkedin.svg";

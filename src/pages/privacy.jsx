@@ -13,7 +13,7 @@ const Privacy = props => {
       <HelmetComponent
         title={metaTags.indexTitle}
         description={metaTags.index}
-        page=""
+        page="/privacy"
       />
       <AppWrapper {...props} lang={locale}>
         <PrivacyPage />
