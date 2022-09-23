@@ -8,7 +8,7 @@ const HelmetComponent = ({ description, page, title }) => {
         name="viewport"
         content="initial-scale=1.0 width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
-      <meta charSet="utf-8" />
+      <meta charset="utf-8" />
       <meta name="description" content={description} />
       <title>{title}</title>
       <link rel="canonical" href={"https://aucta.io/" + page} />

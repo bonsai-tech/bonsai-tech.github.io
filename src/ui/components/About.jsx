@@ -2,6 +2,7 @@ import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
 import sara from "../../assets/images/sara.png";
+import ignacio from "../../assets/images/ignacio.jpg";
 // import pattern from "../../assets/images/pattern2.png";
 import TeamMember from "./TeamMember";
 import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
@@ -24,7 +25,7 @@ const About = () => {
           name="Ignacio Ramos"
           position={t("about:position:ignacio")}
           description={t("about:description:ignacio")}
-          image={sara}
+          image={ignacio}
         />
         <TeamMember
           ref={blockRef}
