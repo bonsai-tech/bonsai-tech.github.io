@@ -5278,6 +5278,17 @@
     "graphql" "^0.11.7"
     "ptz-i18n" "^1.0.0"
 
+"gatsby-plugin-manifest@^4.23.1":
+  "integrity" "sha512-Z7i7giHg70vzO7wwAzAUY1b06IRLUU40kZliuRpNiTnfEqUOrCyVmFPDmVRz9ShcbE7uT4m223YbVUjVlJVbOw=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.23.1.tgz"
+  "version" "4.23.1"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "gatsby-core-utils" "^3.23.0"
+    "gatsby-plugin-utils" "^3.17.1"
+    "semver" "^7.3.7"
+    "sharp" "^0.30.7"
+
 "gatsby-plugin-page-creator@^4.23.0":
   "integrity" "sha512-Xh+u0NhT+/7k42cSg1QJNojJVKSOzb/Jbbmdx9Dy5q3q5ZEzQczRce7Hr+mS1DCLWvh78GEV58fxz+o4zpBNpA=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.23.0.tgz"
@@ -5330,10 +5341,10 @@
     "@babel/runtime" "^7.15.4"
     "babel-plugin-remove-graphql-queries" "^4.23.0"
 
-"gatsby-plugin-utils@^3.17.0":
-  "integrity" "sha512-THfQJ9y5V5pdUPkTRExK/3pI1OMTN8srA40dL7HeEoSVhiaEs+Bk45q1d8O1G6P7ulmLFinhOOBi56H4cAdqBg=="
-  "resolved" "https://registry.npmjs.org/gatsby-plugin-utils/-/gatsby-plugin-utils-3.17.0.tgz"
-  "version" "3.17.0"
+"gatsby-plugin-utils@^3.17.0", "gatsby-plugin-utils@^3.17.1":
+  "integrity" "sha512-88mR4ee4Cd41bIhGpWGLu4WrZqNw1uIxeY7AqGy6E+dXKtrhMvO0nufg8XqgthICfymhtme5jqgcVw/USMROwg=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-utils/-/gatsby-plugin-utils-3.17.1.tgz"
+  "version" "3.17.1"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@gatsbyjs/potrace" "^2.3.0"

@@ -28,7 +28,7 @@ const Contact = () => {
             <>
               <p className="basic-text">{t("contact:lets-see-text")}</p>
               <ButtonLink
-                href="https://calendly.com/ignacioramoshowell/30min"
+                href="https://calendly.com/bonsaitech/30min"
                 label="action:program-meeting"
                 external
               />
