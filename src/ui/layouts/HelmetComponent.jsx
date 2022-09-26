@@ -52,6 +52,18 @@ const HelmetComponent = ({ description, page, title }) => {
         src="https://cdn-cookieyes.com/client_data/f78cb06b7da6ecc0375f429d/script.js"
       ></script>
       {/*<!-- End cookieyes banner -->*/}
+      {/* Google tag (gtag.js) */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-7WSK4H6DL5"
+      ></script>
+      <script>
+        {`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7WSK4H6DL5');`}
+      </script>
     </Helmet>
   );
 };
