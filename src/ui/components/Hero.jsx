@@ -9,7 +9,7 @@ const Hero = () => {
   const t = useTranslations();
   const blockRef = useRevealEffect();
   const textRef = useRevealEffect({ delay: 0.2 });
-  const imageRef = useRevealEffect({ delay: 0.3 });
+  // const imageRef = useRevealEffect({ delay: 0.3 });
 
   return (
     <div className="hero" ref={blockRef}>

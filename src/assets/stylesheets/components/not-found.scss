@@ -1,0 +1,40 @@
+// Not found
+
+.not-found-page {
+  padding: 40px;
+
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+  }
+  .button {
+    margin: 20px 0;
+    min-width: 200px;
+  }
+  .alpha,
+  .beta {
+    margin-bottom: 20px;
+  }
+  .animated-grid {
+    top: 10%;
+    right: -70%;
+  }
+
+  .intro-text {
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    display: block;
+    width: 100px;
+    margin-bottom: 110px;
+  }
+  @include mq(lg) {
+    .animated-grid {
+      top: 0;
+      right: -251px;
+    }
+  }
+}
