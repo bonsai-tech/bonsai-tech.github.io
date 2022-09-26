@@ -22,8 +22,8 @@ module.exports = {
         name: "GatsbyJS",
         short_name: "GatsbyJS",
         start_url: "/",
-        background_color: "#6b37bf",
-        theme_color: "#6b37bf",
+        background_color: "#fff",
+        theme_color: "#fff",
         display: "standalone",
         icon: "src/images/icon.png", // This path is relative to the root
         crossOrigin: `use-credentials`,
