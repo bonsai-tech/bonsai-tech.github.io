@@ -11,6 +11,9 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
+    "copy-to-gh-pages": "shx rm -rf ../bonsai-web-build/* && shx cp -r public/* ../bonsai-web-build/",
+    "deploy-gh-pages": "cd ../bonsai-web-build && git add . && git commit -m \"update\" && git push origin main",
+    "deploy": "npm run build && npm run copy-to-gh-pages && npm run deploy-gh-pages",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -18,7 +21,8 @@
     "@babylonjs/core": "^5.25.0",
     "@svgr/webpack": "^6.3.1",
     "classnames": "^2.3.2",
-    "gatsby": "^4.23.0",
+    "gatsby": "^4.23.1",
+    "gatsby-cli": "^4.23.1",
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-manifest": "^4.23.1",
     "gatsby-plugin-react-svg": "^3.1.0",
@@ -32,6 +36,7 @@
     "react-intl": "^6.1.1",
     "react-router-dom": "^6.4.1",
     "react-router-hash-link": "^2.4.3",
-    "sass": "^1.54.9"
+    "sass": "^1.54.9",
+    "shx": "^0.3.4"
   }
 }
