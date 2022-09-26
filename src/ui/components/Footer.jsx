@@ -3,10 +3,10 @@ import useTranslations from "../../hooks/useTranslations";
 import logo from "../../assets/images/logo.svg";
 import Link from "../components/LinkLocalized";
 import { HashLink } from "react-router-hash-link";
-import { ReactComponent as Instagram } from "../../assets/icons/icon-instagram.svg";
-import { ReactComponent as Linkedin } from "../../assets/icons/icon-linkedin.svg";
-import { ReactComponent as Whastapp } from "../../assets/icons/icon-whatsapp.svg";
-import { ReactComponent as Telegram } from "../../assets/icons/icon-telegram.svg";
+// import { ReactComponent as Instagram } from "../../assets/icons/icon-instagram.svg";
+// import { ReactComponent as Linkedin } from "../../assets/icons/icon-linkedin.svg";
+// import { ReactComponent as Whastapp } from "../../assets/icons/icon-whatsapp.svg";
+// import { ReactComponent as Telegram } from "../../assets/icons/icon-telegram.svg";
 
 const Footer = ({ hasNav }) => {
   const t = useTranslations();
@@ -32,6 +32,7 @@ const Footer = ({ hasNav }) => {
             <a className="link" href="mailto:hola@bonsaitech.io">
               hola@bonsaitech.io
             </a>
+            {/*
             <a
               href="#"
               className="social-item"
@@ -64,6 +65,7 @@ const Footer = ({ hasNav }) => {
             >
               <Telegram />
             </a>
+            */}
           </div>
         </div>
       </div>

@@ -3,8 +3,8 @@ import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
 import pattern from "../../assets/images/grid.png";
 import ButtonLink from "./buttons/ButtonLink";
-import { ReactComponent as Whatsapp } from "../../assets/icons/icon-whatsapp.svg";
-import { ReactComponent as Telegram } from "../../assets/icons/icon-telegram.svg";
+// import { ReactComponent as Whatsapp } from "../../assets/icons/icon-whatsapp.svg";
+// import { ReactComponent as Telegram } from "../../assets/icons/icon-telegram.svg";
 import Card from "./Card";
 import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
 
@@ -50,6 +50,7 @@ const Contact = () => {
             </>
           }
         />
+        {/*
 
         <Card
           ref={blockRef}
@@ -62,6 +63,7 @@ const Contact = () => {
             </>
           }
         />
+        */}
       </div>
     </Brick>
   );
