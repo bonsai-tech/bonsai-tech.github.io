@@ -12,7 +12,7 @@ const MapBlock = () => {
           <p className="text">{t("map:address")}</p>
         </div>
       </div>
-      <iframe src="https://snazzymaps.com/embed/424465"></iframe>
+      <iframe title="map" src="https://snazzymaps.com/embed/424465"></iframe>
     </div>
   );
 };
