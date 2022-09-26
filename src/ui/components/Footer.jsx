@@ -29,8 +29,8 @@ const Footer = ({ hasNav }) => {
             </nav>
           ) : null}
           <div className="footer-social">
-            <a className="link" href="#">
-              hola@bonsaitech.com
+            <a className="link" href="mailto:hola@bonsaitech.io">
+              hola@bonsaitech.io
             </a>
             <a
               href="#"

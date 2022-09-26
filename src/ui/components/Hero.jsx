@@ -28,7 +28,7 @@ const Hero = () => {
             })}
           </h1>
           <p className="intro-text">{t("hero:subtitle")}</p>
-          <ButtonHashLink label="actions:hire" to="#contact" />
+          <ButtonHashLink label="action:hire" to="#contact" />
         </div>
       </div>
     </div>

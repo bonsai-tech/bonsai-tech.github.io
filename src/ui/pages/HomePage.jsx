@@ -19,10 +19,20 @@ const HomePage = () => {
     <MainLayout>
       <Hero />
       <Claims />
-      <Cta />
+      <Cta
+        title="cta:title"
+        text="cta:text"
+        buttonText="action:start-working"
+      />
       <Services />
       <About />
-      <Cta skin="dark" clearButton />
+      <Cta
+        skin="dark"
+        clearButton
+        title="cta2:title"
+        text="cta2:text"
+        buttonText="action:tell-us-your-project"
+      />
       <Values />
       <MapBlock />
       <Quote

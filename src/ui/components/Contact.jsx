@@ -43,7 +43,10 @@ const Contact = () => {
           content={
             <>
               <p className="basic-text">{t("contact:send-email-text")}</p>
-              <ButtonLink href="#" label="action:ask-budget" />
+              <ButtonLink
+                href="mailto:hola@bonsaitech.io"
+                label="action:ask-budget"
+              />
             </>
           }
         />

@@ -116,6 +116,11 @@
     border: none;
     box-shadow: none;
     color: $grey;
+    &:not(.active) {
+      &:hover {
+        color: darken($grey, 15%);
+      }
+    }
     &.active {
       font-weight: 700;
       color: $black;

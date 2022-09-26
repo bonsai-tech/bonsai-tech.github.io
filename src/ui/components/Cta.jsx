@@ -4,7 +4,7 @@ import Brick from "../components/Brick";
 import ButtonHashLink from "../components/buttons/ButtonHashLink";
 import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
 
-const Cta = ({ skin, clearButton }) => {
+const Cta = ({ skin, clearButton, title, text, buttonText }) => {
   const t = useTranslations();
   const blockRef = useScrollRevealEffect();
   // const buttonRef = useScrollRevealEffect({ delay: 0.3 });
@@ -12,15 +12,11 @@ const Cta = ({ skin, clearButton }) => {
   return (
     <Brick className="cta" skin={skin}>
       <div className="cta-info" ref={blockRef}>
-        <h1 className="beta">{t("cta:title")}</h1>
-        <p className="cta-text">{t("cta:text")}</p>
+        <h1 className="beta">{t(title)}</h1>
+        <p className="cta-text">{t(text)}</p>
       </div>
       <div className="cta-action" ref={blockRef}>
-        <ButtonHashLink
-          label="actions:hire"
-          to="#contact"
-          clear={clearButton}
-        />
+        <ButtonHashLink label={buttonText} to="#contact" clear={clearButton} />
       </div>
     </Brick>
   );

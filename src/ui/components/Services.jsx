@@ -39,7 +39,7 @@ const Services = () => {
       <p className="text" ref={blockRef}>
         {t("services:contact-text", {
           a: t => (
-            <a className="link" href="#">
+            <a className="link" href="mailto:hola@bonsaitech.io">
               {t}
             </a>
           ),
