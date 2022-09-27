@@ -45,6 +45,7 @@ const HelmetComponent = ({ description, page, title }) => {
       <meta property="twitter:title" content="Bonsai" />
       <meta name="twitter:image:alt" content="Bonsai" />
       <meta property="twitter:description" content={description} />
+
       {/*<!-- End cookieyes banner -->*/}
       <script
         id="cookieyes"

@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `bonsai-web`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://bonsaitech.io/`,
+    title: `Bonsai`,
+    description: `Quality web development agency based on Madrid.`,
+    author: `bonsai team`,
   },
   plugins: [
     "gatsby-plugin-sass",
