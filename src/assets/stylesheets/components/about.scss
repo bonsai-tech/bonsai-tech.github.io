@@ -56,9 +56,12 @@
   &-description {
     max-width: 90%;
   }
-  @include mq($until:md) {
+  @include mq($until: md) {
     &-member {
       align-items: flex-start;
+    }
+    &-description {
+      max-width: 100%;
     }
   }
   @include mq(md) {

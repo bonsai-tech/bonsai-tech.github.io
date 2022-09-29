@@ -11,9 +11,9 @@ import Services from "../components/Services";
 import MapBlock from "../components/MapBlock";
 
 const HomePage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <MainLayout>
