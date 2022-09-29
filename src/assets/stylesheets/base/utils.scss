@@ -94,6 +94,9 @@
 .basic-table {
   width: 100%;
   border-collapse: collapse;
+  &-wrapper {
+    overflow: auto;
+  }
   th,
   td {
     border: 1px solid darken($grey-light, 10%);

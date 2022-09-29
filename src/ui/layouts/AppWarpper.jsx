@@ -16,8 +16,11 @@ const AppWrapper = ({ children, location = {}, lang }) => {
     // class in body to style each language
     document.body.classList.value = locale;
     // autoscroll to top of document on navigation
-    if (!isSSR) window.scrollTo(0, 0);
-  }, [locale, location]);
+    // if (!isSSR) window.scrollTo(0, 0);
+  }, [
+    locale,
+    // location
+  ]);
   // -- END i18n ----
 
   return (
