@@ -9,19 +9,17 @@ const HelmetComponent = ({ description, page, title }) => {
         content="initial-scale=1.0 width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
       <meta charset="utf-8" />
-      <meta
-        name="description"
-        content="Bonsai Tech - agencia desarrollo web de calidad con sede en Madrid"
-      />
+      <meta name="description" content={description} />
       <title>{title}</title>
-      <link rel="canonical" href="https://bonsaitech.io/" />
+      <link rel="canonical" href={"https://bonsaitech.io/" + page} />
       <meta property="og:title" content="Bonsai Tech" />
       <meta property="og:site_name" content="Bonsai" />
-      <meta property="og:url" content="https://bonsaitech.io/" />
+      <meta property="og:url" content={"https://bonsaitech.io/" + page} />
       <meta
         property="og:description"
-        content="Bonsai Tech - agencia desarrollo web de calidad con sede en Madrid"
+        content="Learn about 13 features that set Ahrefs apart from the competition."
       />
+      <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta
         property="og:image"
@@ -50,10 +48,7 @@ const HelmetComponent = ({ description, page, title }) => {
       />
       <meta property="twitter:title" content="Bonsai" />
       <meta name="twitter:image:alt" content="Bonsai" />
-      <meta
-        property="twitter:description"
-        content="Bonsai Tech - agencia desarrollo web de calidad con sede en Madrid"
-      />
+      <meta property="twitter:description" content={description} />
 
       {/*<!-- End cookieyes banner -->*/}
       <script

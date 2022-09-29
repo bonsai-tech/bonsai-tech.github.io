@@ -30,6 +30,8 @@ module.exports = {
         icon: "src/images/icon.png", // This path is relative to the root
         crossOrigin: `use-credentials`,
         icon: `src/assets/images/icon.png`, // This path is relative to the root of the site.
+        description:
+          "Bonsai Tech - quality web development agency based on Madrid.",
       },
     },
   ],
