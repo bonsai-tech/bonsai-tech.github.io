@@ -9,15 +9,24 @@ const HelmetComponent = ({ description, page, title }) => {
         content="initial-scale=1.0 width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
       />
       <meta charset="utf-8" />
-      <meta name="description" content={description} />
+
       <title>{title}</title>
       <link rel="canonical" href={"https://bonsaitech.io/" + page} />
       <meta property="og:title" content="Bonsai Tech" />
       <meta property="og:site_name" content="Bonsai" />
       <meta property="og:url" content={"https://bonsaitech.io/" + page} />
       <meta
+        name="description"
+        content="Bonsai - Web development agency based in Madrid"
+      />
+      <meta
+        name="keywords"
+        content="web development, web design, desarrollo,React, apps, HTML, CSS, JavaScript"
+      />
+
+      <meta
         property="og:description"
-        content="Learn about 13 features that set Ahrefs apart from the competition."
+        content="Bonsai development agency based in Madrid."
       />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
