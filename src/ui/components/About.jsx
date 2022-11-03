@@ -4,7 +4,7 @@ import Brick from "../components/Brick";
 import sara from "../../assets/images/sara.png";
 import ignacio from "../../assets/images/ignacio.png";
 import juanlu from "../../assets/images/juanlu.png";
-import antonio from "../../assets/images/antonio.png";
+import antonio from "../../assets/images/antonio1.png";
 // import pattern from "../../assets/images/pattern2.png";
 import TeamMember from "./TeamMember";
 import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
@@ -45,7 +45,7 @@ const About = () => {
         />
         <TeamMember
           ref={blockRef}
-          name="Juanlu García"
+          name="Juan Luis García"
           position={t("about:position:juanlu")}
           description={t("about:description:juanlu")}
           image={juanlu}
