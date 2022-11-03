@@ -37,8 +37,8 @@ const HomePage = () => {
       <MapBlock />
       <Quote
         text="quote:text"
-        author="Elías Alonso Gómez-Cornejo"
-        position="quote:elias-position"
+        author="Daniel Seiler"
+        position="quote:daniel-position"
       />
       <Contact />
     </MainLayout>

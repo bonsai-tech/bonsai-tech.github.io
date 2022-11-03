@@ -14,7 +14,7 @@ $cube-padding-v: $cube-padding * $v-to-h;
   &-s,
   &-w {
     transition: transform 0.9s cubic-bezier(0, 0, 0, 1.18);
-    transition-delay: 0.8s;
+    transition-delay: 0.6s;
     width: $cube-width;
     height: $cube-height;
     position: absolute;

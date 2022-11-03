@@ -4,7 +4,7 @@ import Brick from "../components/Brick";
 import sara from "../../assets/images/sara.png";
 import ignacio from "../../assets/images/ignacio.png";
 import juanlu from "../../assets/images/juanlu.png";
-import antonio from "../../assets/images/antonio1.png";
+import antonio from "../../assets/images/antonio2.png";
 // import pattern from "../../assets/images/pattern2.png";
 import TeamMember from "./TeamMember";
 import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
