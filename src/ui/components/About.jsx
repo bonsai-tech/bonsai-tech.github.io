@@ -2,7 +2,7 @@ import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
 import sara from "../../assets/images/sara.png";
-import ignacio from "../../assets/images/ignacio.png";
+import ignacio from "../../assets/images/ignacio1.png";
 import juanlu from "../../assets/images/juanlu.png";
 import antonio from "../../assets/images/antonio2.png";
 // import pattern from "../../assets/images/pattern2.png";
