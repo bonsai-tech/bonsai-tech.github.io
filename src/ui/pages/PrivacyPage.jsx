@@ -49,9 +49,6 @@ const PrivacyPage = () => {
 
           <h2 className="gamma">{t("privacy:section5:title1")}</h2>
           <p>{t("privacy:section5:text1")}</p>
-          <p>{t("privacy:section5:text2")}</p>
-          <p>{t("privacy:section5:text3")}</p>
-
           <h2 className="gamma">{t("privacy:section6:title1")}</h2>
           <p>{t("privacy:section6:text1")}</p>
           <h3 className="delta">{t("privacy:section6:title2")}</h3>
