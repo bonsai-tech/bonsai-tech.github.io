@@ -75,6 +75,9 @@ const Footer = ({ hasNav }) => {
             <Link className="footer-caption" to="/privacy">
               {t("info:privacy")}
             </Link>
+            <Link className="footer-caption" to="/legal">
+              {t("info:legal")}
+            </Link>
             <Link className="footer-caption" to="/cookies">
               {t("info:cookies")}
             </Link>
