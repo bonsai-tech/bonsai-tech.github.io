@@ -27,7 +27,11 @@ const Hero = () => {
               span: t => <span className="emphasis-text">{t}</span>,
             })}
           </h1>
-          <p className="intro-text">{t("hero:subtitle")}</p>
+          <p className="intro-text">
+            {t("hero:subtitle", {
+              strong: t => <strong>{t}</strong>,
+            })}
+          </p>
           <ButtonHashLink label="action:hire" to="#contact" />
         </div>
       </div>
