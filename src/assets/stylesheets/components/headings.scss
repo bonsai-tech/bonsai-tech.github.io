@@ -12,6 +12,10 @@
   @include typo-rwd(gamma);
 }
 
+.delta {
+  @include typo-rwd(delta);
+}
+
 .intro-text {
   @include typo-rwd(intro-text);
 }
