@@ -27,6 +27,9 @@
   .intro-text {
     color: $grey;
     max-width: 600px;
+    strong {
+      color: $primary;
+    }
   }
 
   .button {

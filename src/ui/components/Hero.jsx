@@ -1,6 +1,5 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
-// import pattern from "../../assets/images/hero-pattern.png";
 import useRevealEffect from "../../hooks/effects/useRevealEffect";
 import ButtonHashLink from "./buttons/ButtonHashLink";
 import AnimatedGrid from "./AnimatedGrid";
@@ -10,17 +9,10 @@ const Hero = () => {
   const blockRef = useRevealEffect();
   const textRef = useRevealEffect({ delay: 0.2 });
   // const imageRef = useRevealEffect({ delay: 0.3 });
-
   return (
     <div className="hero" ref={blockRef}>
       <div className="wrapper">
         <AnimatedGrid />
-        {/* <img */}
-        {/*   className="hero-pattern" */}
-        {/*   src={pattern} */}
-        {/*   alt="cube pattern" */}
-        {/*   ref={imageRef} */}
-        {/* /> */}
         <div className="hero-info" ref={textRef}>
           <h1 className="alpha">
             {t("hero:title", {
