@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <Brick skin="grey" className="services" id="services">
       <div className="intro-heading" ref={blockRef}>
-        <h3 className="pre-title">{t("services:pretitle")}</h3>
+        <p className="pre-title">{t("services:pretitle")}</p>
         <h1 className="beta">{t("services:title")}</h1>
         <p className="text">{t("services:intro-text")}</p>
       </div>

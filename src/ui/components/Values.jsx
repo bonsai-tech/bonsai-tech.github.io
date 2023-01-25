@@ -12,7 +12,7 @@ const Values = () => {
   return (
     <Brick className="values">
       <div className="intro-heading" ref={titleRef}>
-        <h3 className="pre-title">{t("values:pretitle")}</h3>
+        <p className="pre-title">{t("values:pretitle")}</p>
         <h1 className="beta">{t("values:title")}</h1>
       </div>
       <div className="values-block">

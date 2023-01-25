@@ -18,7 +18,7 @@ const About = () => {
   return (
     <Brick className="about" id="about">
       <div className="intro-heading" ref={titleRef}>
-        <h3 className="pre-title">{t("about:pretitle")}</h3>
+        <p className="pre-title">{t("about:pretitle")}</p>
         <h1 className="beta">{t("about:title")}</h1>
       </div>
       <div className="team">
