@@ -13,6 +13,7 @@ const IndexPage = props => {
       <HelmetComponent
         title={metaTags.indexTitle}
         description={metaTags.index}
+        keywords={metaTags.keywords}
         page=""
       />
       <AppWrapper {...props} lang={locale}>

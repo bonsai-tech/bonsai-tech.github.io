@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-const HelmetComponent = ({ description, page, title }) => {
+const HelmetComponent = ({ description, page, title, keywords }) => {
   return (
     <Helmet>
       <meta
@@ -10,6 +10,7 @@ const HelmetComponent = ({ description, page, title }) => {
       />
       <meta charset="utf-8" />
       <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
       <title>{title}</title>
       <link rel="canonical" href={"https://bonsaitech.io/" + page} />
       <meta property="og:title" content="Bonsai Tech" />

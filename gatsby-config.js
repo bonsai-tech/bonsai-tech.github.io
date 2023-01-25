@@ -3,7 +3,8 @@ module.exports = {
     siteUrl: `https://bonsaitech.io/`,
     title: `Bonsai`,
     description: `Quality web development agency based on Madrid.`,
-    author: `bonsai team`,
+    author: `Bonsai Tech Team`,
+    keywords: `web development, agency, quality web development, web design, React, HTML, CSS`,
   },
   plugins: [
     "gatsby-plugin-sass",
