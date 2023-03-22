@@ -11,6 +11,8 @@
     z-index: 10;
     position: relative;
     max-width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   &-pattern {
@@ -50,7 +52,7 @@
     }
   }
   @include mq(lg) {
-    padding: 120px 0;
+    padding: 120px 0 60px;
     &-pattern {
       top: 0;
       right: 0;

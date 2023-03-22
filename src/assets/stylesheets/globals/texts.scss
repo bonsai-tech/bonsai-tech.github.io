@@ -26,9 +26,10 @@ $typography: (
         fw: 500,
       ),
       md: (
-        fz: 60px,
+        fz: 80px,
+        lh: 1.2,
       ),
-      lg: (
+      xl: (
         fz: 120px,
         lh: 151px,
       ),
@@ -80,7 +81,7 @@ $typography: (
         fw: 400,
       ),
       md: (
-        fz: 20px,
+        fz: 18px,
         lh: 1.2,
         fw: 400,
       ),
