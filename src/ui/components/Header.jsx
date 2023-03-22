@@ -5,6 +5,7 @@ import logo from "../../assets/images/logo.svg";
 import Link from "../components/LinkLocalized";
 import { HashLink } from "react-router-hash-link";
 import cx from "classnames";
+import ButtonHashLink from "./buttons/ButtonHashLink";
 
 const Header = () => {
   const t = useTranslations();
@@ -38,13 +39,17 @@ const Header = () => {
           <HashLink to="#services" className="nav-item">
             {t("services:name")}
           </HashLink>
-          <HashLink to="#about" className="nav-item">
-            {t("about:name")}
+          <HashLink to="#approach" className="nav-item">
+            {t("approach:name")}
           </HashLink>
-          <HashLink to="#contact" className="nav-item">
-            {t("contact:name")}
+          <HashLink to="#startups" className="nav-item">
+            {t("startups:name")}
+          </HashLink>
+          <HashLink to="#team" className="nav-item">
+            {t("team:name")}
           </HashLink>
           <LangSelector />
+          <ButtonHashLink label="action:lets-talk" to="#contact" />
         </nav>
         <button
           className="button-menu show-in-mobile"
