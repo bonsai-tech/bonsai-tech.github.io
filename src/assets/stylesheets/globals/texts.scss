@@ -1,50 +1,8 @@
 // Texts
 
-// @font-face {
-//   font-family: "CeraPro";
-//   src: url("../../assets/fonts/CeraPro-Light.ttf");
-//   font-display: swap;
-//   font-weight: 300;
-// }
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;500;600&display=swap");
 
-// @font-face {
-//   font-family: "CeraPro";
-//   src: url("../../assets/fonts/CeraPro-Regular.ttf");
-//   font-display: swap;
-//   font-weight: 400;
-// }
-
-// @font-face {
-//   font-family: "CeraPro";
-//   src: url("../../assets/fonts/CeraPro-Medium.ttf");
-//   font-display: swap;
-//   font-weight: 500;
-// }
-
-// @font-face {
-//   font-family: "CeraPro";
-//   src: url("../../assets/fonts/CeraPro-Italic.ttf");
-//   font-display: swap;
-//   font-weight: 500;
-//   font-style: italic;
-// }
-
-// @font-face {
-//   font-family: "CeraPro";
-//   src: url("../../assets/fonts/CeraPro-Bold.ttf");
-//   font-display: swap;
-//   font-weight: 700;
-// }
-
-// @font-face {
-//   font-family: "CeraPro";
-//   src: url("../../assets/fonts/CeraPro-Black.ttf");
-//   font-display: swap;
-//   font-weight: 900;
-// }
-
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;700;900&display=swap");
-$font: "Lexend", sans-serif;
+$font: "Outfit", sans-serif;
 
 $font-families: (
   font: $font,
@@ -65,13 +23,14 @@ $typography: (
       xxs: (
         fz: 40px,
         lh: 1.1,
-        fw: 900,
+        fw: 500,
       ),
       md: (
-        fz: 56px,
+        fz: 60px,
       ),
       lg: (
-        fz: 62px,
+        fz: 120px,
+        lh: 151px,
       ),
     ),
   ),
@@ -132,13 +91,14 @@ $typography: (
       xxs: (
         fz: 22px,
         lh: 1.2,
-        fw: 300,
+        fw: 400,
       ),
       md: (
         fz: 26px,
       ),
       lg: (
         fz: 28px,
+        lh: 35px,
       ),
     ),
   ),

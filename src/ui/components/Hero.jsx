@@ -24,7 +24,7 @@ const Hero = () => {
               strong: t => <strong>{t}</strong>,
             })}
           </p>
-          <ButtonHashLink label="action:hire" to="#contact" />
+          <ButtonHashLink label="action:lets-start" to="#contact" />
         </div>
       </div>
     </div>

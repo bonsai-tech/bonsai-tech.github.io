@@ -64,7 +64,7 @@
   padding: 60px 20px;
   position: relative;
   overflow: hidden;
-  background: $grey-light;
+  background: $grey-2;
   .pattern {
     position: absolute;
     top: -228px;
@@ -83,7 +83,7 @@
       content: "";
       width: 6px;
       height: 6px;
-      background: $black;
+      background: $black-grey;
       position: absolute;
       top: 8px;
       left: 4px;
@@ -99,12 +99,12 @@
   }
   th,
   td {
-    border: 1px solid darken($grey-light, 10%);
+    border: 1px solid darken($grey-2, 10%);
     text-align: left;
   }
   th {
     padding: 6px 20px;
-    background: $grey-light;
+    background: $grey-2;
   }
   td {
     padding: 16px 20px;

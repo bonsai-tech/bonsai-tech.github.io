@@ -27,7 +27,7 @@
 .text {
   @include typo-rwd(basic-text);
   font-weight: $medium;
-  color: $grey;
+  color: $grey-8;
 }
 
 .cta-text {
@@ -37,5 +37,5 @@
 .pre-title {
   @include typo-rwd(pre-title);
   text-transform: uppercase;
-  color: $black-40;
+  color: $grey-10;
 }

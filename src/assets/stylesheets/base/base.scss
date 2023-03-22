@@ -13,6 +13,7 @@ html {
 body {
   @include typo-rwd(body);
   background: $white;
+  color: $black-grey;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

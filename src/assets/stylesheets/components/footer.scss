@@ -7,11 +7,11 @@
     margin-right: 20px;
   }
   &-main {
-    background: darken($grey-light, 2%);
+    background: darken($grey-2, 2%);
     padding: 20px 0;
   }
   &-extra {
-    background: darken($grey-light, 5%);
+    background: darken($grey-2, 5%);
     padding: 10px 0;
     a {
       &:hover {
@@ -32,7 +32,7 @@
 
   &-caption {
     font-size: 12px;
-    color: $grey;
+    color: $grey-8;
     &:not(:last-child) {
       margin-right: 20px;
     }

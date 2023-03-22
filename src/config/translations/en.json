@@ -1,6 +1,6 @@
 {
-  "hero:title": "The Plug-in product <span>team</span> you're lacking right now",
-  "hero:subtitle": "We specialize in creating web applications <strong>fast</strong> and <strong>good</strong>.",
+  "hero:title": "Start building your product today",
+  "hero:subtitle": "We define, build and scale digital products that people want and businesses need.",
   "claims:title": "Why you shouldn't think twice about hiring us",
   "claims:section1:title": "Smart investment, high speed",
   "claims:section2:title": "Pay for when you really need it",
@@ -69,6 +69,7 @@
   "quote:text": "I’m saving tons of project management time with Bonsai, because they listen very carefully, ask the right questions upfront and have an eye to engineer excellent web applications you will only get from senior people. They’re specialized and absolutely premium when it comes to UI/UX heavy React based web apps.",
   "quote:daniel-position": "Founder at Aucta",
   "action:hire": "Hire your team now!",
+  "action:lets-start": "Let’s start now!",
   "action:start-working": "Let's get to work now",
   "action:program-meeting": "Schedule a meeting",
   "action:ask-budget": "Ask for a quote",
