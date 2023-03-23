@@ -63,8 +63,36 @@
 
   &.is-clear {
     #{$self}-content {
+      background: transparent;
+      color: $black-grey;
+    }
+  }
+}
+
+.dark {
+  .button {
+    &-content {
       background: $white;
       color: $black-grey;
+    }
+    &:hover,
+    &:focus {
+      .button-content {
+        border-color: $grey-4;
+      }
+      &:after {
+        animation: pulse-in-dark 0.3s both;
+      }
+    }
+    &:after {
+      animation: pulse-out-dark 0.3s;
+    }
+    &.is-clear {
+      .button-content {
+        background: transparent;
+        border-color: $white;
+        color: $white;
+      }
     }
   }
 }
