@@ -38,29 +38,29 @@ $typography: (
   beta: (
     format: (
       xxs: (
-        fz: 30px,
+        fz: 40px,
         lh: 1.1,
-        fw: 900,
+        fw: 500,
       ),
       md: (
-        fz: 34px,
+        fz: 60px,
       ),
       lg: (
-        fz: 40px,
+        fz: 88px,
       ),
     ),
   ),
   gamma: (
     format: (
       xxs: (
-        fz: 24px,
+        fz: 26px,
         lh: 1.2,
-        fw: 900,
+        fw: 500,
       ),
       lg: (
-        fz: 28px,
-        lh: 1.2,
-        fw: 900,
+        fz: 32px,
+        lh: 40.32px,
+        fw: 500,
       ),
     ),
   ),
@@ -108,7 +108,11 @@ $typography: (
       xxs: (
         fz: 18px,
         lh: 1.2,
-        fw: 300,
+        fw: 400,
+      ),
+      md: (
+        fz: 20px,
+        lh: 25px,
       ),
     ),
   ),

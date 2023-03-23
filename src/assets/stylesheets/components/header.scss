@@ -92,6 +92,10 @@
     font-weight: 500;
     transition: color $general-change;
     position: relative;
+    color: $grey-7;
+    &:hover {
+      color: $black-grey;
+    }
     &:after {
       content: "";
       width: 100%;

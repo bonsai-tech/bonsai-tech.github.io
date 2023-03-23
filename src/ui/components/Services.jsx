@@ -1,8 +1,17 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
-import Card from "./Card";
 import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
+import { ReactComponent as PenTool } from "../../assets/icons/icon-pentool.svg";
+import { ReactComponent as Code } from "../../assets/icons/icon-code.svg";
+import { ReactComponent as People } from "../../assets/icons/icon-people.svg";
+import { ReactComponent as Health } from "../../assets/icons/icon-health.svg";
+import { ReactComponent as Shipping } from "../../assets/icons/icon-shipping.svg";
+import { ReactComponent as Verify } from "../../assets/icons/icon-verify.svg";
+import { ReactComponent as Star } from "../../assets/icons/icon-star.svg";
+import { ReactComponent as Signpost } from "../../assets/icons/icon-signpost.svg";
+import BlockItem from "./BlockItem";
+import BlockItemSimple from "./BlockItemSimple";
 
 const Services = () => {
   const t = useTranslations();
@@ -10,41 +19,60 @@ const Services = () => {
   // const blockRef = useScrollRevealEffect({ delay: 0.3, stagger: 0.1 });
 
   return (
-    <Brick skin="grey" className="services" id="services">
+    <Brick className="services" id="services">
       <div className="intro-heading" ref={blockRef}>
-        <p className="pre-title">{t("services:pretitle")}</p>
+        <p className="pre-title tag">{t("services:name")}</p>
         <h1 className="beta">{t("services:title")}</h1>
-        <p className="text">{t("services:intro-text")}</p>
       </div>
-      <div className="card-grid">
-        <Card
-          ref={blockRef}
+      <div className="block-list">
+        <BlockItem
           title="services:service1:title"
-          content={
-            <>
-              <p className="basic-text">{t("services:service1:text")}</p>
-            </>
-          }
-        />
-        <Card
+          text="services:service1:text"
+          icon={<PenTool />}
           ref={blockRef}
+        />
+        <BlockItem
           title="services:service2:title"
-          content={
-            <>
-              <p className="basic-text">{t("services:service2:text")}</p>
-            </>
-          }
+          text="services:service2:text"
+          icon={<Code />}
+          ref={blockRef}
+        />
+        <BlockItem
+          title="services:service3:title"
+          text="services:service3:text"
+          icon={<People />}
+          ref={blockRef}
+        />
+        <BlockItem
+          title="services:service4:title"
+          text="services:service4:text"
+          icon={<Health />}
+          ref={blockRef}
         />
       </div>
-      <p className="text" ref={blockRef}>
-        {t("services:contact-text", {
-          a: t => (
-            <a className="link" href="mailto:hola@bonsaitech.io">
-              {t}
-            </a>
-          ),
-        })}
-      </p>
+      <h3 className="gamma centered">{t("services:section2:title")}</h3>
+      <div className="block-list is-simple">
+        <BlockItemSimple
+          text="services:service5:title"
+          icon={<Shipping />}
+          ref={blockRef}
+        />
+        <BlockItemSimple
+          text="services:service6:title"
+          icon={<Verify />}
+          ref={blockRef}
+        />
+        <BlockItemSimple
+          text="services:service7:title"
+          icon={<Star />}
+          ref={blockRef}
+        />
+        <BlockItemSimple
+          text="services:service8:title"
+          icon={<Signpost />}
+          ref={blockRef}
+        />
+      </div>
     </Brick>
   );
 };

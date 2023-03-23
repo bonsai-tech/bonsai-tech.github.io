@@ -108,3 +108,66 @@
     color: $grey-8;
   }
 }
+
+// Block List
+
+.block-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  .block-item {
+    padding-right: 32px;
+    flex: 0 0 100%;
+    margin-bottom: 32px;
+  }
+
+  @include mq(md) {
+    .block-item {
+      flex: 0 0 50%;
+    }
+  }
+  @include mq(lg) {
+    .block-item {
+      flex: 0 0 25%;
+    }
+  }
+}
+
+// Block item
+
+.block-item {
+  &.is-simple {
+    display: flex;
+    align-items: flex-start;
+    svg {
+      margin-right: 26px;
+      color: $grey-3;
+      width: 34px;
+      height: 34px;
+    }
+    .title {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: $regular;
+    }
+  }
+  .icon-box {
+    width: 84px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $grey-1;
+    border: 1px solid $grey-2;
+    border-radius: 1px;
+    margin-bottom: 24px;
+    svg {
+      width: 30px;
+      height: 30px;
+      color: $grey-8;
+    }
+  }
+  .gamma {
+    margin-bottom: 18px;
+  }
+}
