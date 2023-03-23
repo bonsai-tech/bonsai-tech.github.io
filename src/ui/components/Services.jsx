@@ -50,7 +50,7 @@ const Services = () => {
           ref={blockRef}
         />
       </div>
-      <h3 className="gamma centered">{t("services:section2:title")}</h3>
+      <h3 className="delta centered">{t("services:section2:title")}</h3>
       <div className="block-list is-simple">
         <BlockItemSimple
           text="services:service5:title"

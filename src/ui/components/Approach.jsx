@@ -39,7 +39,7 @@ const Approach = () => {
           </ul>
         </div>
       </div>
-      <h3 className="gamma centered">{t("approach:section2:title")}</h3>
+      <h3 className="delta centered">{t("approach:section2:title")}</h3>
       <div className="block-list is-simple">
         <BlockItemSimple
           text="approach:claim1"

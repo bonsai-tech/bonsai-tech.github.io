@@ -1,6 +1,6 @@
 // Texts
 
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600&display=swap");
 
 $font: "Outfit", sans-serif;
 
@@ -53,6 +53,20 @@ $typography: (
   gamma: (
     format: (
       xxs: (
+        fz: 40px,
+        lh: 1.2,
+        fw: 600,
+      ),
+      lg: (
+        fz: 64px,
+        lh: 80.32px,
+        fw: 600,
+      ),
+    ),
+  ),
+  delta: (
+    format: (
+      xxs: (
         fz: 28px,
         lh: 1.2,
         fw: 500,
@@ -60,15 +74,6 @@ $typography: (
       lg: (
         fz: 32px,
         lh: 40.32px,
-        fw: 500,
-      ),
-    ),
-  ),
-  delta: (
-    format: (
-      xxs: (
-        fz: 22px,
-        lh: 1.1,
         fw: 500,
       ),
     ),

@@ -6,10 +6,7 @@
       margin: 0 24px 24px 0;
     }
   }
-  .title {
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: 600;
+  .gamma {
     margin-bottom: 48px;
   }
   .demo-wrapper {
@@ -37,16 +34,14 @@
       display: flex;
       align-items: center;
     }
-    .title {
-      font-size: 64px;
-    }
+
     .info {
       flex: 0 0 40%;
-      padding-right: 100px;
     }
     .demo-wrapper {
       max-width: 920px;
       margin-left: auto;
+      padding-left: 100px;
     }
   }
 }

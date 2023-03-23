@@ -93,3 +93,20 @@
     }
   }
 }
+
+.cta {
+  &-info {
+    max-width: 900px;
+  }
+
+  &.is-reversed {
+    .cta-info {
+      padding-right: 0;
+      margin-left: auto;
+    }
+    .cta-action {
+      order: -1;
+      margin-left: 0;
+    }
+  }
+}

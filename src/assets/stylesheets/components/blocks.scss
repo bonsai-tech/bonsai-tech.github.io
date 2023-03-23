@@ -150,6 +150,19 @@
       line-height: 30px;
       font-weight: $regular;
     }
+    .number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $grey-1;
+      border: 1px solid $grey-2;
+      border-radius: 1px;
+      color: $grey-8;
+      width: 40px;
+      height: 40px;
+      margin-right: 24px;
+      margin-top: -2px;
+    }
   }
   .icon-box {
     width: 84px;
@@ -167,7 +180,7 @@
       color: $grey-8;
     }
   }
-  .gamma {
+  .delta {
     margin-bottom: 18px;
   }
 }

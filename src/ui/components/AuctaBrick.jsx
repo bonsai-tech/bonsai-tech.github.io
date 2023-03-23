@@ -13,7 +13,7 @@ const AuctaBrick = () => {
   return (
     <Brick className="aucta" skin="dark" id="aucta">
       <div className="info" ref={blockRef}>
-        <h2 className="title">{t("aucta:title")}</h2>
+        <h2 className="gamma">{t("aucta:title")}</h2>
         <ButtonLink
           href="https://daniel-seiler.com/aucta.html"
           label="aucta:show-case-study"

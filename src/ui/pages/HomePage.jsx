@@ -10,6 +10,7 @@ import Services from "../components/Services";
 import MapBlock from "../components/MapBlock";
 import AuctaBrick from "../components/AuctaBrick";
 import Approach from "../components/Approach";
+import Startups from "../components/Startups";
 
 const HomePage = () => {
   // useEffect(() => {
@@ -23,18 +24,18 @@ const HomePage = () => {
       <AuctaBrick />
       <Approach />
       <Cta
+        skin="dark"
         title="cta:title"
-        text="cta:text"
-        buttonText="action:start-working"
+        buttonText="action:lets-make-it-happen"
       />
-      <About />
+      <Startups />
       <Cta
         skin="dark"
-        clearButton
         title="cta2:title"
-        text="cta2:text"
         buttonText="action:tell-us-your-project"
+        reversed
       />
+      <About />
       <Values />
       <MapBlock />
       <Quote

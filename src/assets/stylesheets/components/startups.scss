@@ -1,0 +1,18 @@
+// Startups
+
+.startups {
+  .intro-heading {
+    max-width: 800px;
+    margin: 0 auto 120px;
+  }
+
+  .block-list {
+    margin: 70px 0 80px;
+  }
+
+  .block-item {
+    &.is-simple {
+      margin-bottom: 60px;
+    }
+  }
+}

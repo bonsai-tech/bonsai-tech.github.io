@@ -8,7 +8,7 @@ const BlockItem = forwardRef(({ title, icon, text }, ref) => {
     <div className="block-item" ref={ref}>
       <div className="icon-box">{icon}</div>
       <div className="info-box">
-        <h2 className="gamma">{t(title)}</h2>
+        <h3 className="delta">{t(title)}</h3>
         <p className="text">{t(text)}</p>
       </div>
     </div>
