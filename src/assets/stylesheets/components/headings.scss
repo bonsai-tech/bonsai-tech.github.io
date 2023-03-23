@@ -46,5 +46,7 @@
 }
 
 .centered {
-  text-align: center;
+  @include mq(lg) {
+    text-align: center;
+  }
 }

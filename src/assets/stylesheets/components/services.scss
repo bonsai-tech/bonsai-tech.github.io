@@ -1,6 +1,11 @@
 // Services
 
 .services {
+  @include mq($until: md) {
+    .block-list {
+      padding: 40px 0;
+    }
+  }
   @include mq(md) {
     .block-list {
       &:not(.is-simple) {

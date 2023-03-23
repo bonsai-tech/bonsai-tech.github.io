@@ -1,0 +1,85 @@
+// Approach
+
+.approach {
+  .beta {
+    margin-bottom: 24px;
+  }
+  .intro-text {
+    color: $grey-4;
+    max-width: 90%;
+  }
+  .block-list {
+    padding: 40px 0;
+  }
+  .block-item {
+    margin-bottom: 60px;
+  }
+  &-grid {
+    margin-bottom: 40px;
+  }
+  @include mq($until: lg) {
+    &-col {
+      margin-bottom: 40px;
+    }
+  }
+  @include mq(lg) {
+    &-grid {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 120px;
+    }
+    &-col {
+      flex: 1 1 50%;
+      &:first-child {
+        padding-right: 60px;
+      }
+    }
+    .block-list {
+      padding: 100px 0 40px;
+    }
+  }
+}
+
+// Steps
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  .number {
+    display: inline-block;
+    font-size: 42px;
+    width: 80px;
+    height: 80px;
+    background: $grey-1;
+    border: 1px solid $grey-2;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $grey-6;
+    border-radius: 1px;
+    margin-right: 40px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 26px;
+  }
+
+  @include mq(lg) {
+    margin-bottom: 40px;
+    .title {
+      font-size: 64px;
+      line-height: 81px;
+    }
+    .number {
+      font-size: 48px;
+      width: 104px;
+      height: 104px;
+      margin-right: 68px;
+    }
+  }
+}

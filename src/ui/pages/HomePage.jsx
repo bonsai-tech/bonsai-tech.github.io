@@ -9,6 +9,7 @@ import Quote from "../components/Quote";
 import Services from "../components/Services";
 import MapBlock from "../components/MapBlock";
 import AuctaBrick from "../components/AuctaBrick";
+import Approach from "../components/Approach";
 
 const HomePage = () => {
   // useEffect(() => {
@@ -20,6 +21,7 @@ const HomePage = () => {
       <Hero />
       <Services />
       <AuctaBrick />
+      <Approach />
       <Cta
         title="cta:title"
         text="cta:text"

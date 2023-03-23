@@ -53,7 +53,7 @@ $typography: (
   gamma: (
     format: (
       xxs: (
-        fz: 26px,
+        fz: 28px,
         lh: 1.2,
         fw: 500,
       ),
@@ -90,16 +90,17 @@ $typography: (
   intro-text: (
     format: (
       xxs: (
-        fz: 22px,
+        fz: 24px,
         lh: 1.2,
         fw: 400,
       ),
       md: (
-        fz: 26px,
+        fz: 28px,
+        lh: 1.2,
       ),
       lg: (
-        fz: 28px,
-        lh: 35px,
+        fz: 32px,
+        lh: 40px,
       ),
     ),
   ),
