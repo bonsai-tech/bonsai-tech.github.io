@@ -15,8 +15,8 @@ import BlockItemSimple from "./BlockItemSimple";
 
 const Services = () => {
   const t = useTranslations();
-  const blockRef = useScrollRevealEffect();
-  // const blockRef = useScrollRevealEffect({ delay: 0.3, stagger: 0.1 });
+  // const blockRef = useScrollRevealEffect();
+  const blockRef = useScrollRevealEffect({ delay: 0.3, stagger: 0.1 });
 
   return (
     <Brick className="services" id="services">
