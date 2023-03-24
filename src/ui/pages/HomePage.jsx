@@ -29,12 +29,7 @@ const HomePage = () => {
         buttonText="action:lets-make-it-happen"
       />
       <Startups />
-      <Cta
-        skin="dark"
-        title="cta2:title"
-        buttonText="action:tell-us-your-project"
-        reversed
-      />
+      <Cta skin="dark" title="cta2:title" buttonText="cta2:action" reversed />
       <About />
       <Values />
       <MapBlock />

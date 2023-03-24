@@ -7,75 +7,101 @@
     z-index: 10;
     position: relative;
   }
-  .animated-grid {
-    position: absolute;
-    top: -200px;
-    right: -350px;
-    // max-width: 1500px;
-    z-index: 1;
-  }
+
   @include mq(lg) {
     padding: 120px 0;
   }
 }
 
+// Team
+
 .team {
-  margin-top: 40px;
-  z-index: 10;
-  position: relative;
-  &-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 60px;
+  margin: 120px 0 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 40px;
+  .card-member {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+// Card Member
+
+.card-member {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 40px;
+
+  .card-inner {
+    border: 1px solid $black-grey;
+    overflow: hidden;
+    width: 100%;
+    height: 471px;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
   }
 
-  &-image {
-    width: 116px;
-    height: auto;
-    margin-right: 20px;
-    position: relative;
-    flex-shrink: 0;
-    img {
-      z-index: 10;
-      display: block;
-      position: relative;
+  &:hover,
+  &:focus {
+    .card-inner {
+      transform: translate(-4px, -4px);
+      box-shadow: 4px 4px $black-grey;
     }
   }
 
-  &-name {
-    font-weight: 900;
+  .card-name {
     font-size: 24px;
+    line-height: 30px;
+    font-weight: $semibold;
+    margin-bottom: 8px;
   }
-  &-position {
-    color: $grey-8;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-bottom: 5px;
+  .card-position {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: $regular;
+    color: $grey-3;
   }
 
-  &-description {
-    max-width: 90%;
-    opacity: 0.8;
-    font-size: 15px;
+  .card-info {
+    padding: 20px 32px;
+    transition: transform 0.3s ease;
+    background: $black-grey;
+    color: $white;
+    .card-position {
+      margin-bottom: 48px;
+    }
+    .card-description {
+      color: $grey-8;
+      font-size: 24px;
+      font-weight: $regular;
+      line-height: 30px;
+    }
+  }
+
+  .card-image {
+    background: $grey-1;
+    height: calc(100% - 110px);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+  &:hover,
+  &:focus {
+    .card-info {
+      transform: translateY(calc(-100% + 110px));
+      background-color: $white;
+      color: $black-grey;
+      text-align: left;
+      padding: 32px;
+      height: 100%;
+    }
   }
   @include mq($until: md) {
-    &-member {
-      align-items: flex-start;
-    }
-    &-description {
-      max-width: 100%;
-    }
-  }
-  @include mq(md) {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    &-member {
-      flex: 1 1 50%;
-
-      &:nth-child(odd) {
-        padding-right: 20px;
-      }
-    }
+    height: 600px;
   }
 }
