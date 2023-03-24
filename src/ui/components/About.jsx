@@ -55,25 +55,17 @@ const About = () => {
           image={antonio}
         />
       </div>
-      <h3 className="delta centered">{t("services:section2:title")}</h3>
+      <h3 className="delta centered">{t("about:section2:title")}</h3>
       <div className="block-list is-simple">
+        <BlockItemSimple text="about:claim1" icon={<Cube />} ref={blockRef} />
         <BlockItemSimple
-          text="services:service5:title"
-          icon={<Cube />}
-          ref={blockRef}
-        />
-        <BlockItemSimple
-          text="services:service6:title"
+          text="about:claim2"
           icon={<Refresh />}
           ref={blockRef}
         />
+        <BlockItemSimple text="about:claim3" icon={<Flash />} ref={blockRef} />
         <BlockItemSimple
-          text="services:service7:title"
-          icon={<Flash />}
-          ref={blockRef}
-        />
-        <BlockItemSimple
-          text="services:service8:title"
+          text="about:claim4"
           icon={<RulerPen />}
           ref={blockRef}
         />

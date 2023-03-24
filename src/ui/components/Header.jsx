@@ -45,7 +45,7 @@ const Header = () => {
           <HashLink to="#startups" className="nav-item">
             {t("startups:name")}
           </HashLink>
-          <HashLink to="#team" className="nav-item">
+          <HashLink to="#about" className="nav-item">
             {t("team:name")}
           </HashLink>
           <LangSelector />

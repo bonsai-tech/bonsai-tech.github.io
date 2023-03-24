@@ -31,14 +31,12 @@ const HomePage = () => {
       <Startups />
       <Cta skin="dark" title="cta2:title" buttonText="cta2:action" reversed />
       <About />
-      <Values />
-      <MapBlock />
+      <Cta skin="dark" title="cta3:title" buttonText="cta3:action" />
       <Quote
         text="quote:text"
         author="Daniel Seiler"
         position="quote:daniel-position"
       />
-      <Contact />
     </MainLayout>
   );
 };
