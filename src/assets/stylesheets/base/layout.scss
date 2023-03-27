@@ -26,6 +26,14 @@ $header-height-mv: 60px;
 }
 
 .inner-wrapper {
-  max-width: 800px;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+.simple-layout {
+  .footer {
+    background: transparent;
+    color: $black-grey;
+  }
 }

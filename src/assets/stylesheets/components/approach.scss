@@ -23,10 +23,11 @@
     }
   }
   @include mq(lg) {
+    padding-bottom: 180px;
     &-grid {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 120px;
+      margin-bottom: 80px;
     }
     &-col {
       flex: 1 1 50%;
@@ -35,7 +36,7 @@
       }
     }
     .block-list {
-      padding: 100px 0 40px;
+      padding: 96px 0 0;
     }
   }
 }

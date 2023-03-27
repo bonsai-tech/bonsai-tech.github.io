@@ -10,7 +10,8 @@ import { Texture } from "@babylonjs/core/Materials/Textures/texture";
 import { TransformNode } from "@babylonjs/core/Meshes/transformNode";
 // for side effects
 import "@babylonjs/core/Meshes/instancedMesh";
-import gridTexture from "../../assets/images/grid-texture.jpg";
+import gridTexture from "../../assets/images/grid-texture.png";
+import gridTextureDark from "../../assets/images/grid-texture-dark.png";
 
 import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
 import { PointLight } from "@babylonjs/core/Lights/pointLight";
@@ -46,13 +47,14 @@ class SceneManager {
   nodes = [];
   frameCount = 0;
 
-  constructor(canvas) {
+  constructor(canvas, dark) {
     this.canvas = canvas;
     this.engine = new Engine(canvas, true, {
       // preserveDrawingBuffer: true,
       stencil: true,
       // disableWebGL2Support: false,
     });
+    this.dark = dark;
     this.createScene();
     this.populateScene();
     this.engine.runRenderLoop(this.onFrame);
@@ -97,7 +99,7 @@ class SceneManager {
 
     // material
     const mat = new StandardMaterial(id("mat"));
-    mat.emissiveColor = Color3.Red();
+    mat.emissiveColor = Color3.White();
     mat.diffuseColor = Color3.White();
     mat.emissiveColor = Color3.White();
     mat.diffuseTexture = texture;
@@ -116,7 +118,11 @@ class SceneManager {
   populateScene() {
     const floor = CreatePlane("foor", { size: 150 }, this.scene);
     floor.material = new StandardMaterial(id("mat"));
-    floor.material.emissiveColor = Color3.White();
+    if (this.dark) {
+      floor.material.emissiveColor = new Color3(0.08, 0.12, 0.19);
+    } else {
+      floor.material.emissiveColor = Color3.White();
+    }
     floor.rotation.x = Math.PI / 2;
     floor.position.y = 0;
 
@@ -124,7 +130,7 @@ class SceneManager {
     root.position.x = config.offsetX;
     root.position.z = config.offsetZ;
 
-    const texture = new Texture(gridTexture);
+    const texture = new Texture(this.dark ? gridTextureDark : gridTexture);
 
     const node = this.createBlock(texture);
     node.parent = root;
@@ -189,13 +195,13 @@ class SceneManager {
   }
 }
 
-const AnimatedGrid = () => {
+const AnimatedGrid = ({ dark = false }) => {
   const canvasRef = useRef(null);
 
   // initialize babylon scene
   useEffect(() => {
     if (!canvasRef.current) return;
-    const sceneManager = new SceneManager(canvasRef.current);
+    const sceneManager = new SceneManager(canvasRef.current, dark);
     canvasRef.current.classList.add("visible");
     // resize window
     const onResize = () => sceneManager.onResize();

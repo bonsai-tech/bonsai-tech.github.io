@@ -3,6 +3,7 @@ import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
 import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
 import ContactForm from "./ContactForm";
+import AnimatedGrid from "./AnimatedGrid";
 
 const Contact = () => {
   const t = useTranslations();
@@ -11,7 +12,7 @@ const Contact = () => {
 
   return (
     <Brick skin="dark" className="contact" id="contact">
-      <div className="contact-col">
+      <div className="contact-col" ref={blockRef}>
         <h2 className="gamma" ref={titleRef}>
           {t("contact:title")}
         </h2>
@@ -25,9 +26,10 @@ const Contact = () => {
           ></iframe>
         </div>
       </div>
-      <div className="contact-col">
+      <div className="contact-col" ref={blockRef}>
         <ContactForm />
       </div>
+      <AnimatedGrid dark />
     </Brick>
   );
 };

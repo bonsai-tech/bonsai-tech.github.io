@@ -7,12 +7,15 @@
   }
 
   .block-list {
-    margin: 70px 0 80px;
+    margin: 70px 0 120px;
   }
 
   .block-item {
     &.is-simple {
       margin-bottom: 60px;
     }
+  }
+  @include mq(lg) {
+    padding-bottom: 60px;
   }
 }

@@ -51,8 +51,6 @@
     }
   }
   @include mq(xl) {
-    padding: 240px 0;
-
     .wrapper {
       display: flex;
       position: relative;

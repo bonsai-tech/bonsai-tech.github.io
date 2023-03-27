@@ -12,7 +12,7 @@ const Quote = ({ text, author, position }) => {
 
   return (
     <Brick className="quote">
-      <div className="quote-image">
+      <div className="quote-image" ref={blockRef}>
         <img src={daniel} alt="Daniel Seiler" />
       </div>
       <div className="quote-info" ref={blockRef}>

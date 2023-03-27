@@ -18,7 +18,7 @@
   }
 
   @include mq(lg) {
-    padding: 120px 0;
+    padding: 240px 0;
   }
 }
 
@@ -41,72 +41,54 @@
     }
   }
 }
-
 // whyus
 
-.whyus {
-  padding: 100px 0 60px 0;
-  .delta {
-    margin-bottom: 10px;
-    opacity: 0.9;
-  }
-  p {
-    opacity: 0.7;
-    font-size: 15px;
-  }
-  &-group {
-    padding: 40px 0;
-  }
-  .icon-block {
-    flex: 1 1 33.3%;
-    margin-bottom: 40px;
-    padding-right: 60px;
-    img {
-      width: 60px;
-      margin-left: -8px;
-    }
-  }
-  @include mq(lg) {
-    &-group {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 60px 0 20px;
-    }
-    .delta {
-      min-height: 57px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-  }
-}
+// .whyus {
+//   padding: 100px 0 60px 0;
+//   .delta {
+//     margin-bottom: 10px;
+//     opacity: 0.9;
+//   }
+//   p {
+//     opacity: 0.7;
+//     font-size: 15px;
+//   }
+//   &-group {
+//     padding: 40px 0;
+//   }
+//   .icon-block {
+//     flex: 1 1 33.3%;
+//     margin-bottom: 40px;
+//     padding-right: 60px;
+//     img {
+//       width: 60px;
+//       margin-left: -8px;
+//     }
+//   }
+//   @include mq(lg) {
+//     &-group {
+//       display: flex;
+//       flex-wrap: wrap;
+//       padding: 60px 0 20px;
+//     }
+//     .delta {
+//       min-height: 57px;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: flex-end;
+//     }
+//   }
+// }
 
-.icon-block {
-  @include mq(lg) {
-    &-title {
-      display: flex;
-      align-items: flex-start;
-      img {
-        margin-right: 6px;
-        flex-shrink: 0;
-      }
-    }
-  }
-}
-
-.cta {
-  &-info {
-    max-width: 900px;
-  }
-
-  &.is-reversed {
-    .cta-info {
-      padding-right: 0;
-      margin-left: auto;
-    }
-    .cta-action {
-      order: -1;
-      margin-left: 0;
-    }
-  }
-}
+// .icon-block {
+//   @include mq(lg) {
+//     &-title {
+//       display: flex;
+//       align-items: flex-start;
+//       img {
+//         margin-right: 6px;
+//         flex-shrink: 0;
+//       }
+//     }
+//   }
+// }

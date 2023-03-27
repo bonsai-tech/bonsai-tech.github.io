@@ -1,6 +1,5 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
-import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
 import FormField from "./FormField";
 import FormInput from "./FormInput";
 import Button from "./buttons/Button";
@@ -9,10 +8,9 @@ import { ReactComponent as Arrow } from "../../assets/icons/icon-arrow.svg";
 
 const ContactForm = () => {
   const t = useTranslations();
-  const blockRef = useScrollRevealEffect({ delay: 0.3, stagger: 0.1 });
 
   return (
-    <div className="contact-form" ref={blockRef}>
+    <div className="contact-form">
       <form>
         <FormField
           labelFor="name"
@@ -106,7 +104,7 @@ const ContactForm = () => {
         />
         <Button onClick="" label="contact:lets-work-together" type="submit" />
       </form>
-      <p className="text" ref={blockRef}>
+      <p className="text">
         {t("contact:extra-text", {
           a: t => (
             <a className="link" href="mailto:hello@bonsaitech.io">

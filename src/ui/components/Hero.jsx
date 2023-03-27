@@ -3,17 +3,17 @@ import useTranslations from "../../hooks/useTranslations";
 import useRevealEffect from "../../hooks/effects/useRevealEffect";
 import ButtonHashLink from "./buttons/ButtonHashLink";
 import AnimatedGrid from "./AnimatedGrid";
-import idealista from "../../assets/images/clients/idealista.png";
-import aucta from "../../assets/images/clients/aucta.png";
-import hugo from "../../assets/images/clients/hugo-boss.png";
-import liberty from "../../assets/images/clients/liberty.png";
-import confidencial from "../../assets/images/clients/confidencial.png";
+import { ReactComponent as Aucta } from "../../assets/images/clients/aucta.svg";
+import { ReactComponent as Idealista } from "../../assets/images/clients/idealista.svg";
+import { ReactComponent as Hugo } from "../../assets/images/clients/hugo-boss.svg";
+import { ReactComponent as Liberty } from "../../assets/images/clients/liberty.svg";
+import { ReactComponent as Confidencial } from "../../assets/images/clients/confidencial.svg";
 
 const Hero = () => {
   const t = useTranslations();
   const blockRef = useRevealEffect();
   const textRef = useRevealEffect({ delay: 0.2 });
-  // const imageRef = useRevealEffect({ delay: 0.3 });
+
   return (
     <div className="hero" ref={blockRef}>
       <div className="wrapper">
@@ -33,42 +33,29 @@ const Hero = () => {
         </div>
         <div className="clients" ref={blockRef}>
           <div className="wrapper">
-            <h2 className="pre-title">{t("clients:title")}</h2>
-            <div className="clients-list">
-              <img
+            <h2 className="pre-title" ref={textRef}>
+              {t("clients:title")}
+            </h2>
+            <div className="clients-list" ref={blockRef}>
+              <Idealista
                 className="client"
-                alt="idealista"
-                src={idealista}
-                width="210px"
-                height="60px"
+                style={{ width: "210px", height: "40px" }}
               />
-              <img
+              <Aucta
                 className="client"
-                alt="aucta"
-                src={aucta}
-                width="197px"
-                height="48px"
+                style={{ width: "182px", height: "40px" }}
               />
-              <img
+              <Hugo
                 className="client"
-                alt="hugo boss"
-                src={hugo}
-                width="128px"
-                height="48px"
+                style={{ width: "109px", height: "40px" }}
               />
-              <img
+              <Liberty
                 className="client"
-                alt="liberty seguros"
-                src={liberty}
-                width="120px"
-                height="60px"
+                style={{ width: "137px", height: "68px" }}
               />
-              <img
+              <Confidencial
                 className="client"
-                alt="El confidencial"
-                src={confidencial}
-                width="254px"
-                height="38px"
+                style={{ width: "282px", height: "32px" }}
               />
             </div>
           </div>

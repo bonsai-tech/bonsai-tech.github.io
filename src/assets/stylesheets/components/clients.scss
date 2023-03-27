@@ -14,6 +14,11 @@
 
   .client {
     margin: 0 10px 10px;
+    color: $grey-2;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $black-grey;
+    }
   }
 
   @include mq($until: lg) {

@@ -1,7 +1,7 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
-import pattern from "../../assets/images/grid.png";
 import SimpleLayout from "../layouts/SimpleLayout";
+import AnimatedGrid from "../components/AnimatedGrid";
 
 const CookiesPage = () => {
   const t = useTranslations();
@@ -9,7 +9,7 @@ const CookiesPage = () => {
   return (
     <SimpleLayout>
       <div className="banner">
-        <img src={pattern} alt="pattern" className="pattern" />
+        <AnimatedGrid />
         <div className="inner-wrapper">
           <h1 className="beta">{t("info:cookies")}</h1>
         </div>

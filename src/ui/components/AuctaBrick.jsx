@@ -21,7 +21,7 @@ const AuctaBrick = () => {
         />
         <ButtonLink href="https://aucta.io/" label="aucta:go" external clear />
       </div>
-      <div className="demo-wrapper">
+      <div className="demo-wrapper" ref={blockRef}>
         <img className="demo-topBar" src={chromeBar} alt="browser" />
         <iframe
           title="Engine Demo Aucta"

@@ -9,18 +9,18 @@
   }
 
   .block-list {
-    padding-top: 69px;
+    padding-top: 64px;
   }
 
   @include mq(lg) {
-    padding: 120px 0;
+    padding-bottom: 208px;
   }
 }
 
 // Team
 
 .team {
-  margin: 120px 0 80px;
+  margin: 120px 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 1fr;

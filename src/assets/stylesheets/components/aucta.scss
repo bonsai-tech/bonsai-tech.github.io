@@ -10,6 +10,9 @@
     margin-bottom: 48px;
   }
   .demo-wrapper {
+    height: 535px;
+    border-radius: 4px;
+    overflow: hidden;
     img {
       width: 100%;
       margin: 0;
@@ -19,8 +22,13 @@
 
   iframe {
     width: 100%;
-    height: 535px;
+    height: 503px;
     margin-top: -3px;
+    border-radius: 0 0 4px 4px;
+  }
+
+  @include mq(lg) {
+    padding: 160px 0;
   }
 
   @include mq($until: xl) {
@@ -36,10 +44,10 @@
     }
 
     .info {
-      flex: 0 0 40%;
+      flex: 1 1 auto;
     }
     .demo-wrapper {
-      max-width: 920px;
+      flex: 0 0 920px;
       margin-left: auto;
       padding-left: 100px;
     }

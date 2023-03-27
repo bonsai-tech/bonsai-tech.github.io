@@ -1,6 +1,20 @@
 // Contact
 
 .contact {
+  position: relative;
+
+  .animated-grid {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    right: auto;
+    z-index: 1;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  &-col {
+    z-index: 10;
+  }
   .map {
     margin-bottom: 32px;
     iframe {
@@ -40,7 +54,7 @@
         flex: 1 1 auto;
         padding-right: 100px;
       }
-      &:last-child {
+      &:nth-child(2) {
         flex: 0 0 652px;
       }
     }
