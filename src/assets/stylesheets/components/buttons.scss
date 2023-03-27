@@ -57,24 +57,26 @@
 }
 
 .dark {
-  .button {
-    &-content {
-      background: $white;
-      color: $black-grey;
-    }
-    &:hover,
-    &:focus {
-      .button-content {
-        border-color: $grey-4;
-        box-shadow: 4px 4px $grey-4;
+  &:not(.contact) {
+    .button {
+      &-content {
+        background: $white;
+        color: $black-grey;
       }
-    }
+      &:hover,
+      &:focus {
+        .button-content {
+          border-color: $grey-4;
+          box-shadow: 4px 4px $grey-4;
+        }
+      }
 
-    &.is-clear {
-      .button-content {
-        background: transparent;
-        border-color: $grey-4;
-        color: $white;
+      &.is-clear {
+        .button-content {
+          background: transparent;
+          border-color: $grey-4;
+          color: $white;
+        }
       }
     }
   }

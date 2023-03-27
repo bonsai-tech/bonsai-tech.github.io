@@ -1,0 +1,150 @@
+// Forms
+
+.form {
+  &-field {
+    margin-bottom: 24px;
+    &.has-error {
+      .form-input,
+      .select,
+      .textarea {
+        border-color: $error;
+      }
+    }
+  }
+
+  &-label {
+    display: block;
+    font-size: 16px;
+    line-height: 20.16px;
+    font-weight: $semibold;
+    margin-bottom: 6px;
+  }
+
+  &-input {
+  }
+
+  &-select {
+    position: relative;
+    .arrow {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+select,
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input {
+  &:focus-visible {
+    outline: 1px solid $black-grey;
+  }
+}
+
+select {
+  color: $grey-3;
+  &:focus-visible {
+    border: 1px solid $black-grey;
+    outline: none;
+  }
+  .arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.form-input,
+textarea,
+select {
+  font-size: 16px;
+  line-height: 20.16px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid $grey-3;
+  background: transparent;
+  &:focus,
+  &:focus-visible {
+    border-color: $black-grey;
+  }
+  &::-webkit-input-placeholder {
+    color: $grey-4;
+  }
+
+  &:-ms-input-placeholder {
+    color: $grey-4;
+  }
+
+  &::placeholder {
+    color: $grey-4;
+  }
+}
+
+.checkbox {
+  display: block;
+  margin-bottom: 8px;
+  color: $grey-4;
+  font-size: 16px;
+  line-height: 20.16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  padding-left: 32px;
+  min-height: 20px;
+
+  .checkmark {
+    color: $white;
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    width: 24px;
+    height: 24px;
+    display: none;
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    &:before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border: 1px solid $grey-3;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 2px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+    &:checked {
+      &:before {
+        background: $black-grey;
+        border-color: $black-grey;
+      }
+      + .checkmark {
+        display: block;
+      }
+    }
+  }
+}
+
+.error-text {
+  color: $error;
+  margin: 4px 0;
+}

@@ -9,6 +9,8 @@
 
   &-image {
     margin-bottom: 20px;
+    z-index: 10;
+    position: relative;
   }
 
   &-info {

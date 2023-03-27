@@ -1,0 +1,22 @@
+// Contact form
+
+.contact-form {
+  background: $white;
+  color: $black-grey;
+  padding: 30px;
+  border-radius: 1px;
+  .button {
+    width: 100%;
+    margin-bottom: 12px;
+    border: none;
+    height: 52px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  @include mq(xl) {
+    padding: 64px;
+  }
+}

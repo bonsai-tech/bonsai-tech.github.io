@@ -44,15 +44,11 @@
   opacity: 0;
 }
 
-.emphasis-text {
-  color: $primary;
-}
-
 .link {
-  color: $primary;
-  font-weight: $bold;
+  color: $black-grey;
+  text-decoration: underline;
   &:hover {
-    color: darken($primary, 10%);
+    color: $grey-10;
   }
 }
 

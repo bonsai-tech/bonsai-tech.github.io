@@ -1,7 +1,6 @@
 import React from "react";
 import MainLayout from "../layouts/MainLayout";
 import Hero from "../components/Hero";
-import Values from "../components/Values";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Cta from "../components/Cta";
@@ -37,6 +36,7 @@ const HomePage = () => {
         author="Daniel Seiler"
         position="quote:daniel-position"
       />
+      <Contact />
     </MainLayout>
   );
 };
