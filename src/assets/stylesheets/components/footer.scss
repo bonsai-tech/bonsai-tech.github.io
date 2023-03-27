@@ -2,98 +2,34 @@
 
 .footer {
   $self: &;
-  .logo {
-    width: 100px;
-    margin-right: 20px;
-  }
-  &-main {
-    background: darken($grey-2, 2%);
-    padding: 20px 0;
-  }
-  &-extra {
-    background: darken($grey-2, 5%);
-    padding: 10px 0;
-    a {
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  .social-item {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-  }
+  background: $black-grey;
+  color: $white;
+  padding: 24px 0;
+  font-size: 16px;
+  line-height: 20.16px;
+  font-weight: 400px;
 
   &-caption {
-    font-size: 12px;
-    color: $grey-8;
-    &:not(:last-child) {
-      margin-right: 20px;
+    margin-right: 32px;
+    display: block;
+    margin-bottom: 8px;
+    &:hover {
+      text-decoration: underline;
     }
   }
 
-  .nav-item {
-    margin-right: 20px;
-  }
-
-  @include mq($until: md) {
-    .logo {
-      margin-bottom: 6px;
-    }
-    .nav-item {
-      display: block;
-      margin: 0;
-      padding-left: 0;
-    }
-    &-social {
-      .link {
-        display: block;
-        margin-bottom: 10px;
-      }
-      .social-item {
-        margin: 0 10px 0 0;
-      }
-    }
-    .right-slot {
-      .footer-caption {
-        display: block;
-        margin-bottom: 2px;
-      }
-    }
-    &-caption {
-      font-size: 14px;
-    }
-  }
-
-  @include mq(md) {
-    &-main {
-      .wrapper {
-        display: flex;
-        align-items: center;
-      }
-      #{$self}-social {
-        margin-left: auto;
-      }
-    }
-
-    &-social {
+  @include mq(lg) {
+    .wrapper {
       display: flex;
       align-items: center;
     }
-    &-extra {
-      .wrapper {
-        display: flex;
-        align-items: center;
-      }
-      .right-slot {
-        margin-left: auto;
-      }
+    .right-slot {
+      margin-left: auto;
+    }
+
+    &-caption {
+      display: inline-block;
+      margin-bottom: 0;
     }
   }
 }
