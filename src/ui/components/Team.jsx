@@ -16,7 +16,7 @@ import BlockItemSimple from "./BlockItemSimple";
 const Team = () => {
   const t = useTranslations();
   const titleRef = useScrollRevealEffect();
-  const blockRef = useScrollRevealEffect({ delay: 0.3, stagger: 0.1 });
+  const blockRef = useScrollRevealEffect({ delay: 0.1 });
 
   return (
     <Brick className="team-brick" id="team" ref={blockRef}>
