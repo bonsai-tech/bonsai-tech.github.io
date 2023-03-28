@@ -19,7 +19,7 @@ const Team = () => {
   const blockRef = useScrollRevealEffect({ delay: 0.1 });
 
   return (
-    <Brick className="team-brick" id="team" ref={blockRef}>
+    <Brick className="team-brick" id="team">
       <div className="intro-heading centered" ref={titleRef}>
         <p className="pre-title tag">{t("team:pretitle")}</p>
         <h2 className="beta">{t("team:title")}</h2>
