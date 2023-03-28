@@ -57,7 +57,7 @@
 }
 
 .banner {
-  padding: 160px 0;
+  padding: 80px 0;
   position: relative;
   overflow: hidden;
   .inner-wrapper {
@@ -66,6 +66,9 @@
   }
   .animated-grid {
     z-index: 0;
+  }
+  @include mq(xl) {
+    padding: 160px 0;
   }
 }
 

@@ -2,7 +2,7 @@
 
 .brick {
   background: $white;
-  padding: 80px 0;
+  padding: 60px 0;
   &.dark {
     background: $black-grey;
     color: $white;
@@ -18,6 +18,10 @@
   }
 
   @include mq(lg) {
+    padding: 100px 0;
+  }
+
+  @include mq(xl) {
     padding: 240px 0;
   }
 }

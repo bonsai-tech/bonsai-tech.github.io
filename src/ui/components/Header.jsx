@@ -3,9 +3,9 @@ import useTranslations from "../../hooks/useTranslations";
 import LangSelector from "../components/LangSelector";
 import logo from "../../assets/images/logo.svg";
 import Link from "../components/LinkLocalized";
-import { HashLink } from "react-router-hash-link";
 import cx from "classnames";
 import ButtonHashLink from "./buttons/ButtonHashLink";
+import useScrollspy from "../../hooks/useScrollSpy";
 
 const Header = () => {
   const t = useTranslations();
@@ -29,27 +29,47 @@ const Header = () => {
     return () => document.body.classList.remove("disable-scroll-mobile");
   }, [isMenuOpen]); // Empty array ensures effect is only run on mount and unmount
 
+  const ids = ["services", "aucta", "approach", "startups", "team"];
+  const activeId = useScrollspy(ids, 101);
+
   return (
     <header className={cx("header", { "open-menu": isMenuOpen })}>
       <div className="wrapper">
-        <Link to="/" className="logo">
+        <Link to="/" className="logo" activeClassName="active">
           <img className="logo" alt="Bonsai" src={logo} />
         </Link>
         <nav className="main-nav" onClick={closeMenu}>
-          <HashLink to="#services" className="nav-item">
+          <Link
+            to="/#services"
+            className={cx("nav-item", {
+              active: activeId === "services" || activeId === "aucta",
+            })}
+          >
             {t("services:name")}
-          </HashLink>
-          <HashLink to="#approach" className="nav-item">
+          </Link>
+          <Link
+            to="/#approach"
+            activeClassName="active"
+            className={cx("nav-item", { active: activeId === "approach" })}
+          >
             {t("approach:name")}
-          </HashLink>
-          <HashLink to="#startups" className="nav-item">
+          </Link>
+          <Link
+            to="/#startups"
+            activeClassName="active"
+            className={cx("nav-item", { active: activeId === "startups" })}
+          >
             {t("startups:name")}
-          </HashLink>
-          <HashLink to="#about" className="nav-item">
+          </Link>
+          <Link
+            to="/#team"
+            className={cx("nav-item", { active: activeId === "team" })}
+            activeClassName="active"
+          >
             {t("team:name")}
-          </HashLink>
+          </Link>
           <LangSelector />
-          <ButtonHashLink label="action:lets-talk" to="#contact" />
+          <ButtonHashLink label="action:lets-talk" to="/#contact" />
         </nav>
         <button
           className="button-menu show-in-mobile"

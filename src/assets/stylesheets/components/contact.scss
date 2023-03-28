@@ -13,6 +13,7 @@
     transform: scaleX(-1);
   }
   &-col {
+    position: relative;
     z-index: 10;
   }
   .map {
@@ -35,6 +36,11 @@
       font-size: 24px;
       line-height: 30.24px;
       color: $white;
+    }
+  }
+  @include mq($until: xl) {
+    .gamma {
+      margin-bottom: 40px;
     }
   }
   @include mq(xl) {

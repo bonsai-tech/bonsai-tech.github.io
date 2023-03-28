@@ -59,6 +59,7 @@
 // Cta
 
 .cta {
+  padding: 80px 0;
   .beta {
     margin-bottom: 10px;
     max-width: 600px;
@@ -80,6 +81,7 @@
     .cta-action {
       order: -1;
       margin-left: 0;
+      margin-right: 40px;
     }
   }
 
@@ -98,7 +100,7 @@
       margin: 0 0 0 auto;
     }
   }
-  @include mq(lg) {
+  @include mq(xl) {
     padding: 160px 0;
   }
 }
@@ -155,9 +157,9 @@
       height: 34px;
     }
     .title {
-      font-size: 24px;
-      line-height: 30px;
       font-weight: $regular;
+      font-size: 20px;
+      line-height: 1.2;
     }
     .number {
       display: flex;
@@ -191,5 +193,11 @@
   }
   .delta {
     margin-bottom: 18px;
+  }
+  @include mq(xl) {
+    .title {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 }

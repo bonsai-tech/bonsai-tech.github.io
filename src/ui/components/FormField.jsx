@@ -7,7 +7,7 @@ const FormField = ({ label, labelFor, field, errorText }) => {
 
   return (
     <div className={cx("form-field", { "has-error": errorText })}>
-      <label for={labelFor} className="form-label">
+      <label htmlFor={labelFor} className="form-label">
         {t(label)}
       </label>
       {field}

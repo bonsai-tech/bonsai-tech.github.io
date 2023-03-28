@@ -2,22 +2,24 @@
 
 .clients {
   text-align: center;
-  padding: 80px 0;
+  padding: 40px 0;
   .pre-title {
     margin-bottom: 46px;
   }
-  &-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
 
   .client {
-    margin: 0 10px 10px;
+    display: block;
+    margin: 10px auto;
     color: $grey-2;
     transition: color 0.3s ease;
     &:hover {
       color: $black-grey;
+    }
+  }
+
+  @include mq($until: xs) {
+    .confidencial {
+      margin-left: -5%;
     }
   }
 
@@ -26,8 +28,23 @@
       transform: scale(0.8);
     }
   }
+  @include mq(md) {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .client {
+      margin: 0 20px 20px;
+    }
+  }
 
   @include mq(lg) {
+    padding: 80px 0 0;
+  }
+
+  @include mq(xl) {
     &-list {
       justify-content: space-between;
     }

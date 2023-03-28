@@ -42,10 +42,10 @@ $typography: (
         lh: 1.1,
         fw: 500,
       ),
-      md: (
-        fz: 60px,
-      ),
       lg: (
+        fz: 70px,
+      ),
+      xl: (
         fz: 88px,
       ),
     ),
@@ -58,6 +58,10 @@ $typography: (
         fw: 600,
       ),
       lg: (
+        fz: 50px,
+        lh: 1.2,
+      ),
+      xl: (
         fz: 64px,
         lh: 80.32px,
         fw: 600,
@@ -71,7 +75,7 @@ $typography: (
         lh: 1.2,
         fw: 500,
       ),
-      lg: (
+      xl: (
         fz: 32px,
         lh: 40.32px,
         fw: 500,
@@ -103,7 +107,7 @@ $typography: (
         fz: 28px,
         lh: 1.2,
       ),
-      lg: (
+      xl: (
         fz: 32px,
         lh: 40px,
       ),

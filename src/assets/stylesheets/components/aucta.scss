@@ -27,8 +27,22 @@
     border-radius: 0 0 4px 4px;
   }
 
+  @include mq($until: md) {
+    .button {
+      width: 100%;
+    }
+  }
+
   @include mq(lg) {
-    padding: 160px 0;
+    padding: 100px 0;
+    .button-group {
+      display: flex;
+      align-items: center;
+    }
+    .button-content {
+      padding: 0 20px;
+      min-width: 180px;
+    }
   }
 
   @include mq($until: xl) {
@@ -38,6 +52,7 @@
   }
 
   @include mq(xl) {
+    padding: 160px 0;
     .wrapper {
       display: flex;
       align-items: center;
@@ -47,9 +62,15 @@
       flex: 1 1 auto;
     }
     .demo-wrapper {
-      flex: 0 0 920px;
+      flex: 0 0 760px;
       margin-left: auto;
-      padding-left: 100px;
+      padding-left: 80px;
+    }
+  }
+
+  @include mq(xxl) {
+    .demo-wrapper {
+      flex-basis: 920px;
     }
   }
 }

@@ -1,12 +1,11 @@
 import React from "react";
 import MainLayout from "../layouts/MainLayout";
 import Hero from "../components/Hero";
-import About from "../components/About";
+import Team from "../components/Team";
 import Contact from "../components/Contact";
 import Cta from "../components/Cta";
 import Quote from "../components/Quote";
 import Services from "../components/Services";
-import MapBlock from "../components/MapBlock";
 import AuctaBrick from "../components/AuctaBrick";
 import Approach from "../components/Approach";
 import Startups from "../components/Startups";
@@ -29,7 +28,7 @@ const HomePage = () => {
       />
       <Startups />
       <Cta skin="dark" title="cta2:title" buttonText="cta2:action" reversed />
-      <About />
+      <Team />
       <Cta skin="dark" title="cta3:title" buttonText="cta3:action" />
       <Quote
         text="quote:text"

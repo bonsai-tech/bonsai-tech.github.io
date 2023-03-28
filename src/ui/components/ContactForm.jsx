@@ -77,7 +77,7 @@ const ContactForm = () => {
           field={
             <div className="form-select">
               <select id="budget" name="budget" className="select">
-                <option value="" disabled selected hidden>
+                <option value="0" disabled hidden>
                   {t("contact:tell-us-budget")}
                 </option>
                 <option value="1">5€-2000€</option>

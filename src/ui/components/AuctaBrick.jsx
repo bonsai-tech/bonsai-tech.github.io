@@ -14,12 +14,19 @@ const AuctaBrick = () => {
     <Brick className="aucta" skin="dark" id="aucta">
       <div className="info" ref={blockRef}>
         <h2 className="gamma">{t("aucta:title")}</h2>
-        <ButtonLink
-          href="https://daniel-seiler.com/aucta.html"
-          label="aucta:show-case-study"
-          external
-        />
-        <ButtonLink href="https://aucta.io/" label="aucta:go" external clear />
+        <div className="button-group">
+          <ButtonLink
+            href="https://daniel-seiler.com/aucta.html"
+            label="aucta:show-case-study"
+            external
+          />
+          <ButtonLink
+            href="https://aucta.io/"
+            label="aucta:go"
+            external
+            clear
+          />
+        </div>
       </div>
       <div className="demo-wrapper" ref={blockRef}>
         <img className="demo-topBar" src={chromeBar} alt="browser" />

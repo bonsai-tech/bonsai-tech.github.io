@@ -23,7 +23,6 @@
     }
   }
   @include mq(lg) {
-    padding-bottom: 180px;
     &-grid {
       display: flex;
       align-items: flex-start;
@@ -38,6 +37,9 @@
     .block-list {
       padding: 96px 0 0;
     }
+  }
+  @include mq(xl) {
+    padding-bottom: 180px;
   }
 }
 
@@ -63,19 +65,14 @@
     margin-right: 40px;
   }
 
-  .title {
-    font-size: 36px;
-    line-height: 1.2;
+  .gamma {
     font-weight: 500;
     margin-bottom: 26px;
   }
 
-  @include mq(lg) {
+  @include mq(xl) {
     margin-bottom: 40px;
-    .title {
-      font-size: 64px;
-      line-height: 81px;
-    }
+
     .number {
       font-size: 48px;
       width: 104px;

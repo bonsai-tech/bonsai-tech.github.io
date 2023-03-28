@@ -35,7 +35,7 @@ $xs: 390px;
 $sm: 520px;
 $md: 760px;
 $lg: 960px;
-$xl: 1200px;
+$xl: 1220px;
 $xxl: 1600px;
 
 // Breakpoints
@@ -50,5 +50,5 @@ $grid-breakpoints: (
   // Large screen / desktop
   xl: $xl,
   // Extra large screen / wide desktop
-  xxl: $xxl // Extra large screen / wide desktop,,,,
+  xxl: $xxl // Extra large screen / wide desktop,,,,,
 );

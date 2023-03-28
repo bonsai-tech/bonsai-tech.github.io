@@ -69,7 +69,7 @@
     }
   }
   @include mq(lg) {
-    padding: 24px 0;
+    padding: 28px 0;
     .button-menu {
       display: none;
     }
@@ -90,9 +90,13 @@
     padding: 4px;
     font-size: 15px;
     font-weight: 500;
-    transition: color $general-change;
+    transition: all $general-change;
     position: relative;
     color: $grey-7;
+    &.active {
+      color: $black-grey;
+      text-shadow: 0 0 1px $black-grey;
+    }
     &:hover {
       color: $black-grey;
     }

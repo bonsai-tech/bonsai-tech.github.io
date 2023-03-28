@@ -8,7 +8,7 @@ const Step = forwardRef(({ number, text, title }, ref) => {
     <li className="step" ref={ref}>
       <span className="number">{number}</span>
       <div className="info">
-        <h2 className="title">{t(title)}</h2>
+        <h2 className="gamma">{t(title)}</h2>
         <p className="text">{t(text)}</p>
       </div>
     </li>

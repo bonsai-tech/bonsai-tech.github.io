@@ -54,7 +54,7 @@ const Hero = () => {
                 style={{ width: "137px", height: "68px" }}
               />
               <Confidencial
-                className="client"
+                className="client confidencial"
                 style={{ width: "282px", height: "32px" }}
               />
             </div>

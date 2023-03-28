@@ -3,11 +3,11 @@
 .startups {
   .intro-heading {
     max-width: 800px;
-    margin: 0 auto 120px;
+    margin: 0 auto 60px;
   }
 
   .block-list {
-    margin: 70px 0 120px;
+    margin: 60px 0 0 0;
   }
 
   .block-item {
@@ -17,5 +17,14 @@
   }
   @include mq(lg) {
     padding-bottom: 60px;
+  }
+
+  @include mq(xl) {
+    .intro-heading {
+      margin-bottom: 120px;
+    }
+    .block-list {
+      margin: 70px 0 120px;
+    }
   }
 }

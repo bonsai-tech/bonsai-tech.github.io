@@ -4,10 +4,9 @@
   $self: &;
   background: $black-grey;
   color: $white;
-  padding: 24px 0;
+  padding: 0 0 16px 0;
   font-size: 16px;
   line-height: 20.16px;
-  font-weight: 400px;
 
   &-caption {
     margin-right: 32px;
@@ -22,6 +21,8 @@
   }
 
   @include mq(lg) {
+    padding: 24px 0;
+
     .wrapper {
       display: flex;
       align-items: center;
