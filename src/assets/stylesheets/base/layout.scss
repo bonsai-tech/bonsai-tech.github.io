@@ -4,6 +4,7 @@ $header-height: 101px;
 $header-height-mv: 60px;
 
 .outer-wrapper {
+  overflow-x: hidden;
   .header {
     position: fixed;
     top: 0;
