@@ -12,8 +12,8 @@ const Approach = () => {
   // const blockRef = useScrollRevealEffect({ delay: 0.3, stagger: 0.1 });
 
   return (
-    <Brick className="approach" id="approach">
-      <div className="approach-grid" ref={blockRef}>
+    <Brick className="approach" id="approach" ref={blockRef}>
+      <div className="approach-grid">
         <div className="approach-col">
           <p className="pre-title tag">{t("approach:name")}</p>
           <h1 className="beta">{t("approach:title")}</h1>
