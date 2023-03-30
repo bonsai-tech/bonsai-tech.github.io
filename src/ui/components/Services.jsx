@@ -53,7 +53,7 @@ const Services = () => {
       <h3 className="delta centered" ref={blockRef}>
         {t("services:section2:title")}
       </h3>
-      <div className="block-list is-simple">
+      <div className="block-list is-simple is-wide">
         <BlockItemSimple
           text="services:service5:title"
           icon={<Shipping />}

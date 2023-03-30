@@ -76,6 +76,7 @@ select {
   padding: 12px 14px;
   border: 1px solid $grey-3;
   background: transparent;
+  border-radius: 1px;
   &:focus,
   &:focus-visible {
     border-color: $black-grey;

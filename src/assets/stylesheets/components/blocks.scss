@@ -141,6 +141,12 @@
     .block-item {
       flex: 0 0 25%;
     }
+    &.is-wide {
+      justify-content: space-between;
+      .block-item {
+        flex: none;
+      }
+    }
   }
 }
 
@@ -149,7 +155,7 @@
 .block-item {
   &.is-simple {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     svg {
       margin-right: 26px;
       color: $grey-3;
@@ -194,6 +200,7 @@
   .delta {
     margin-bottom: 18px;
   }
+
   @include mq(xl) {
     .title {
       font-size: 24px;

@@ -10,11 +10,8 @@ import { Texture } from "@babylonjs/core/Materials/Textures/texture";
 import { TransformNode } from "@babylonjs/core/Meshes/transformNode";
 // for side effects
 import "@babylonjs/core/Meshes/instancedMesh";
-import gridTexture from "../../assets/images/grid-texture.png";
+import gridTexture from "../../assets/images/grid-texture3.png";
 import gridTextureDark from "../../assets/images/grid-texture-dark.png";
-
-import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
-import { PointLight } from "@babylonjs/core/Lights/pointLight";
 
 const config = {
   intensity: 1.5,

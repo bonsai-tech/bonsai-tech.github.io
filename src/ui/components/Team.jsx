@@ -56,7 +56,7 @@ const Team = () => {
         />
       </div>
       <h3 className="delta centered">{t("team:section2:title")}</h3>
-      <div className="block-list is-simple">
+      <div className="block-list is-simple is-wide">
         <BlockItemSimple text="team:claim1" icon={<Cube />} ref={blockRef} />
         <BlockItemSimple text="team:claim2" icon={<Refresh />} ref={blockRef} />
         <BlockItemSimple text="team:claim3" icon={<Flash />} ref={blockRef} />
