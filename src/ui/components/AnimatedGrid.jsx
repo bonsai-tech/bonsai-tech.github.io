@@ -16,10 +16,10 @@ import gridTextureDark from "../../assets/images/grid-texture-dark.png";
 const config = {
   intensity: 1.5,
   speed: 1.5,
-  blockSeparation: 0.5,
+  blockSeparation: 0.4,
   ortho: 6,
-  offsetX: -4,
-  offsetZ: -6,
+  offsetX: -5, //-4,
+  offsetZ: -5, //-6,
   viewportRatio: 1080 / 900,
   pattern: [
     [0, 0, 0, 0, 0, 0, 1, 1, 1],
@@ -73,7 +73,7 @@ class SceneManager {
     this.camera.setPosition(new Vector3(5, 5, -5));
     // BABYLON.Camera.ORTHOGRAPHIC_CAMERA === 1
     this.camera.mode = 1;
-    this.camera.orthoTop = config.ortho;
+    this.camera.orthoTop = config.ortho * 1.25;
     this.camera.orthoBottom = -config.ortho;
     this.camera.orthoLeft = -config.ortho * this.viewportRatio;
     this.camera.orthoRight = config.ortho * this.viewportRatio;

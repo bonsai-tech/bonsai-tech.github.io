@@ -29,7 +29,7 @@ const Header = () => {
     return () => document.body.classList.remove("disable-scroll-mobile");
   }, [isMenuOpen]); // Empty array ensures effect is only run on mount and unmount
 
-  const ids = ["services", "aucta", "approach", "startups", "team"];
+  const ids = ["services", "aucta", "approach", "startups", "team "];
   const activeId = useScrollspy(ids, 101);
 
   return (
@@ -62,8 +62,8 @@ const Header = () => {
             {t("startups:name")}
           </Link>
           <Link
-            to="/#team"
-            className={cx("nav-item", { active: activeId === "team" })}
+            to="/#team  "
+            className={cx("nav-item", { active: activeId === "team  " })}
             activeClassName="active"
           >
             {t("team:name")}
