@@ -1,6 +1,5 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
-import useRevealEffect from "../../hooks/effects/useRevealEffect";
 import ButtonHashLink from "./buttons/ButtonHashLink";
 import AnimatedGrid from "./AnimatedGrid";
 import { ReactComponent as Aucta } from "../../assets/images/clients/aucta.svg";
@@ -11,14 +10,12 @@ import { ReactComponent as Confidencial } from "../../assets/images/clients/conf
 
 const Hero = () => {
   const t = useTranslations();
-  const blockRef = useRevealEffect();
-  const textRef = useRevealEffect({ delay: 0.2 });
 
   return (
-    <div className="hero" ref={blockRef}>
+    <div className="hero" data-aos="custom-animation">
       <div className="wrapper">
         <AnimatedGrid />
-        <div className="hero-info" ref={textRef}>
+        <div className="hero-info">
           <h1 className="alpha">
             {t("hero:title", {
               span: t => <span className="emphasis-text">{t}</span>,
@@ -31,12 +28,10 @@ const Hero = () => {
           </p>
           <ButtonHashLink label="action:lets-start" to="#contact" />
         </div>
-        <div className="clients" ref={blockRef}>
+        <div className="clients" data-aos="custom-animation">
           <div className="wrapper">
-            <h2 className="pre-title" ref={textRef}>
-              {t("clients:title")}
-            </h2>
-            <div className="clients-list" ref={blockRef}>
+            <h2 className="pre-title">{t("clients:title")}</h2>
+            <div className="clients-list">
               <Idealista
                 className="client"
                 style={{ width: "210px", height: "40px" }}

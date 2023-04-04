@@ -1,25 +1,22 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
-import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
 import { ReactComponent as Tick } from "../../assets/icons/icon-tick-circle.svg";
 import BlockItemSimple from "./BlockItemSimple";
 import Step from "../components/Step";
 
 const Approach = () => {
   const t = useTranslations();
-  const blockRef = useScrollRevealEffect();
-  // const blockRef = useScrollRevealEffect({ delay: 0.3, stagger: 0.1 });
 
   return (
-    <Brick className="approach" id="approach">
-      <div className="approach-grid">
-        <div className="approach-col" ref={blockRef}>
+    <Brick className="approach" id="approach" aos="custom-animation">
+      <div className="approach-grid" data-aos="custom-animation">
+        <div className="approach-col">
           <p className="pre-title tag">{t("approach:name")}</p>
           <h1 className="beta">{t("approach:title")}</h1>
           <p className="intro-text">{t("approach:intro-text")}</p>
         </div>
-        <div className="approach-col" ref={blockRef}>
+        <div className="approach-col" data-aos="custom-animation">
           <ul className="approach-steps">
             <Step
               number={1}
@@ -39,48 +36,18 @@ const Approach = () => {
           </ul>
         </div>
       </div>
-      <h3 className="delta centered">{t("approach:section2:title")}</h3>
-      <div className="block-list is-simple">
-        <BlockItemSimple
-          text="approach:claim1"
-          icon={<Tick />}
-          ref={blockRef}
-        />
-        <BlockItemSimple
-          text="approach:claim2"
-          icon={<Tick />}
-          ref={blockRef}
-        />
-        <BlockItemSimple
-          text="approach:claim3"
-          icon={<Tick />}
-          ref={blockRef}
-        />
-        <BlockItemSimple
-          text="approach:claim4"
-          icon={<Tick />}
-          ref={blockRef}
-        />
-        <BlockItemSimple
-          text="approach:claim5"
-          icon={<Tick />}
-          ref={blockRef}
-        />
-        <BlockItemSimple
-          text="approach:claim6"
-          icon={<Tick />}
-          ref={blockRef}
-        />
-        <BlockItemSimple
-          text="approach:claim7"
-          icon={<Tick />}
-          ref={blockRef}
-        />
-        <BlockItemSimple
-          text="approach:claim8"
-          icon={<Tick />}
-          ref={blockRef}
-        />
+      <h3 className="delta centered" data-aos="custom-animation">
+        {t("approach:section2:title")}
+      </h3>
+      <div className="block-list is-simple" data-aos="custom-animation">
+        <BlockItemSimple text="approach:claim1" icon={<Tick />} />
+        <BlockItemSimple text="approach:claim2" icon={<Tick />} />
+        <BlockItemSimple text="approach:claim3" icon={<Tick />} />
+        <BlockItemSimple text="approach:claim4" icon={<Tick />} />
+        <BlockItemSimple text="approach:claim5" icon={<Tick />} />
+        <BlockItemSimple text="approach:claim6" icon={<Tick />} />
+        <BlockItemSimple text="approach:claim7" icon={<Tick />} />
+        <BlockItemSimple text="approach:claim8" icon={<Tick />} />
       </div>
     </Brick>
   );

@@ -19,7 +19,9 @@
   },
   "dependencies": {
     "@babylonjs/core": "^5.25.0",
+    "@parcel/runtime-browser-hmr": "^2.8.3",
     "@svgr/webpack": "^6.3.1",
+    "aos": "^2.3.4",
     "classnames": "^2.3.2",
     "gatsby": "^4.23.1",
     "gatsby-cli": "^4.23.1",
@@ -28,6 +30,7 @@
     "gatsby-plugin-manifest": "^4.23.1",
     "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-sass": "^5.23.0",
+    "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-svgr": "^3.0.0-beta.0",
     "gsap": "^3.11.1",
     "react": "^18.1.0",

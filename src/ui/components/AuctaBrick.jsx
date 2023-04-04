@@ -1,18 +1,15 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
-import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
 import chromeBar from "../../assets/images/chrome-bar.png";
 import ButtonLink from "./buttons/ButtonLink";
 
 const AuctaBrick = () => {
   const t = useTranslations();
-  const blockRef = useScrollRevealEffect();
-  // const blockRef = useScrollRevealEffect({ delay: 0.3, stagger: 0.1 });
 
   return (
     <Brick className="aucta" skin="dark" id="aucta">
-      <div className="info" ref={blockRef}>
+      <div className="info" data-aos="custom-animation">
         <h2 className="gamma">{t("aucta:title")}</h2>
         <div className="button-group">
           <ButtonLink
@@ -28,7 +25,7 @@ const AuctaBrick = () => {
           />
         </div>
       </div>
-      <div className="demo-wrapper" ref={blockRef}>
+      <div className="demo-wrapper" data-aos="custom-animation">
         <img className="demo-topBar" src={chromeBar} alt="browser" />
         <iframe
           title="Engine Demo Aucta"

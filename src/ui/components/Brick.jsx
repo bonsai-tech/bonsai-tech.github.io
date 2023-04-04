@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import cx from "classnames";
 
-const Brick = forwardRef(({ className, children, skin, id }, ref) => {
+const Brick = forwardRef(({ className, children, skin, id, aos }, ref) => {
   return (
     <div
       className={cx(`brick`, {
@@ -10,6 +10,7 @@ const Brick = forwardRef(({ className, children, skin, id }, ref) => {
       })}
       id={id}
       ref={ref}
+      data-aos={aos}
     >
       <div className="wrapper">{children}</div>
     </div>

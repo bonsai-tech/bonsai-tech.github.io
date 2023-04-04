@@ -1,19 +1,16 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
 import Brick from "../components/Brick";
-import useScrollRevealEffect from "../../hooks/effects/useScrollRevealEffect";
 import ContactForm from "./ContactForm";
 import AnimatedGrid from "./AnimatedGrid";
 
 const Contact = () => {
   const t = useTranslations();
-  const titleRef = useScrollRevealEffect();
-  const blockRef = useScrollRevealEffect({ delay: 0.3, stagger: 0.1 });
 
   return (
     <Brick skin="dark" className="contact" id="contact">
-      <div className="contact-col" ref={blockRef}>
-        <h2 className="gamma" ref={titleRef}>
+      <div className="contact-col" data-aos="custom-animation">
+        <h2 className="gamma" data-aos="custom-animation">
           {t("contact:title")}
         </h2>
         <div className="map">
@@ -26,7 +23,7 @@ const Contact = () => {
           ></iframe>
         </div>
       </div>
-      <div className="contact-col" ref={blockRef}>
+      <div className="contact-col" data-aos="custom-animation">
         <ContactForm />
       </div>
       <AnimatedGrid dark />

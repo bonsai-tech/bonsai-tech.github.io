@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MainLayout from "../layouts/MainLayout";
 import Hero from "../components/Hero";
 import Team from "../components/Team";
@@ -9,11 +9,17 @@ import Services from "../components/Services";
 import AuctaBrick from "../components/AuctaBrick";
 import Approach from "../components/Approach";
 import Startups from "../components/Startups";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HomePage = () => {
   // useEffect(() => {
   //   window.scrollTo(0, 0);
   // }, []);
+
+  useEffect(() => {
+    AOS.init({});
+  }, []);
 
   return (
     <MainLayout>
