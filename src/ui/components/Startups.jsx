@@ -26,21 +26,25 @@ const Startups = () => {
       </p>
       <div className="block-list" data-aos="custom-animation">
         <BlockItem
+          aos="custom-animation"
           title="startups:service1:title"
           text="startups:service1:text"
           icon={<People />}
         />
         <BlockItem
+          aos="custom-animation"
           title="startups:service2:title"
           text="startups:service2:text"
           icon={<Money />}
         />
         <BlockItem
+          aos="custom-animation"
           title="startups:service3:title"
           text="startups:service3:text"
           icon={<Clock />}
         />
         <BlockItem
+          aos="custom-animation"
           title="startups:service4:title"
           text="startups:service4:text"
           icon={<TagUser />}
@@ -53,14 +57,46 @@ const Startups = () => {
         {t("startups:how:text")}
       </p>
       <div className="block-list is-simple" data-aos="custom-animation">
-        <BlockItemSimple text="startups:service5:title" number="1" />
-        <BlockItemSimple text="startups:service6:title" number="2" />
-        <BlockItemSimple text="startups:service7:title" number="3" />
-        <BlockItemSimple text="startups:service8:title" number="4" />
-        <BlockItemSimple text="startups:service9:title" number="5" />
-        <BlockItemSimple text="startups:service10:title" number="6" />
-        <BlockItemSimple text="startups:service11:title" number="7" />
-        <BlockItemSimple text="startups:service12:title" number="8" />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="startups:service5:title"
+          number="1"
+        />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="startups:service6:title"
+          number="2"
+        />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="startups:service7:title"
+          number="3"
+        />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="startups:service8:title"
+          number="4"
+        />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="startups:service9:title"
+          number="5"
+        />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="startups:service10:title"
+          number="6"
+        />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="startups:service11:title"
+          number="7"
+        />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="startups:service12:title"
+          number="8"
+        />
       </div>
     </Brick>
   );

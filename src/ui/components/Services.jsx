@@ -23,21 +23,25 @@ const Services = () => {
       </div>
       <div className="block-list" data-aos="custom-animation">
         <BlockItem
+          aos="custom-animation"
           title="services:service1:title"
           text="services:service1:text"
           icon={<PenTool />}
         />
         <BlockItem
+          aos="custom-animation"
           title="services:service2:title"
           text="services:service2:text"
           icon={<Code />}
         />
         <BlockItem
+          aos="custom-animation"
           title="services:service3:title"
           text="services:service3:text"
           icon={<People />}
         />
         <BlockItem
+          aos="custom-animation"
           title="services:service4:title"
           text="services:service4:text"
           icon={<Health />}
@@ -47,10 +51,26 @@ const Services = () => {
         {t("services:section2:title")}
       </h3>
       <div className="block-list is-simple is-wide" data-aos="custom-animation">
-        <BlockItemSimple text="services:service5:title" icon={<Shipping />} />
-        <BlockItemSimple text="services:service6:title" icon={<Verify />} />
-        <BlockItemSimple text="services:service7:title" icon={<Star />} />
-        <BlockItemSimple text="services:service8:title" icon={<Signpost />} />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="services:service5:title"
+          icon={<Shipping />}
+        />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="services:service6:title"
+          icon={<Verify />}
+        />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="services:service7:title"
+          icon={<Star />}
+        />
+        <BlockItemSimple
+          aos="custom-animation"
+          text="services:service8:title"
+          icon={<Signpost />}
+        />
       </div>
     </Brick>
   );

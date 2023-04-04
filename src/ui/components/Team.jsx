@@ -21,24 +21,27 @@ const Team = () => {
         <p className="pre-title tag">{t("team:pretitle")}</p>
         <h2 className="beta">{t("team:title")}</h2>
       </div>
-      <div className="team" data-aos="custom-animation">
+      <div className="team">
         <CardMember
           name="Ignacio Ramos"
           position={t("team:position:ignacio")}
           description={t("team:description:ignacio")}
           image={ignacio}
+          aos="custom-animation"
         />
         <CardMember
           name="Juan Luis García"
           position={t("team:position:juanlu")}
           description={t("team:description:juanlu")}
           image={juanlu}
+          aos="custom-animation"
         />
         <CardMember
           name="Sara Moreno"
           position={t("team:position:sara")}
           description={t("team:description:sara")}
           image={sara}
+          aos="custom-animation"
         />
 
         <CardMember
@@ -46,6 +49,7 @@ const Team = () => {
           position={t("team:position:antonio")}
           description={t("team:description:antonio")}
           image={antonio}
+          aos="custom-animation"
         />
       </div>
       <h3 className="delta centered" data-aos="custom-animation">
