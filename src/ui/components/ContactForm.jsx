@@ -1,12 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import useTranslations from "../../hooks/useTranslations";
 import FormField from "./FormField";
 import FormInput from "./FormInput";
 import Button from "./buttons/Button";
 import Checkbox from "./Checkbox";
 import { ReactComponent as Arrow } from "../../assets/icons/icon-arrow.svg";
+import useFormSubmit from "../../hooks/useFormSubmit";
+import { validateForm } from "../../utils/validation";
+
+const BUDGETS = {
+  low: "5€-2000€",
+  midLow: "2000€-5000€",
+  mid: "5000€-10000€",
+  midHigh: "10000€-50000€",
+  high: "+50000€",
+};
 
 const ContactForm = () => {
+  const [purposes, setPurposes] = useState({});
+  const [info, setInfo] = useState({});
+  const [errors, setErrors] = useState({});
+
+  const [loading, submit, result] = useFormSubmit();
+
+  const clearError = key => {
+    setErrors({ ...errors, [key]: undefined });
+  };
+
+  const updatePurposes = (key, value) => {
+    const newPurposes = { ...purposes };
+    newPurposes[key] = value;
+    const purposesKeys = Object.keys(newPurposes);
+    const purposesString = purposesKeys.reduce(
+      (text, key) => text + (newPurposes[key] ? `, ${key}` : ""),
+      "",
+    );
+    setPurposes(newPurposes);
+    updateInfo("purpose", purposesString);
+  };
+
+  const updateInfo = (key, value) => {
+    clearError(key); // Remove the error if editing the field
+    const newInfo = { ...info };
+    newInfo[key] = value;
+    setInfo(newInfo);
+  };
+
+  const handleSubmit = () => {
+    const formErrors = validateForm(info);
+    setErrors(formErrors);
+    if (Object.keys(formErrors).find(key => !!formErrors[key])) return;
+    submit(info);
+  };
+
   const t = useTranslations();
 
   return (
@@ -15,12 +61,14 @@ const ContactForm = () => {
         <FormField
           labelFor="name"
           label="contact:name"
+          errorText={errors.name}
           field={
             <FormInput
               type="text"
               id="name"
-              name="name"
+              name={info.name}
               placeholder="contact:whats-your-name"
+              onChange={ev => updateInfo("name", ev.target.value)}
             />
           }
         />
@@ -31,21 +79,23 @@ const ContactForm = () => {
             <FormInput
               type="text"
               id="company"
-              name="company"
+              name={info.company}
               placeholder="contact:what-company-work"
+              onChange={ev => updateInfo("company", ev.target.value)}
             />
           }
         />
         <FormField
           labelFor="email"
           label="contact:email"
-          errorText="contact:error-email"
+          errorText={errors.email}
           field={
             <FormInput
               type="email"
               id="email"
-              name="email"
+              name={info.email}
               placeholder="contact:give-us-email"
+              onChange={ev => updateInfo("email", ev.target.value)}
             />
           }
         />
@@ -53,19 +103,32 @@ const ContactForm = () => {
         <FormField
           labelFor="purpose"
           label="contact:purpose"
+          errorText={errors.purpose}
           field={
             <>
-              <Checkbox id="dev-team" value="check-1" text="contact:purpose1" />
               <Checkbox
-                id="build-scratch"
+                id="dev-team"
+                value="check-1"
+                text="contact:purpose1"
+                onChange={ev => updatePurposes(ev.target.id, ev.target.checked)}
+              />
+              <Checkbox
+                id="build-from-scratch"
                 value="check-2"
                 text="contact:purpose2"
+                onChange={ev => updatePurposes(ev.target.id, ev.target.checked)}
               />
-              <Checkbox id="redesign" value="check-3" text="contact:purpose3" />
+              <Checkbox
+                id="redesign"
+                value="check-3"
+                text="contact:purpose3"
+                onChange={ev => updatePurposes(ev.target.id, ev.target.checked)}
+              />
               <Checkbox
                 id="something-else"
                 value="check-4"
                 text="contact:purpose4"
+                onChange={ev => updatePurposes(ev.target.id, ev.target.checked)}
               />
             </>
           }
@@ -76,15 +139,20 @@ const ContactForm = () => {
           label="contact:budget"
           field={
             <div className="form-select">
-              <select id="budget" name="budget" className="select">
+              <select
+                id="budget"
+                name="budget"
+                className="select"
+                onChange={ev => updateInfo("budget", ev.target.value)}
+              >
                 <option value="0" disabled hidden>
                   {t("contact:tell-us-budget")}
                 </option>
-                <option value="1">5€-2000€</option>
-                <option value="2">2000€-5000€</option>
-                <option value="3">5000€-10000€</option>
-                <option value="4">10000€-50000€</option>
-                <option value="5">+50000€</option>
+                <option value={BUDGETS.low}>{BUDGETS.low}</option>
+                <option value={BUDGETS.midLow}>{BUDGETS.midLow}</option>
+                <option value={BUDGETS.mid}>{BUDGETS.mid}</option>
+                <option value={BUDGETS.midHigh}>{BUDGETS.midHigh}</option>
+                <option value={BUDGETS.high}>{BUDGETS.high}</option>
               </select>
               <Arrow className="arrow" />
             </div>
@@ -99,11 +167,27 @@ const ContactForm = () => {
               id="tell-us-more"
               name="tell-us-more"
               placeholder={t("contact:tell-us-more")}
+              value={info.message}
+              onChange={ev => updateInfo("message", ev.target.value)}
             />
           }
         />
-        <Button onClick="" label="contact:lets-work-together" type="submit" />
       </form>
+      {result && (
+        <div
+          style={{
+            color: `${result.intent == "positive" ? "green" : "red"}`,
+          }}
+        >
+          {result.message}
+        </div>
+      )}
+      {loading ? (
+        <div>Loading...</div>
+      ) : (
+        <Button onClick={handleSubmit} label="contact:lets-work-together" />
+      )}
+
       <p className="text">
         {t("contact:extra-text", {
           a: t => (
