@@ -173,13 +173,14 @@ const ContactForm = () => {
           }
         />
       </form>
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
-        result || (
-          <Button onClick={handleSubmit} label="contact:lets-work-together" />
-        )
-      )}
+
+      {loading && <div>Loading...</div>}
+      {result}
+      <Button
+        onClick={handleSubmit}
+        label="contact:lets-work-together"
+        disabled={!!result}
+      />
 
       <p className="text">
         {t("contact:extra-text", {
