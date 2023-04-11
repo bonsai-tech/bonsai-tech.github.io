@@ -173,19 +173,12 @@ const ContactForm = () => {
           }
         />
       </form>
-      {result && (
-        <div
-          style={{
-            color: `${result.intent == "positive" ? "green" : "red"}`,
-          }}
-        >
-          {result.message}
-        </div>
-      )}
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <Button onClick={handleSubmit} label="contact:lets-work-together" />
+        result || (
+          <Button onClick={handleSubmit} label="contact:lets-work-together" />
+        )
       )}
 
       <p className="text">

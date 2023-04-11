@@ -1,5 +1,6 @@
-import { useCallback, useState, useEffect } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import useTranslations from "./useTranslations";
+import Notification from "../ui/components/Notification";
 
 // This is using formSubmit.co to handle the form submitting.
 // It is kind of weird... but free. We might want to change it eventually.
@@ -7,7 +8,7 @@ import useTranslations from "./useTranslations";
 const useFormSubmit = () => {
   const [loading, setLoading] = useState();
 
-  const [submitResult, setSubmitResult] = useState({ message: "", intent: "" });
+  const [submitResult, setSubmitResult] = useState(null);
 
   const t = useTranslations();
 
@@ -20,7 +21,7 @@ const useFormSubmit = () => {
     try {
       setLoading(true);
       await fetch(
-        `https://formsubmt.co/ajax/${t("contact:bonsai-email")}.com`,
+        `https://formsubmit.co/ajax/${t("contact:bonsai-email")}.com`,
         {
           method: "POST",
           headers: {
@@ -36,9 +37,11 @@ const useFormSubmit = () => {
           }),
         },
       );
-      setSubmitResult({ message: "Hurray!", intent: "positive" });
+      setSubmitResult(<Notification message={t("contact:submit-success")} />);
     } catch (e) {
-      setSubmitResult({ message: "Oops!", intent: "danger" });
+      setSubmitResult(
+        <Notification message={t("contact:submit-fail")} isError={true} />,
+      );
     }
     setLoading(false);
   }, []);
