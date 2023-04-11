@@ -9,11 +9,12 @@ import useFormSubmit from "../../hooks/useFormSubmit";
 import { validateForm } from "../../utils/validation";
 
 const BUDGETS = {
-  low: "5€-2000€",
-  midLow: "2000€-5000€",
-  mid: "5000€-10000€",
-  midHigh: "10000€-50000€",
-  high: "+50000€",
+  low: "Less than 10.000€",
+  midLow: "10.000€ - 25.000€",
+  mid: "25.000€ - 50.000€",
+  midHigh: "50.000€ - 100.000€",
+  high: "100.000€ - 200.000€",
+  extraHigh: "More than 200.000€",
 };
 
 const ContactForm = () => {
@@ -60,8 +61,9 @@ const ContactForm = () => {
       <form>
         <FormField
           labelFor="name"
-          label="contact:name"
+          label={"contact:name"}
           errorText={errors.name}
+          required
           field={
             <FormInput
               type="text"
@@ -89,6 +91,7 @@ const ContactForm = () => {
           labelFor="email"
           label="contact:email"
           errorText={errors.email}
+          required
           field={
             <FormInput
               type="email"
@@ -104,6 +107,8 @@ const ContactForm = () => {
           labelFor="purpose"
           label="contact:purpose"
           errorText={errors.purpose}
+          required
+          className="check-group"
           field={
             <>
               <Checkbox
@@ -148,11 +153,14 @@ const ContactForm = () => {
                 <option value="0" disabled hidden>
                   {t("contact:tell-us-budget")}
                 </option>
-                <option value={BUDGETS.low}>{BUDGETS.low}</option>
+                <option value={BUDGETS.low}>{t("budget:low")}</option>
                 <option value={BUDGETS.midLow}>{BUDGETS.midLow}</option>
                 <option value={BUDGETS.mid}>{BUDGETS.mid}</option>
                 <option value={BUDGETS.midHigh}>{BUDGETS.midHigh}</option>
                 <option value={BUDGETS.high}>{BUDGETS.high}</option>
+                <option value={BUDGETS.extraHigh}>
+                  {t("budget:extraHigh")}
+                </option>
               </select>
               <Arrow className="arrow" />
             </div>
@@ -174,13 +182,19 @@ const ContactForm = () => {
         />
       </form>
 
-      {loading && <div>Loading...</div>}
-      {result}
-      <Button
-        onClick={handleSubmit}
-        label="contact:lets-work-together"
-        disabled={!!result}
-      />
+      <div className="actions">
+        <Button
+          onClick={handleSubmit}
+          label="contact:lets-work-together"
+          disabled={!!result}
+        />
+        {loading && (
+          <div className="spinner-box">
+            <div className="spinner" />
+          </div>
+        )}
+        {result}
+      </div>
 
       <p className="text">
         {t("contact:extra-text", {

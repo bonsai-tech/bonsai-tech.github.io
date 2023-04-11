@@ -1,17 +1,15 @@
 import React from "react";
+import { ReactComponent as TickCircle } from "../../assets/icons/icon-tick-circle.svg";
+import { ReactComponent as People } from "../../assets/icons/icon-people.svg";
 
 const Notification = ({ message, isError = false }) => {
   return (
-    <div
-      style={{
-        height: "64px",
-        textAlign: "center",
-        alignItems: "center",
-        justifyContent: "center",
-        background: "#141e30",
-        color: `${isError ? "red" : "green"}`,
-      }}
-    >
+    <div className="form-notification">
+      {isError ? (
+        <People className="icon-error" />
+      ) : (
+        <TickCircle className="icon-success" />
+      )}
       {message}
     </div>
   );

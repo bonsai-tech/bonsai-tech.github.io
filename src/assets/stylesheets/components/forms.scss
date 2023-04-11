@@ -2,13 +2,21 @@
 
 .form {
   &-field {
+    position: relative;
     margin-bottom: 24px;
     &.has-error {
       .form-input,
       .select,
       .textarea {
         border-color: $error;
+        box-shadow: 0 0 0 1px $error;
       }
+    }
+    .error-icon {
+      color: $error;
+      position: absolute;
+      top: 36px;
+      right: 8px;
     }
   }
 
@@ -18,9 +26,6 @@
     line-height: 20.16px;
     font-weight: $semibold;
     margin-bottom: 6px;
-  }
-
-  &-input {
   }
 
   &-select {
@@ -153,5 +158,11 @@ select {
 
 .error-text {
   color: $error;
-  margin: 4px 0;
+  margin: 6px 0;
+}
+
+.check-group {
+  .error-icon {
+    display: none;
+  }
 }

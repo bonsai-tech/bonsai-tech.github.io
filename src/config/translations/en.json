@@ -114,6 +114,8 @@
   "contact:extra-text": "If you don't like forms, you can reach us at <a> hello@bonsaitech.io </a>",
   "contact:submit-fail": "An error ocurred. Try again",
   "contact:submit-success": "We'll get back to you as soon as possible",
+  "budget:low": "Less than 10.000€",
+  "budget:extraHigh": "More than 200.000€",
   "quote:text": "I’m saving tons of project management time with Bonsai, because they listen very carefully, ask the right questions upfront and have an eye to engineer excellent web applications you will only get from senior people. They’re specialized and absolutely premium when it comes to UI/UX heavy React based web apps.",
   "quote:daniel-position": "Founder at Aucta",
   "quote:action": "Check Daniel’s Website!",

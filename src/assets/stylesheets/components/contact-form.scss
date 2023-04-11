@@ -16,6 +16,65 @@
     font-size: 16px;
   }
 
+  .actions {
+    position: relative;
+
+    .button {
+      z-index: 1;
+      margin-bottom: 12px;
+    }
+
+    .spinner-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      height: 52px;
+      width: 100%;
+      background: $black-grey;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fade-in 0.4s ease;
+    }
+
+    .spinner {
+      border: 3px solid $white;
+      border-bottom-color: transparent;
+    }
+  }
+
+  .form-notification {
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    background: $black-grey;
+    color: $white;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    z-index: 10;
+    animation: fade-in 0.1s ease;
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .icon-success {
+      color: $success;
+    }
+    .icon-error {
+      color: $error;
+    }
+  }
+
   @include mq(xl) {
     padding: 64px;
   }
