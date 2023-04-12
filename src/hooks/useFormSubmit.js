@@ -20,23 +20,20 @@ const useFormSubmit = () => {
   const submit = useCallback(async info => {
     try {
       setLoading(true);
-      await fetch(
-        `https://formsubmit.co/ajax/${t("contact:bonsai-email")}.com`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            name: info.name,
-            email: info.email,
-            purpose: info.purpose,
-            budget: info.budget,
-            message: info.message,
-          }),
+      await fetch(`https://formsubmit.co/ajax/${t("contact:bonsai-email")}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-      );
+        body: JSON.stringify({
+          name: info.name,
+          email: info.email,
+          purpose: info.purpose,
+          budget: info.budget,
+          message: info.message,
+        }),
+      });
       setSubmitResult(<Notification message={t("contact:submit-success")} />);
     } catch (e) {
       setSubmitResult(
