@@ -1,10 +1,8 @@
 import React from "react";
 import useTranslations from "../../hooks/useTranslations";
-import logo from "../../assets/images/logo.svg";
 import Link from "../components/LinkLocalized";
-import { HashLink } from "react-router-hash-link";
 
-const Footer = ({ hasNav }) => {
+const Footer = () => {
   const t = useTranslations();
 
   return (
