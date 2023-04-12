@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build && mv public docs",
     "copy-to-gh-pages": "shx rm -rf ../bonsai-web-build/* && shx cp -r public/* ../bonsai-web-build/",
     "deploy-gh-pages": "cd ../bonsai-web-build && git add . && git commit -m \"update\" && git push origin main",
     "deploy": "npm run build && npm run copy-to-gh-pages && npm run deploy-gh-pages",
