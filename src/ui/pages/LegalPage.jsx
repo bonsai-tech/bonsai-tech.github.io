@@ -22,7 +22,7 @@ const LegalPage = () => {
             <li>{t("legal:section1:item2")}</li>
             <li>{t("legal:section1:item3")}</li>
             <li>{t("legal:section1:item4")}</li>
-            <li>{t("legal:section1:item5")}</li>
+            {/*<li>{t("legal:section1:item5")}</li>*/}
             <li>{t("legal:section1:item6")}</li>
           </ul>
           <h3 className="delta">{t("legal:section2:title1")}</h3>

@@ -17,10 +17,12 @@ const Contact = () => {
           <h4 className="map-title">{t("map:title")}</h4>
           <p className="text">{t("map:address1")}</p>
           <p className="text">{t("map:address2")}</p>
+          {/*
           <iframe
             src="https://snazzymaps.com/embed/456663"
             title="Bonsai office map"
           ></iframe>
+          */}
         </div>
       </div>
       <div className="contact-col" data-aos="custom-animation">
